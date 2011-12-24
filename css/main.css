@@ -1,0 +1,105 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+
+
+#banner
+{
+    
+    background-image: url(../images/new.jpg);
+    background-repeat: no-repeat;
+    background-position: 15%;
+    width: 100%;
+    
+    border-bottom:pink solid 10px;
+    background-color: black;
+}
+
+#banner h1
+{
+    color: Pink;
+    font-size: 460%;
+	padding-left: 30%
+}
+
+
+
+#menuwrapper
+{
+position: absolute;
+bottom:0;
+width: 100%;
+background: blue;
+margin: 0 auto;
+
+text-transform: lowercase;
+}
+
+
+#menuwrapper:after{
+content: ".";
+display: block;
+
+clear: both;
+}
+
+
+#menuwrapper ul
+{
+position:absolute;
+bottom:0;
+list-style: none;
+padding:0;
+margin: 0 auto;
+width:100%;
+font-size: 400%;
+text-align: center;
+
+/* cancels gap caused by top padding in Opera 7.54 */
+
+}
+
+#menuwrapper ul li
+{
+display: blcok;
+float: left;
+width: 25%;
+margin: 0;
+padding: 0;
+background-color: red;
+
+}
+
+#menuwrapper ul li a
+{
+display: block;
+
+padding: 5%;
+border-width: 5px;
+border-color: green;
+border-style: solid;
+color: black;
+text-decoration: none;
+background: gray;
+
+}
+
+
+#menuwrapper>ul li a { width: auto; }
+
+#menuwrapper ul li#active a
+{
+	background:yellow;
+	color: orange;
+}
+
+#menuwrapper li a:hover, ul li#active a:hover
+{
+	color: purple;
+	background: transparent;
+	border-color: pink;
+}
+

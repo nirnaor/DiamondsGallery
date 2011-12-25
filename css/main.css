@@ -9,7 +9,7 @@
 #banner
 {
     
-    background-image: url(../images/new.jpg);
+    /*background-image: url(../images/new.jpg);*/
     background-repeat: no-repeat;
     background-position: 15%;
     width: 100%;
@@ -101,6 +101,12 @@ background: gray;
 	color: purple;
 	background: transparent;
 	border-color: pink;
+}
+
+#gallery
+{
+	background-color: red;
+
 }
 
     

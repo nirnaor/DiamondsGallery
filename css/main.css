@@ -4,31 +4,25 @@
     padding:0;
 }
 
-
-
 #banner
 {
-    
-    /*background-image: url(../images/new.jpg);*/
-    background-repeat: no-repeat;
-    background-position: 15%;
     width: 100%;
-    
-    border-bottom:pink solid 10px;
-    background-color: black;
+    border-bottom:pink solid 5px;
+    background-image: url(../images/diamond-skull.jpg);
+	background-repeat: no-repeat;
+background-color:black;
 }
 
 #banner h1
 {
     color: Pink;
-    font-size: 460%;
-	padding-left: 30%
+    font-size: 650%;
+    
+    padding-left: 20%;
+padding-bottom: 3%;
+padding-top: 2%;
 }
 
-#slideshow {
-  width: 600px;
-  height: 200px;
-}
 
 
 #menuwrapper
@@ -36,6 +30,7 @@
 position: absolute;
 bottom:0;
 width: 100%;
+
 background: blue;
 margin: 0 auto;
 
@@ -59,7 +54,7 @@ list-style: none;
 padding:0;
 margin: 0 auto;
 width:100%;
-font-size: 400%;
+font-size: 100%;
 text-align: center;
 
 /* cancels gap caused by top padding in Opera 7.54 */
@@ -73,7 +68,7 @@ float: left;
 width: 25%;
 margin: 0;
 padding: 0;
-background-color: red;
+
 
 }
 
@@ -83,7 +78,7 @@ display: block;
 
 padding: 5%;
 border-width: 5px;
-border-color: green;
+border-color: Lime;
 border-style: solid;
 color: black;
 text-decoration: none;
@@ -110,7 +105,42 @@ background: gray;
 #gallery
 {
 	background-color: red;
-
+	margin-top: 2%;
 }
 
+
+#gallerymenuWrapper{
+	width: 20%;
+	background-color: black;
+	float: left;
+	
+}
+
+#gallerymenuWrapper li{
+	
+	
+	font-size: 100%;
+	padding-left: 20px;
+
+	padding-top: 15%;
+	
+}
+
+#gallerymenuWrapper li a{
+	
+background-image: url(../images/skullringsmaller.jpg);
+background-repeat: no-repeat;
+background-color:black;	
+	font-size: 250%;
+	padding-left: 30%;
+	text-decoration: none;
+	color: white;
+	
+}
+
+#imagegallery
+{
+    background-color: black;
+	
+}
     

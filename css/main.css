@@ -144,3 +144,25 @@ background-color:black;
 	
 }
     
+    
+    
+    
+#welcome
+{
+    
+    border: solid green 5px;
+    width: 50%;
+    font-size: 180%;
+    margin: 2%;
+}
+
+#slidinggallery
+{
+    
+    border: solid blue 5px;
+     width: 400px;
+  height: 200px;
+    font-size: 180%;
+    margin: 2%;
+	float: right;
+}

@@ -156,6 +156,16 @@ background-color:black;
     margin: 2%;
 }
 
+
+#welcome a
+{
+    
+    
+    color : blue;
+    text-decoration: underline;
+}
+
+
 #slidinggallery
 {
     

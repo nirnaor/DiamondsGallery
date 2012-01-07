@@ -1,7 +1,15 @@
 $(document).ready(function () {
 
-    console.log('hello');
+    showHomeAndHideOtherDivs();
+
+    function showHomeAndHideOtherDivs() {
+        $('#gallery').hide();
+        $('#home').addClass('active');
+
+    }
+
     $('#gallery').hide();
+
 
     $('#slidinggallery').crossSlide({
         fade: 1
@@ -35,13 +43,19 @@ $(document).ready(function () {
     if (idxOut == undefined) {
         // starting single image phase, put up caption
         $('#slidinggallery.caption').text(img.alt).animate({ opacity: .7 })
-        console.log(img.alt);
     }
     else {
         // starting cross-fade phase, take out caption
         $('#slidinggallery.caption').fadeOut()
     }
 });
+
+
+    $('#menu a').click(function (e) {
+        var divToShow = $(this).data('address');
+        console.log('will now display the ' + divToShow);
+        $('#' + divToShow).show();
+    });
 
 
 });

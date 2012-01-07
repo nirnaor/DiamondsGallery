@@ -4,11 +4,10 @@ $(document).ready(function () {
 
     function showHomeAndHideOtherDivs() {
         $('#gallery').hide();
-        $('#home').addClass('active');
+        $('#home').addClass('activediv');
 
     }
 
-    $('#gallery').hide();
 
 
     $('#slidinggallery').crossSlide({
@@ -54,6 +53,7 @@ $(document).ready(function () {
     $('#menu a').click(function (e) {
         var divToShow = $(this).data('address');
         console.log('will now display the ' + divToShow);
+        $('.active').hide();
         $('#' + divToShow).show();
     });
 

@@ -69,9 +69,13 @@ $(document).ready(function () {
 
     function initGalleryFlow() {
         var flowDiv = $('#galleryflow')[0];
-        myNewFlow = new ContentFlow(flowDiv);
-        myNewFlow.init();
-        addPictuesToFlow(myNewFlow);
+
+        if (myNewFlow == null) {
+            myNewFlow = new ContentFlow(flowDiv);
+            myNewFlow.init();
+            addPictuesToFlow(myNewFlow);
+        }
+        
 
     }
 

@@ -57,7 +57,15 @@ $(document).ready(function () {
         $('#' + divToShow).addClass('activediv');
         $('.activediv').show();
 
+        if (divToShow == 'gallery') {
+            initGalleryFlow();
+        }
     });
+
+
+    function initGalleryFlow() {
+        console.log('will now init the gallery flow');
+    }
 
 
 });

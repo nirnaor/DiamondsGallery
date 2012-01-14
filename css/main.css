@@ -60,6 +60,9 @@ padding:0;
 margin: 0 auto;
 width:100%;
 font-size: 180%;
+letter-spacing: 5px;
+font-family: Verdana;
+
 text-align: center;
 
 /* cancels gap caused by top padding in Opera 7.54 */

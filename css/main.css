@@ -4,10 +4,15 @@
     padding:0;
 }
 
+body
+{
+    background-color: Black;
+}
+
 #banner
 {
     width: 100%;
-    border-bottom:pink solid 5px;
+    
     background-image: url(../images/diamond-skull.jpg);
 	background-repeat: no-repeat;
 background-color:black;
@@ -31,10 +36,10 @@ position: absolute;
 bottom:0;
 width: 100%;
 
-background: blue;
+
 margin: 0 auto;
 
-text-transform: lowercase;
+
 }
 
 
@@ -54,7 +59,7 @@ list-style: none;
 padding:0;
 margin: 0 auto;
 width:100%;
-font-size: 100%;
+font-size: 180%;
 text-align: center;
 
 /* cancels gap caused by top padding in Opera 7.54 */
@@ -78,11 +83,12 @@ display: block;
 
 padding: 5%;
 border-width: 5px;
-border-color: Lime;
+border-color: pink;
 border-style: solid;
-color: black;
+color: pink;
+font-weight: bold;
 text-decoration: none;
-background: gray;
+background: black;
 
 }
 
@@ -97,14 +103,14 @@ background: gray;
 
 #menuwrapper li a:hover, ul li#active a:hover
 {
-	color: purple;
+	color: yellow;
 	background: transparent;
-	border-color: pink;
+	border-color: yellow;
 }
 
 #gallery
 {
-	background-color: red;
+	
 	margin-top: 2%;
 }
 
@@ -151,8 +157,8 @@ background-color:black;
     
 #welcome
 {
-    
-    border: solid green 5px;
+    color: pink;
+    border: solid pink 5px;
     width: 50%;
     font-size: 180%;
     margin: 2%;
@@ -163,7 +169,7 @@ background-color:black;
 {
     
     
-    color : blue;
+    color : yellow;
     text-decoration: underline;
 }
 

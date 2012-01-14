@@ -75,7 +75,7 @@ $(document).ready(function () {
             myNewFlow.init();
             addPictuesToFlow(myNewFlow);
         }
-        
+
 
     }
 

@@ -23,24 +23,16 @@ background-color:black;
     color: #CF6174;
     font-size: 550%;
 	font-family: cursive;
-    background: -webkit-gradient(linear, left top , left bottom, from(#CF6174), to(#C7C5A7));
+    background: -webkit-gradient(linear, left top , left bottom, from(#FF778F), to(#C7C5A7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: #1A4352;
     padding-left: 20%;
 padding-bottom: 3%;
 padding-top: 2%;
 }
 
-#banner h1 #gradient
-{
-    background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.1, rgb(207,97,122)),
-	color-stop(0.55, rgb(199,197,167))
-    );
-}
 
 
 

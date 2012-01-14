@@ -5,6 +5,7 @@ $(document).ready(function () {
     function showHomeAndHideOtherDivs() {
         $('#gallery').hide();
         $('#home').addClass('activediv');
+
     }
 
 
@@ -49,7 +50,7 @@ $(document).ready(function () {
 });
 
 
-    $('#menu a').click(function (e) {
+    $('a').click(function (e) {
         var divToShow = $(this).data('address');
         console.log('will now display the ' + divToShow);
         $('.activediv').hide();

@@ -20,8 +20,9 @@ background-color:black;
 
 #banner h1
 {
-    color: Pink;
-    font-size: 650%;
+    color: #CF6174;
+    font-size: 550%;
+	font-family: cursive;
     
     padding-left: 20%;
 padding-bottom: 3%;
@@ -86,10 +87,9 @@ display: block;
 
 padding: 5%;
 border-width: 5px;
-border-color: pink;
+border-color: #1A4352;
 border-style: solid;
-color: pink;
-font-weight: bold;
+color: #CF6174;font-weight: bold;
 text-decoration: none;
 background: black;
 
@@ -106,9 +106,9 @@ background: black;
 
 #menuwrapper li a:hover, ul li#active a:hover
 {
-	color: yellow;
+	color: #DBD028;
 	background: transparent;
-	border-color: yellow;
+	border-color: #C7C5A7;
 }
 
 #gallery
@@ -160,8 +160,8 @@ background-color:black;
     
 #welcome
 {
-    color: pink;
-    border: solid pink 5px;
+    color: #DBD328;
+
     width: 50%;
     font-size: 180%;
     margin: 2%;
@@ -172,7 +172,7 @@ background-color:black;
 {
     
     
-    color : yellow;
+    color : #C7C5A7;
     text-decoration: underline;
 }
 
@@ -180,7 +180,7 @@ background-color:black;
 #slidinggallery
 {
     
-    border: solid blue 5px;
+    border: solid #C7C5A7 5px;
      width: 400px;
   height: 200px;
     font-size: 180%;

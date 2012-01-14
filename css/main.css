@@ -109,7 +109,7 @@ background: black;
 	color: orange;
 }
 
-#menuwrapper li a:hover, ul li#active a:hover
+#menuwrapper li a:hover, #menuwrapper li a.activediv
 {
 	color: #DBD028;
 	background: transparent;

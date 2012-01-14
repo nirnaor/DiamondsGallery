@@ -23,7 +23,9 @@ background-color:black;
     color: #CF6174;
     font-size: 550%;
 	font-family: cursive;
-    
+    background: -webkit-gradient(linear, left top , left bottom, from(#CF6174), to(#C7C5A7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     padding-left: 20%;
 padding-bottom: 3%;
 padding-top: 2%;

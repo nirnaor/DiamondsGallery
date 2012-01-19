@@ -6,7 +6,8 @@
 
 body
 {
-    background-color: Black;
+background-image: -webkit-linear-gradient(bottom, rgb(199,197,167) 16%, rgb(0,0,0) 54%);
+    
 }
 
 #banner
@@ -15,10 +16,15 @@ body
     
     background-image: url(../images/diamond-skull.jpg);
 	background-repeat: no-repeat;
-background-color:black;
+
 }
 
-#banner h1
+
+#banner #headers{
+padding-bottom: 5%;
+}
+
+#banner #headers h1
 {
     color: #CF6174;
     font-size: 550%;
@@ -26,15 +32,20 @@ background-color:black;
     background: -webkit-gradient(linear, left top , left bottom, from(#FF778F), to(#C7C5A7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-	-webkit-text-stroke-width: 3px;
+-webkit-text-stroke-width: 3px;
    -webkit-text-stroke-color: #1A4352;
     padding-left: 20%;
-padding-bottom: 3%;
-padding-top: 2%;
+	
 }
 
 
-
+#banner #headers h2{
+	color:#C7C5A7;
+	width: 30%;
+	float: right; 
+	margin-right: 8%;   	
+	font-size: 170%;
+}
 
 #menuwrapper
 {
@@ -94,9 +105,9 @@ padding: 5%;
 border-width: 5px;
 border-color: #1A4352;
 border-style: solid;
-color: #CF6174;font-weight: bold;
+color: #CF6174;
+font-weight: bold;
 text-decoration: none;
-background: black;
 
 }
 
@@ -105,8 +116,8 @@ background: black;
 
 #menuwrapper ul li#active a
 {
-	background:yellow;
-	color: orange;
+	
+
 }
 
 #menuwrapper li a:hover, #menuwrapper li a.activediv
@@ -125,7 +136,7 @@ background: black;
 
 #gallerymenuWrapper{
 	width: 20%;
-	background-color: black;
+	
 	float: left;
 	
 }
@@ -144,7 +155,7 @@ background: black;
 	
 background-image: url(../images/skullringsmaller.jpg);
 background-repeat: no-repeat;
-background-color:black;	
+	
 	font-size: 250%;
 	padding-left: 30%;
 	text-decoration: none;
@@ -154,7 +165,7 @@ background-color:black;
 
 #imagegallery
 {
-    background-color: black;
+    
     width: 50%;
     height: 50%;
 	

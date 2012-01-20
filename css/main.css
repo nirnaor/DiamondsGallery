@@ -7,15 +7,22 @@
 
 #main
 {
-	
+	background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.36, rgb(199,197,167)),
+	    color-stop(0.85, rgb(207,97,115))
+	);
 
-	background-color: yellow;
 }
 
 
 #logoandmenu
 {
-    background-color: Green;
+	background-image: url(../images/diamondskullnoback.png);
+	background-repeat: no-repeat;
+	
 }
 
 
@@ -23,8 +30,8 @@
 {
     	width: 40%;
 	font-size: 150%;
+	padding-bottom: 3%
 	
-	background-color:red;
 }
 
 
@@ -33,11 +40,24 @@
     	margin-left: 15%;
 }
 
+
+#logoandmenu #banner h1
+{
+	font-family: cursive;
+    background: -webkit-gradient(linear, left top , left bottom, from(#FF778F), to(#C7C5A7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: #1A4352;
+	padding-top: 4%;
+	padding-left: 7%;
+
+}
+
 #logoandmenu #menu 
 {
 	width: 50%;
 	float: right;
-	background-color:pink;
 	margin-top: 8%;
 	font-size: 200%
 }
@@ -61,12 +81,11 @@
 	margin-left: 5%;
 	margin-top: 3%;
     color: #1A4352;
-	background-color: black
+	border: solid 3px; 
 }
 
 #whatwedo
 {
-	background-color: lime;
 	width: 60%;
 }
 
@@ -78,12 +97,11 @@
 #whatwedo p
 {
 	font-size: 200%;
-	color: white;
+	
 }
 #footer
 {
 	margin-top: 3%;
 	text-align: center;
-	background-color: purple;
     color: #1A4352;
 }

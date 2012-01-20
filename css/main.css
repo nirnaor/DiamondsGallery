@@ -14,9 +14,7 @@ background-image: -webkit-linear-gradient(bottom, rgb(199,197,167) 16%, rgb(0,0,
 {
     width: 100%;
     
-    background-image: url(../images/diamond-skull.jpg);
-	background-repeat: no-repeat;
-
+    
 }
 
 
@@ -26,7 +24,7 @@ padding-bottom: 5%;
 
 #banner #headers h1
 {
-    color: #CF6174;
+    
     font-size: 550%;
 	font-family: cursive;
     background: -webkit-gradient(linear, left top , left bottom, from(#FF778F), to(#C7C5A7));
@@ -49,7 +47,7 @@ padding-bottom: 5%;
 
 #menuwrapper
 {
-position: absolute;
+
 bottom:0;
 width: 100%;
 
@@ -70,7 +68,7 @@ clear: both;
 
 #menuwrapper ul
 {
-position:absolute;
+
 bottom:0;
 list-style: none;
 padding:0;
@@ -79,7 +77,7 @@ width:100%;
 font-size: 180%;
 letter-spacing: 5px;
 font-family: Verdana;
-
+clear: both;
 text-align: center;
 
 /* cancels gap caused by top padding in Opera 7.54 */
@@ -88,7 +86,7 @@ text-align: center;
 
 #menuwrapper ul li
 {
-display: blcok;
+display:block;
 float: left;
 width: 25%;
 margin: 0;

@@ -44,7 +44,7 @@
 #logoandmenu #banner h1
 {
 	font-family: cursive;
-    background: -webkit-gradient(linear, left top , left bottom, from(#FF778F), to(#C7C5A7));
+    background: -webkit-gradient(linear, left top , left bottom, from(#DBD328), to(#C7C5A7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 	-webkit-text-stroke-width: 3px;
@@ -56,10 +56,11 @@
 
 #logoandmenu #menu 
 {
-	width: 50%;
+	width: 32%;
 	float: right;
-	margin-top: 8%;
-	font-size: 200%
+	margin-top: 11%;
+	font-size: 200%;
+	
 }
 
 #menu #menulist li
@@ -71,6 +72,7 @@
 #menu #menulist li a
 {
     color: #DBD328;
+    text-decoration: none;
     
 }
 
@@ -79,25 +81,42 @@
 	width: 90%;
 	margin-right: 5%;
 	margin-left: 5%;
-	margin-top: 3%;
+	
     color: #1A4352;
 	border: solid 3px; 
+border-radius: 10% 10%;
 }
 
+
+#home #slidinggallery
+{
+	margin:3%;
+	border: solid 2px;
+    height: 550%;
+    width: 210%;
+}
 #whatwedo
 {
-	width: 60%;
+	width: 50%;
+	margin: 3%;
 }
 
 #whatwedo h1
 {
-	font-size: 780%
+	font-size: 770%
 }
 
 #whatwedo p
 {
-	font-size: 200%;
+	font-size: 150%;
 	
+}
+
+#home #slidinggallery
+{
+	width: 450px;
+	height: 310px;
+	float: right;
 }
 #footer
 {

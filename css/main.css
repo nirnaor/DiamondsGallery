@@ -82,19 +82,22 @@
 
 #home
 {
-	width: 90%;
-	margin-right: 3%;
+	width: 94%;
+	
 	margin-left: 3%;
+	margin-right: 3%;
 	
     	color: #1A4352;
-	border: solid 3px; 
-	border-radius: 10% 10%;
+	border: solid 2px; 
+	border-radius: 10% 10%
 }
 
 
 #home #slidinggallery
 {
-	margin:4%;
+	
+	margin-right: 5%;
+	margin-top: 6%;	
 	border: solid 2px;
     height: 550%;
     width: 210%;
@@ -120,8 +123,8 @@
 
 #home #slidinggallery
 {
-	width: 450px;
-	height: 310px;
+	width: 430px;
+	height: 250px;
 	float: right;
 }
 #footer

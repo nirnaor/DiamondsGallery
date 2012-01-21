@@ -3,7 +3,7 @@
         width: 70%;
 	margin-left: 20%;
 	margin-right: 15%;
-	margin-top: 15%;
+	margin-top: 1%;
 	
 }
 
@@ -16,9 +16,15 @@
 	margin: 5%;
 	color: white;
 	margin-top: 5%;
-	padding-top: 23%;
+	padding-bottom: 13%;
 	font-size: 120%;
 
+}
+
+#galleryflow
+{
+	margin-top: 9%;
+	background-color:white;
 }
 
 

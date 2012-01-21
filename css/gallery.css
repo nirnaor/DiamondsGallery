@@ -10,21 +10,46 @@
 #categories #categorieslist li
 {
     display: inline;
-	background-image: url('../images/gallery/skullwatchnobackground.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: 5%;
-	color: white;
-	margin-top: 5%;
-	padding-bottom: 13%;
+	color: #DBD328;
+    font-family: 'eater', cursive;
+	padding-bottom: 16%;
 	font-size: 120%;
 
+}
+
+
+#categories #categorieslist #rings
+{
+	background-image: url('../images/gallery/skull_ring2.png');
+}
+
+#categories #categorieslist #bracelets
+{
+	background-image: url('../images/gallery/bracelets.png');
+}
+
+#categories #categorieslist #watches
+{
+	background-image: url('../images/gallery/skullwatchnobackground.png');
+}
+
+#categories #categorieslist #necklaces
+{
+	background-image: url('../images/gallery/necklaces.png');
+}
+
+#categories #categorieslist #earings
+{
+	background-image: url('../images/gallery/earings.png');
 }
 
 #galleryflow
 {
 	margin-top: 9%;
-	background-color:white;
+	
 }
 
 

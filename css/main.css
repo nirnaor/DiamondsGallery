@@ -57,7 +57,7 @@
 
 #logoandmenu #menu 
 {
-	width: 48%;
+	width: 57%;
 	float: right;
 	margin-top: 11%;
 	font-size: 200%;
@@ -67,6 +67,7 @@
 #menu #menulist li
 {
     display: inline;
+    margin: 3%;
 }
 
 

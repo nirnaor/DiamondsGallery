@@ -29,8 +29,9 @@
 #logoandmenu #banner
 {
     	width: 40%;
-	font-size: 150%;
-	padding-bottom: 3%
+	font-size: 250%;
+	padding-bottom: 3%;
+	line-height: 90px
 	
 }
 
@@ -43,7 +44,7 @@
 
 #logoandmenu #banner h1
 {
-	font-family: cursive;
+	font-family: 'Just Me Again Down Here', cursive;
     background: -webkit-gradient(linear, left top , left bottom, from(#DBD328), to(#C7C5A7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

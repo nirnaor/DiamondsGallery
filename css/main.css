@@ -22,6 +22,7 @@
 {
 	background-image: url(../images/diamondskullnoback.png);
 	background-repeat: no-repeat;
+	background-position: 2%;
 	
 }
 
@@ -29,12 +30,11 @@
 #logoandmenu #banner
 {
     	width: 40%;
-	font-size: 250%;
+	font-size: 200%;
 	padding-bottom: 3%;
-	line-height: 90px
+	line-height: 220%;
 	
 }
-
 
 #logoandmenu #banner 
 {
@@ -48,9 +48,9 @@
     background: -webkit-gradient(linear, left top , left bottom, from(#DBD328), to(#C7C5A7));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-	-webkit-text-stroke-width: 3px;
+	-webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: #1A4352;
-	padding-top: 4%;
+	padding-top: 1%;
 	padding-left: 7%;
 
 }
@@ -59,7 +59,7 @@
 {
 	width: 57%;
 	float: right;
-	margin-top: 11%;
+	margin-top: 7%;
 	font-size: 200%;
 	
 }
@@ -83,18 +83,18 @@
 #home
 {
 	width: 90%;
-	margin-right: 5%;
-	margin-left: 5%;
+	margin-right: 3%;
+	margin-left: 3%;
 	
-    color: #1A4352;
+    	color: #1A4352;
 	border: solid 3px; 
-border-radius: 10% 10%;
+	border-radius: 10% 10%;
 }
 
 
 #home #slidinggallery
 {
-	margin:3%;
+	margin:4%;
 	border: solid 2px;
     height: 550%;
     width: 210%;

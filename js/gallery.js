@@ -1,4 +1,9 @@
+var myNewFlow = null;
+
 $(document).ready(function () {
+    
+    initGalleryFlow();
+    
     function initGalleryFlow() {
         var flowDiv = $('#galleryflow')[0];
 
@@ -11,7 +16,7 @@ $(document).ready(function () {
 
     function addPictuesToFlow(flowToAdd) {
         for (var i = 1; i <= 10; i++) {
-            var path = 'images/diamonds/diamond' + i + '.jpg';
+            var path = '../images/diamonds/diamond' + i + '.jpg';
             var newImage = createNewImage(path, 'picture ' + i);
             myNewFlow.addItem(newImage, 'last');
         }

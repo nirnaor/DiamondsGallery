@@ -85,4 +85,44 @@
 }
 
 
+#content #slidinggallery
+{
+        margin-right: 5%;
+        margin-top: 6%;	
+        border: solid 2px;
+        height: 550%;
+        width: 210%;
+}
+#whatwedo
+{
+        width: 50%;
+        margin: 3%;
+}
+
+#whatwedo h1
+{
+        font-size: 570%;
+        font-family: Fredericka the Great;
+}
+
+#whatwedo p
+{
+        font-size: 150%;
+        font-family: 'Amaranth', sans-serif;
+}
+
+#content #slidinggallery
+{
+        width: 430px;
+        height: 250px;
+        float: right;
+}
+#footer
+{
+        margin-top: 3%;
+        text-align: center;
+        font-size: 80%;
+        color: #1A4352;
+        font-family: eater; 
+}
 	

@@ -1,139 +1,128 @@
 *
 {
-    margin:0;
-    padding:0;
+        margin: 0;
+        padding: 0;
 }
 
 
 #main
 {
-	background-image: -webkit-gradient(
-	    linear,
-	    left bottom,
-	    left top,
-	    color-stop(0.36, rgb(199,197,167)),
-	    color-stop(0.85, rgb(207,97,115))
-	);
-
+        background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.36, rgb(199,197,167)),
+        color-stop(0.85, rgb(207,97,115))
+        );
 }
 
 
 #logoandmenu
 {
-	background-image: url(../images/diamondskullnoback.png);
-	background-repeat: no-repeat;
-	background-position: 2%;
-	
+        background-image: url(../images/diamondskullnoback.png);
+        background-repeat: no-repeat;
+        background-position: 2%;
 }
 
 
 #logoandmenu #banner
 {
-    	width: 40%;
-	font-size: 200%;
-	padding-bottom: 3%;
-	line-height: 220%;
-	
+        width: 40%;
+        font-size: 200%;
+        padding-bottom: 3%;
+        line-height: 220%;
 }
 
 #logoandmenu #banner 
 {
-    	margin-left: 15%;
+        margin-left: 15%;
 }
 
 
 #logoandmenu #banner h1
 {
-	font-family: 'Just Me Again Down Here', cursive;
-    background: -webkit-gradient(linear, left top , left bottom, from(#DBD328), to(#C7C5A7));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-	-webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: #1A4352;
-	padding-top: 1%;
-	padding-left: 7%;
-
+        font-family: 'Just Me Again Down Here', cursive;
+        background: -webkit-gradient(linear, left top , left bottom, from(#DBD328), to(#C7C5A7));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #1A4352;
+        padding-top: 1%;
+        padding-left: 7%;
 }
 
 #logoandmenu #menu 
 {
-	width: 52%;
-	float: right;
-	margin-top: 7%;
-	font-size: 200%;
-	
+        width: 52%;
+        float: right;
+        margin-top: 7%;
+        font-size: 200%;
 }
 
 #menu #menulist li
 {
-    display: inline;
-    margin: 3%;
+        display: inline;
+        margin: 3%;
 }
 
 
 #menu #menulist li a
 {
-    color: #DBD328;
-    text-decoration: none;
-	font-family: eater ;
-	font-weight:bold;
-    
+        color: #DBD328;
+        text-decoration: none;
+        font-family: eater ;
+        font-weight:bold;
 }
 
-#home
+#content
 {
-	width: 94%;
-	
-	margin-left: 3%;
-	margin-right: 3%;
-	
-    	color: #1A4352;
-	border: solid 2px; 
-	border-radius: 10% 10%
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: #1A4352;
+    border: solid 2px; 
+    border-radius: 10% 10%;
 }
 
 
-#home #slidinggallery
+#content #slidinggallery
 {
-	
-	margin-right: 5%;
-	margin-top: 6%;	
-	border: solid 2px;
-    height: 550%;
-    width: 210%;
+        margin-right: 5%;
+        margin-top: 6%;	
+        border: solid 2px;
+        height: 550%;
+        width: 210%;
 }
 #whatwedo
 {
-	width: 50%;
-	margin: 3%;
+        width: 50%;
+        margin: 3%;
 }
 
 #whatwedo h1
 {
-	font-size: 570%;
-	font-family: Fredericka the Great;
+        font-size: 570%;
+        font-family: Fredericka the Great;
 }
 
 #whatwedo p
 {
-	font-size: 150%;
-	font-family: 'Amaranth', sans-serif;
-
+        font-size: 150%;
+        font-family: 'Amaranth', sans-serif;
 }
 
-#home #slidinggallery
+#content #slidinggallery
 {
-	width: 430px;
-	height: 250px;
-	float: right;
+        width: 430px;
+        height: 250px;
+        float: right;
 }
 #footer
 {
-	margin-top: 3%;
-	text-align: center;
-	font-size: 80%;
-	
-    	color: #1A4352;
-	font-family: eater; 
+        margin-top: 3%;
+        text-align: center;
+        font-size: 80%;
+        color: #1A4352;
+        font-family: eater; 
 }
 	

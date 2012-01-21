@@ -57,7 +57,7 @@
 
 #logoandmenu #menu 
 {
-	width: 32%;
+	width: 48%;
 	float: right;
 	margin-top: 11%;
 	font-size: 200%;
@@ -74,6 +74,8 @@
 {
     color: #DBD328;
     text-decoration: none;
+	font-family: eater ;
+	font-weight:bold;
     
 }
 
@@ -104,13 +106,15 @@ border-radius: 10% 10%;
 
 #whatwedo h1
 {
-	font-size: 770%
+	font-size: 570%;
+	font-family: Fredericka the Great;
 }
 
 #whatwedo p
 {
 	font-size: 150%;
-	
+	font-family: 'Amaranth', sans-serif;
+
 }
 
 #home #slidinggallery

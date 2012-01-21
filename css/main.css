@@ -57,7 +57,7 @@
 
 #logoandmenu #menu 
 {
-	width: 57%;
+	width: 52%;
 	float: right;
 	margin-top: 7%;
 	font-size: 200%;
@@ -131,5 +131,9 @@
 {
 	margin-top: 3%;
 	text-align: center;
-    color: #1A4352;
+	font-size: 80%;
+	
+    	color: #1A4352;
+	font-family: eater; 
 }
+	

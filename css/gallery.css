@@ -1,0 +1,15 @@
+#categories #categorieslist 
+{
+    width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	font-size: 220%;
+}
+
+#categories #categorieslist li
+{
+    display: inline;
+	background-image: url('../images/gallery/skullwatchnobackground.png');
+	
+	margin: 5%;
+}

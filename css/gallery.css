@@ -3,13 +3,25 @@
     width: 70%;
 	margin-left: 15%;
 	margin-right: 15%;
-	font-size: 220%;
+	
 }
 
 #categories #categorieslist li
 {
     display: inline;
 	background-image: url('../images/gallery/skullwatchnobackground.png');
-	
+	background-repeat: no-repeat;
+	background-position: center;
 	margin: 5%;
+	
+	font-size: 620%;
+
+}
+
+
+#categories #categorieslist li label
+{
+ 	color: white;
+	
+	
 }

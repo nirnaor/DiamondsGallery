@@ -1,8 +1,8 @@
 #categories #categorieslist 
 {
-        width: 70%;
-	margin-left: 20%;
-	margin-right: 15%;
+        width: 80%;
+	margin-left: 6%;
+	margin-right: 10%;
 	margin-top: 1%;
 	
 }
@@ -12,7 +12,8 @@
     display: inline;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin: 5%;
+	margin: 7%;
+
 	color: #DBD328;
     font-family: 'eater', cursive;
 	padding-bottom: 16%;
@@ -48,7 +49,7 @@
 
 #galleryflow
 {
-	margin-top: 9%;
+	margin-top: 11%;
 	
 }
 

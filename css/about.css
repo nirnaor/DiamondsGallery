@@ -7,20 +7,29 @@
 {
     border-bottom: solid 7px;
 	font-size: 450%;
+	font-family: Fredericka the Great;
 }
 
 #generaldesc p
 {
+	margin-top: 2%;
     font-size: 150%;
+    font-family: 'Amaranth', sans-serif;
 }
 
 .member h2
 {
-	font-size: 150%;
+	margin-top: 1%;
+	font-size: 280%;
+	font-family: Fredericka the Great;
 	border-bottom: solid 3px;	
 }
 
 .member p
 {
-	width: 60%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+    font-family: 'Amaranth', sans-serif;
+	font-size: 110%;
+	width: 50%;
 }

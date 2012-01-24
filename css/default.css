@@ -118,9 +118,10 @@
         height: 250px;
         float: right;
 }
-#footer
+#footer 
 {
-        margin-top: 3%;
+        padding-top: 0%;
+	padding-bottom: 4%;
         text-align: center;
         font-size: 80%;
         color: #1A4352;

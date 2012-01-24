@@ -11,6 +11,7 @@
 }
 .member h1
 {
+	text-align:center;
 	margin-top: 1%;
 	font-size: 250%;
         font-family: Fredericka the Great;
@@ -26,20 +27,25 @@
 }
 .member p
 {
+
 	margin-top: 2%;
 	margin-bottom: 2%;
     font-family: 'Amaranth', sans-serif;
 	font-size: 100%;
-	width: 40%;
+
+	text-align:center;
 }
-
-
+#Div1{
+	float: right;
+}
 
 
 .member{
 	margin-bottom: 5%;
-	clear: both;
-	width: 40%:
+	background-color: black;
+	width: 30%;
+
+
 }
 
 .member img

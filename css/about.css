@@ -13,7 +13,7 @@
 
 #generaldesc p
 {
-	margin-top: 2%;
+
     font-size: 150%;
     font-family: 'Amaranth', sans-serif;
 }
@@ -23,11 +23,29 @@
 
 
 .member{
-	margin-top: 5%;
-	background-color: black2;
+	margin: 3%;
+	
 	width: 40%;
+	background-color: green2;
 
 
+}
+
+#firstmember
+{
+	background-color: red2;
+}
+
+#firstmember img
+{
+	margin-left: 11%;
+}
+
+
+.member .imagecontainer
+{
+	
+	
 }
 
 .member img
@@ -35,8 +53,9 @@
 
 
 margin-top: 5%;
-margin-left: 25%;
-	
+
+
+	box-shadow: 3px 3px 4px #000;
 	border: white solid 5px;	
 height: 256px;
 }
@@ -58,6 +77,12 @@ height: 256px;
 
 #Div1{
 	float: right;
+}
+
+
+#Div1 img
+{
+	margin-left: 30%;
 }
     
 

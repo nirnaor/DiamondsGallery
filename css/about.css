@@ -9,14 +9,6 @@
 	font-size: 450%;
 	font-family: Fredericka the Great;
 }
-.member h1
-{
-	text-align:center;
-	margin-top: 1%;
-	font-size: 250%;
-        font-family: Fredericka the Great;
-	border-bottom: solid 3px;	
-}
 
 
 #generaldesc p
@@ -25,25 +17,15 @@
     font-size: 150%;
     font-family: 'Amaranth', sans-serif;
 }
-.member p
-{
 
-	margin-top: 2%;
-	margin-bottom: 2%;
-    font-family: 'Amaranth', sans-serif;
-	font-size: 100%;
 
-	text-align:center;
-}
-#Div1{
-	float: right;
-}
+
 
 
 .member{
-	margin-bottom: 5%;
-	background-color: black;
-	width: 30%;
+	margin-top: 5%;
+	background-color: black2;
+	width: 40%;
 
 
 }
@@ -52,12 +34,31 @@
 {
 
 
-margin-top: 2%;
-margin-right: 10%;
+margin-top: 5%;
+margin-left: 25%;
+	
 	border: white solid 5px;	
 height: 256px;
-	}
+}
 
+
+.member p
+{
+
+	margin-top: 2%;
+	margin-bottom: 2%;
+	    font-family: 'Amaranth', sans-serif;
+	font-size: 130%;
+
+	text-align:center;
+}
+
+
+
+
+#Div1{
+	float: right;
+}
     
 
 

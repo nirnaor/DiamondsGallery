@@ -9,6 +9,14 @@
 	font-size: 450%;
 	font-family: Fredericka the Great;
 }
+.member h1
+{
+	margin-top: 1%;
+	font-size: 250%;
+        font-family: Fredericka the Great;
+	border-bottom: solid 3px;	
+}
+
 
 #generaldesc p
 {
@@ -16,38 +24,36 @@
     font-size: 150%;
     font-family: 'Amaranth', sans-serif;
 }
-
-.imagecontainer
-{
-	/*background-image:url('../images/about/alon.png');
-	background-repeat: no-repeat;
-	
-	border: white solid 5px;
-	height: 356px;
-	width: 243px;
-	margin-right: 16%;
-	margin-top: 2%;
-	margin-bottom: 2%;
-	float: right;*/
-	
-}
-
-    
-
-
-.member h2
-{
-	margin-top: 1%;
-	font-size: 280%;
-	font-family: Fredericka the Great;
-	border-bottom: solid 3px;	
-}
-
 .member p
 {
 	margin-top: 2%;
 	margin-bottom: 2%;
     font-family: 'Amaranth', sans-serif;
-	font-size: 110%;
-	width: 50%;
+	font-size: 100%;
+	width: 40%;
 }
+
+
+
+
+.member{
+	margin-bottom: 5%;
+	clear: both;
+	width: 40%:
+}
+
+.member img
+{
+
+
+margin-top: 2%;
+margin-right: 10%;
+	border: white solid 5px;	
+height: 256px;
+	}
+
+    
+
+
+
+

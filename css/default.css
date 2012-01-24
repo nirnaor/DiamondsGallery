@@ -30,12 +30,13 @@
         width: 40%;
         font-size: 200%;
         padding-bottom: 3%;
+        margin-left: 15%;
         line-height: 220%;
 }
 
-#logoandmenu #banner 
+#logoandmenu #banner a
 {
-        margin-left: 15%;
+    text-decoration: none;        
 }
 
 

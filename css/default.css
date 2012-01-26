@@ -16,6 +16,7 @@
         );
         
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D16173', endColorstr='#C7C5A7');
+        background: -moz-linear-gradient(top,  #D16173,  #C7C5A7);
 }
 
 

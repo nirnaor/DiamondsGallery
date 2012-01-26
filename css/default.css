@@ -14,6 +14,8 @@
         color-stop(0.36, rgb(199,197,167)),
         color-stop(0.85, rgb(207,97,115))
         );
+        
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D16173', endColorstr='#C7C5A7');
 }
 
 

@@ -46,6 +46,7 @@
 #logoandmenu #banner h1
 {
         font-family: 'Just Me Again Down Here', cursive;
+        color: #DBD328;
         background: -webkit-gradient(linear, left top , left bottom, from(#DBD328), to(#C7C5A7));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

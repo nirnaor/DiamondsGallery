@@ -7,7 +7,7 @@
 #logoandmenu
 {
     background-position: 32%;
-    background-color: Black;
+    background-color: Black2;
 }
 
 
@@ -18,7 +18,7 @@
     padding-bottom: 3%;
     margin-left: 55%;
 	margin-bottom: 5%;
-    line-height: 120%;
+    line-height: 220%;
 }
 
 
@@ -35,13 +35,14 @@
     -webkit-text-stroke-color: #1A4352;
     
     padding-left: 7%;
+	padding-bottom: 12%;
 }
 
 #logoandmenu #menu
 {
 
     position: relative;
-    top: 180px;
+    top: 200px;
     
     font-size: 200%;
 }

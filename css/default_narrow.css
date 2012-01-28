@@ -4,10 +4,6 @@
     padding: 0;
 }
 
-
-
-
-
 #logoandmenu
 {
     background-image: url(../images/diamondskullnoback.png);
@@ -19,17 +15,15 @@
 
 #logoandmenu #banner
 {
-    width: 40%;
+    
     font-size: 200%;
     padding-bottom: 3%;
     margin-left: 55%;
+	margin-bottom: 5%;
     line-height: 220%;
 }
 
-#logoandmenu #banner a
-{
-    text-decoration: none;
-}
+
 
 
 #logoandmenu #banner h1
@@ -47,9 +41,10 @@
 
 #logoandmenu #menu
 {
-    width: 2%;
-    float: right;
-    margin-top: 7%;
+
+    position: relative;
+	top: 150px;
+    
     font-size: 200%;
 }
 

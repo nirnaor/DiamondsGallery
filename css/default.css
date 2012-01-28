@@ -1,29 +1,5 @@
-*
-{
-        margin: 0;
-        padding: 0;
-}
-
-
-#main
-{
-        background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0.36, rgb(199,197,167)),
-        color-stop(0.85, rgb(207,97,115))
-        );
-        
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D16173', endColorstr='#C7C5A7');
-        background: -moz-linear-gradient(top,  #D16173,  #C7C5A7);
-}
-
-
 #logoandmenu
 {
-        background-image: url(../images/diamondskullnoback.png);
-        background-repeat: no-repeat;
         background-position: 2%;
 }
 
@@ -37,22 +13,10 @@
         line-height: 220%;
 }
 
-#logoandmenu #banner a
-{
-    text-decoration: none;        
-}
 
 
 #logoandmenu #banner h1
-{
-        font-family: 'Just Me Again Down Here', cursive;
-        color: #DBD328;
-        background: -webkit-gradient(linear, left top , left bottom, from(#DBD328), to(#C7C5A7));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #1A4352;
-        padding-top: 1%;
+{        padding-top: 1%;
         padding-left: 7%;
 }
 

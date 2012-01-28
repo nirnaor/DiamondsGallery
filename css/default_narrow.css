@@ -20,7 +20,7 @@
     padding-bottom: 3%;
     margin-left: 55%;
 	margin-bottom: 5%;
-    line-height: 220%;
+    line-height: 120%;
 }
 
 
@@ -35,7 +35,7 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #1A4352;
-    padding-top: 1%;
+    
     padding-left: 7%;
 }
 
@@ -43,7 +43,7 @@
 {
 
     position: relative;
-	top: 150px;
+    top: 180px;
     
     font-size: 200%;
 }

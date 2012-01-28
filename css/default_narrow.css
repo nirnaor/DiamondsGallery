@@ -5,10 +5,7 @@
 }
 
 
-#main
-{
-        background-color: Blue;
-}
+
 
 
 #logoandmenu
@@ -16,6 +13,7 @@
         background-image: url(../images/diamondskullnoback.png);
         background-repeat: no-repeat;
         background-position: 2%;
+        background-color: Black;
 }
 
 

@@ -1,98 +1,82 @@
 #logoandmenu
 {
-        background-position: 2%;
+    background-position: 2%;
 }
 
 
 #logoandmenu #banner
 {
-        width: 40%;
-        font-size: 200%;
-        padding-bottom: 3%;
-        margin-left: 15%;
-        line-height: 220%;
+    width: 40%;
+    font-size: 200%;
+    padding-bottom: 3%;
+    margin-left: 15%;
+    line-height: 220%;
 }
 
 
 
 #logoandmenu #banner h1
-{        padding-top: 1%;
-        padding-left: 7%;
+{
+    padding-top: 1%;
+    padding-left: 7%;
 }
 
-#logoandmenu #menu 
+#logoandmenu #menu
 {
-        width: 52%;
-        float: right;
-        margin-top: 7%;
-        font-size: 200%;
+    width: 52%;
+    float: right;
+    margin-top: 7%;
+    font-size: 200%;
 }
 
 #menu #menulist li
 {
-        display: inline;
-        margin: 3%;
+    margin: 3%;
 }
 
 
-#menu #menulist li a
-{
-        color: #DBD328;
-        text-decoration: none;
-        font-family: eater ;
-        font-weight:bold;
-}
 
 #content
 {
     width: 94%;
     margin-left: 3%;
     margin-right: 3%;
-    color: #1A4352;
-    border: solid 2px; 
     border-radius: 10% 10%;
 }
 
 
 #content #slidinggallery
 {
-        margin-right: 5%;
-        margin-top: 6%;	
-        border: solid 2px;
-        height: 550%;
-        width: 210%;
+    margin-right: 5%;
+    margin-top: 6%;
+    height: 550%;
+    width: 210%;
 }
 #whatwedo
 {
-        width: 50%;
-        margin: 3%;
+    width: 50%;
+    margin: 3%;
 }
 
 #whatwedo h1
 {
-        font-size: 570%;
-        font-family: Fredericka the Great;
+    font-size: 570%;
 }
 
 #whatwedo p
 {
-        font-size: 150%;
-        font-family: 'Amaranth', sans-serif;
+    font-size: 150%;
 }
 
 #content #slidinggallery
 {
-        width: 430px;
-        height: 250px;
-        float: right;
+    width: 430px;
+    height: 250px;
+    float: right;
 }
-#footer 
+#footer
 {
-        padding-top: 0%;
-	padding-bottom: 4%;
-        text-align: center;
-        font-size: 80%;
-        color: #1A4352;
-        font-family: eater; 
+    padding-top: 0%;
+    padding-bottom: 4%;
+    font-size: 80%;
 }
-	

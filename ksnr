@@ -1,0 +1,16 @@
+[33m386b87c[m refs/remotes/origin/master@{0}: pull: fast-forward
+[33m368b847[m refs/heads/master@{0}: commit: deleted the narrow css
+[33m7c71943[m refs/heads/master@{1}: commit: moved the logo more left
+[33m79c29b4[m refs/heads/master@{2}: commit: finally the menu is looking in his place
+[33md5c9c5b[m refs/heads/master@{3}: commit: deleted duplicate declaration of the background image
+[33mdce937f[m refs/heads/master@{4}: commit: menu is below banner in narrow mode
+[33m23b42e6[m refs/heads/master@{5}: commit: menu is below the banner now
+[33m49961ec[m refs/heads/master@{6}: commit: fixed the banenr location
+[33meb2d0df[m refs/heads/master@{7}: commit: added background color when narrow
+[33mea8abff[m refs/heads/master@{8}: commit: added a general css file for the basic stuff that each platform will display, not size related
+[33m41bb6fd[m refs/heads/master@{9}: commit: changed sketch for narrow
+[33mb10cb8c[m refs/heads/master@{10}: commit: changed width for narrow css file selection
+[33md3795af[m refs/heads/master@{11}: commit: added another css default file for narrow
+[33m5dd24c0[m refs/heads/master@{12}: commit: finished with the design of the narrow home page
+[33m76b17e3[m refs/heads/master@{13}: commit: added a narrow sketch for the home page
+[33me6bd55a[m refs/heads/adler@{0}: branch: Created from HEAD

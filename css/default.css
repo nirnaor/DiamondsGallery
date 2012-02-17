@@ -137,11 +137,34 @@
     
     #content
     {
+        font-size: 180%;
         width: 94%;
         border-radius: 10% 10%;
         border: solid 2px;
         margin-left: 3%;
         margin-right: 3%; 
+    }
+    
+    #banner
+    {
+        text-align:left;
+        margin-left: 4%;
+    }
+    
+    #banner h1
+    { 
+        position:relative;
+        bottom:0;
+    }
+    #menu
+    {
+        text-align:right;
+        font-size:150%;
+    }
+    
+    #whatwedo 
+    {
+        font-size:35%;
     }
     
   
@@ -156,4 +179,10 @@
         background-image: none;
         background-color: green;
     }
+    
+    #whatwedo 
+    {
+        font-size:45%;
+    }
+    
 }

@@ -22,24 +22,20 @@
             background: -moz-linear-gradient(top,  #D16173,  #C7C5A7);
     }
 
-
     #logoandmenu
     {
-            background-image: url(../images/diamondskullnoback.png);
-            background-repeat: no-repeat;
-            background-position: 2%;
+                text-align:center;
     }
 
-
-    #logoandmenu #banner
+    #logoandmenu img
     {
-            width: 40%;
-            font-size: 200%;
-            padding-bottom: 3%;
-            margin-left: 15%;
-            line-height: 220%;
+            max-width: 25%;
+    
+            
     }
 
+
+    
     #logoandmenu #banner a
     {
         text-decoration: none;        
@@ -48,6 +44,8 @@
 
     #logoandmenu #banner h1
     {
+        display:inline;
+        line-height: 0;
             font-family: 'Just Me Again Down Here', cursive;
             color: #DBD328;
             background: -webkit-gradient(linear, left top , left bottom, from(#DBD328), to(#C7C5A7));
@@ -55,16 +53,16 @@
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: #1A4352;
-            padding-top: 1%;
-            padding-left: 7%;
+            line-height: 0;
+            
     }
 
     #logoandmenu #menu 
     {
-            width: 52%;
-            float: right;
-            margin-top: 7%;
-            font-size: 200%;
+            
+            padding-top: 5px;
+            
+            
     }
 
     #menu #menulist li
@@ -84,22 +82,14 @@
 
     #content
     {
-        width: 94%;
-        margin-left: 3%;
-        margin-right: 3%;
         color: #1A4352;
-        border: solid 2px; 
-        border-radius: 10% 10%;
     }
 
 
     #content #slidinggallery
     {
-            margin-right: 5%;
-            margin-top: 6%;	
-            border: solid 2px;
-            height: 550%;
-            width: 210%;
+        border: solid 2px;
+            
     }
     #whatwedo
     {
@@ -123,7 +113,7 @@
     {
             width: 430px;
             height: 250px;
-            float: right;
+            
     }
     #footer 
     {
@@ -144,6 +134,24 @@
         background-image: none;
         background-color: red;
     }
+    
+    #content
+    {
+        width: 94%;
+        border-radius: 10% 10%;
+        border: solid 2px;
+        margin-left: 3%;
+        margin-right: 3%; 
+    }
+    
+    #content #slidinggallery
+    {
+        margin-right: 5%;
+            margin-top: 6%;	
+            
+            height: 550%;
+            width: 210%;
+      }
 }
 
 

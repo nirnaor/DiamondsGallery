@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    $('#slidinggallery').width(0.4 * $(window).width());
     $('#slidinggallery').crossSlide({
         fade: 1
     }, [
@@ -40,6 +41,6 @@ $(document).ready(function () {
 });
 
 
-  
+
 
 });

@@ -25,13 +25,14 @@
         background-image: url(../images/diamondskullnoback.png);
         background-repeat: no-repeat;
         background-position: 2%;
+        width: 90%;
 }
 
 
 #logoandmenu #banner
 {
         width: 40%;
-        font-size: 200%;
+        font-size: 100%;
         padding-bottom: 3%;
         margin-left: 15%;
         line-height: 220%;
@@ -58,10 +59,9 @@
 
 #logoandmenu #menu 
 {
-        width: 52%;
+        width: 40%;
         float: right;
         margin-top: 7%;
-        font-size: 200%;
 }
 
 #menu #menulist li

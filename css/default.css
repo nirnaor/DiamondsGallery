@@ -10,13 +10,13 @@
 
     #main
     {
-            background-image: -webkit-gradient(
+             background-image: -webkit-gradient(
               linear,
               left bottom,
               left top,
-              color-stop(0.16, rgb(0,0,0)),
-              color-stop(0.51, rgb(11,204,222)),
-              color-stop(0.78, rgb(0,0,0))
+              color-stop(0.13, rgb(0,0,0)),
+              color-stop(0.46, rgb(86,198,232)),
+              color-stop(0.7, rgb(0,0,0))
             );
             
         
@@ -77,15 +77,15 @@
 
     #menu #menulist li a
     {
-            color: #DBD328;
             text-decoration: none;
+            color: #B50B3A;
             font-family: eater ;
             font-weight:bold;
     }
 
     #content
     {
-        color: #1A4352;
+            color: #B50B3A;
     }
 
     #footer
@@ -101,17 +101,13 @@
     
     #footer h1
     {
+            color: #B50B3A;
             font-size: 130%;
     }
 }
 
 @media screen and (min-width:480px)
 {
-    #main
-    {
-        background-image: none;
-        background-color: purple;
-    }
     #menulist li a
     {
       font-size: 121%;
@@ -121,17 +117,10 @@
 
 @media screen and (min-width:600px)
 {
-    #main
-    {
-        background-image: none;
-        background-color: red;
-    }
     
     #content
     {
         width: 94%;
-        border-radius: 10% 10%;
-        border: solid 2px;
         margin-left: 3%;
         margin-right: 3%; 
     }
@@ -151,11 +140,6 @@
 
 @media screen and (min-width:768px)
 {
-    #main
-    {
-        background-image: none;
-        background-color: blue;
-    }
     #menulist li a
     {
       font-size: 190%;
@@ -165,11 +149,6 @@
 
 @media screen and (min-width:1024px)
 {
-    #main
-    {
-        background-image: none;
-        background-color: green;
-    }
     
     
     #menulist li a
@@ -182,11 +161,6 @@
 
 @media screen and (min-width:1200px)
 {
-    #main
-    {
-        background-image: none;
-        background-color: grey;
-    }
     #menulist li a
     {
       font-size: 307%;

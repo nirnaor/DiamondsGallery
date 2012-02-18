@@ -11,12 +11,14 @@
     #main
     {
             background-image: -webkit-gradient(
-            linear,
-            left bottom,
-            left top,
-            color-stop(0.36, rgb(199,197,167)),
-            color-stop(0.85, rgb(207,97,115))
+              linear,
+              left bottom,
+              left top,
+              color-stop(0.16, rgb(0,0,0)),
+              color-stop(0.51, rgb(11,204,222)),
+              color-stop(0.78, rgb(0,0,0))
             );
+            
         
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D16173', endColorstr='#C7C5A7');
             background: -moz-linear-gradient(top,  #D16173,  #C7C5A7);
@@ -127,6 +129,19 @@
     }
 }
 
+@media screen and (min-width:480px)
+{
+    #main
+    {
+        background-image: none;
+        background-color: purple;
+    }
+    #menulist li a
+    {
+      font-size: 121%;
+      margin: 2%;
+    }
+}    
 
 @media screen and (min-width:600px)
 {
@@ -155,13 +170,28 @@
     }
     
   
+
     #menulist li a
     {
-      font-size: 180%;
+      font-size: 150%;
+      margin: 2%;
     }
 }
 
 
+@media screen and (min-width:768px)
+{
+    #main
+    {
+        background-image: none;
+        background-color: blue;
+    }
+    #menulist li a
+    {
+      font-size: 190%;
+      margin: 2%;
+    }
+}    
 
 @media screen and (min-width:1024px)
 {
@@ -178,8 +208,22 @@
     
     #menulist li a
     {
-      font-size: 344%;
+      font-size: 270%;
+      margin: 2%;
     }
 }
 
 
+@media screen and (min-width:1200px)
+{
+    #main
+    {
+        background-image: none;
+        background-color: grey;
+    }
+    #menulist li a
+    {
+      font-size: 307%;
+      margin: 2%;
+    }
+}    

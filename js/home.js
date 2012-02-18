@@ -1,12 +1,16 @@
 $(document).ready(function () {
 
 
+    setSizesByWindowSizes();
 
     $(window).resize(function () {
-        $('#slidinggallery').width(0.4 * $(window).width());
+     setSizesByWindowSizes();
     });
 
 
+    function setSizesByWindowSizes(){
+        $('#slidinggallery').width(0.4 * $(window).width()); 
+    };
     $('#slidinggallery').crossSlide({
         fade: 1
     }, [

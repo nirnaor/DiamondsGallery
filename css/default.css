@@ -155,6 +155,10 @@
     }
     
   
+    #menulist li a
+    {
+      font-size: 180%;
+    }
 }
 
 
@@ -172,6 +176,10 @@
         font-size:45%;
     }
     
+    #menulist li a
+    {
+      font-size: 344%;
+    }
 }
 
 

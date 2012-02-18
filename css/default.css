@@ -68,7 +68,8 @@
     #menu #menulist li
     {
             display: inline;
-            margin: 3%;
+            margin: 1%;
+            font-size: 59%;
     }
 
 
@@ -145,22 +146,8 @@
         margin-right: 3%; 
     }
     
-    #banner
-    {
-        text-align:left;
-        margin-left: 4%;
-    }
+      
     
-    #banner h1
-    { 
-        position:relative;
-        bottom:0;
-    }
-    #menu
-    {
-        text-align:right;
-        font-size:150%;
-    }
     
     #whatwedo 
     {
@@ -186,3 +173,5 @@
     }
     
 }
+
+

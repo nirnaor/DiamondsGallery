@@ -1,9 +1,39 @@
+#mainimagecontainer 
+{
+    text-align: center;
+}
+
+
 #mainimage
 {
+    margin-top: 15px;
+    max-width: 80%;
 }
 #description
 {
+    width: 36%;
+    float: left;
+    margin-left: 3%;
+    
 }
 #details
 {
+    width: 36%;
+    
+    float: right;
+    margin-right: 3%;
 }
+
+
+
+#birth
+{
+    clear: both;
+    text-align: center;
+}
+
+#birth img
+{
+  max-width: 15%;
+}
+

@@ -58,11 +58,18 @@
   }
 
 
+  #emptydiv
+  {
+    clear: both;
+  }
+
+
   #birth
   {
       clear: both;
       text-align: center;
       width: 100%;
+      margin-top: 24px;
   }
 
   #birth img
@@ -73,7 +80,7 @@
 }
 
 
-@media screen and (min-width:480px)
+@media screen and (min-width:600px)
 {
   #mainimage
   {
@@ -99,6 +106,30 @@
 
 
 
+@media screen and (min-width:480px)
+{
+  #content
+  {
+    font-size: 116%;
+  }
+}
 
 
+@media screen and (min-width:1024px)
+{
 
+  #content
+  {
+    font-size: 136%;
+  }
+
+}
+@media screen and (min-width:1200px)
+{
+
+  #content
+  {
+    font-size: 164%;
+  }
+
+}

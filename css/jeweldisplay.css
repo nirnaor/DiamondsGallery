@@ -48,7 +48,7 @@
   }
   dt {
    float:left;
-   width:50%; /* adjust the width; make sure the total of both is 100% */
+   width:30%; /* adjust the width; make sure the total of both is 100% */
    
   }
   dd {
@@ -75,6 +75,10 @@
   #birth img
   {
     max-width: 15%;
+  }
+ #content img
+  {
+      border: solid #F5E99A 2px;
   }
 
 }

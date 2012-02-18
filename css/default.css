@@ -88,30 +88,6 @@
         color: #1A4352;
     }
 
-    #whatwedo
-    {
-            font-size: 30%;
-            float: left;
-            width: 20%;
-    }
-
-    #whatwedo h1
-    {
-            font-family: Fredericka the Great,fantasy;
-    }
-
-    #whatwedo #desc
-    {
-            font-size: 250%;
-            font-family: 'Amaranth', sans-serif;
-    }
-
-    #content #slidinggallerycontainer
-    {
-        float: right;
-        width: 30%;
-            
-    }
     #footer
     {
             padding-top: 3%;
@@ -163,11 +139,6 @@
       
     
     
-    #whatwedo 
-    {
-        font-size:35%;
-    }
-    
   
 
     #menulist li a
@@ -200,10 +171,6 @@
         background-color: green;
     }
     
-    #whatwedo 
-    {
-        font-size:45%;
-    }
     
     #menulist li a
     {

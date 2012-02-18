@@ -10,7 +10,7 @@
   {
       margin-top: 15px;
       max-width: 80%;
-      
+      padding-left: 10%;
       
   }
 
@@ -78,6 +78,7 @@
   #mainimage
   {
       max-width: 40%;
+      padding-left: 0%;
   }
   #description
   {
@@ -94,6 +95,7 @@
   }
     
 }
+
 
 
 

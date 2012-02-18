@@ -16,7 +16,7 @@
 
   #content
   {
-      color: yellow;
+      color: #B5A312;
       font-weight:bold;
   }
 
@@ -25,7 +25,7 @@
       
       width: 45%;
       float: left;
-      
+      color: #F5E99A;
       
       margin-left: 3%;
       margin-top: 15px;
@@ -34,7 +34,7 @@
   #details
   {
       width: 36%;
-      
+      color: #F5E99A;
       float: right;
       margin-right: 3%;
       margin-top: 15px;
@@ -49,7 +49,7 @@
   dt {
    float:left;
    width:50%; /* adjust the width; make sure the total of both is 100% */
-   color: white;
+   
   }
   dd {
    float:left;
@@ -133,3 +133,4 @@
   }
 
 }
+

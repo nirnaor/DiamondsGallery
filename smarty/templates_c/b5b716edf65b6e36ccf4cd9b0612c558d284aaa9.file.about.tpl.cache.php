@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2012-02-25 16:38:39
+<?php /* Smarty version Smarty-3.1.8, created on 2012-02-25 17:14:05
          compiled from "../templates\about.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:242574f490e8f3ca418-92048323%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ee4186df630c936001c077ec9e0190a9a58c0484' => 
     array (
       0 => '../templates\\master.tpl',
-      1 => 1330185379,
+      1 => 1330190038,
       2 => 'file',
     ),
   ),
@@ -21,9 +21,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
+  'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.8',
   'unifunc' => 'content_4f490e8f44fa31_68673433',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_4f490e8f44fa31_68673433')) {function content_4f490e8f44fa31_68673433($_smarty_tpl) {?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
@@ -42,15 +43,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div id="main">
         <div id="logoandmenu">
         <div id="banner">
+              <a href="home.php">
               <img src="../images/blacklogo.gif" alt="skull" />
+              </a>
             </div>
             <div id="menu">
                 <ul id="menulist">
-                    <li><a href="gallery.html">Rings</a> </li>
-                    <li><a href="gallery.html">Necklaces</a> </li>
-                    <li><a href="contactus.html">Bracelets</a> </li>
-                    <li><a href="contactus.html">Earings</a> </li>
-                    <li><a href="about.html">Contact Us</a> </li>
+                    <li><a href="gallery.php">Rings</a> </li>
+                    <li><a href="gallery.php">Necklaces</a> </li>
+                    <li><a href="gallery.php">Bracelets</a> </li>
+                    <li><a href="gallery.php">Earings</a> </li>
+                    <li><a href="about.php">About</a> </li>
                 </ul>
             </div>
             

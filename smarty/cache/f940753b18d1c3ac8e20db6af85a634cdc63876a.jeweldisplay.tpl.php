@@ -11,17 +11,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ee4186df630c936001c077ec9e0190a9a58c0484' => 
     array (
       0 => '../templates\\master.tpl',
-      1 => 1330185379,
+      1 => 1330189909,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '247084f49115b4ebe49-05514856',
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_4f4911bd3fa591_54466087',
+  'unifunc' => 'content_4f4916578ccaa9_89198137',
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_4f4911bd3fa591_54466087')) {function content_4f4911bd3fa591_54466087($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_4f4916578ccaa9_89198137')) {function content_4f4916578ccaa9_89198137($_smarty_tpl) {?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <title>Kre8tive Collection</title>
@@ -38,7 +38,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div id="main">
         <div id="logoandmenu">
         <div id="banner">
+              <a href="home.php">
               <img src="../images/blacklogo.gif" alt="skull" />
+              </a>
             </div>
             <div id="menu">
                 <ul id="menulist">

@@ -13,15 +13,17 @@
     <div id="main">
         <div id="logoandmenu">
         <div id="banner">
+              <a href="home.php">
               <img src="../images/blacklogo.gif" alt="skull" />
+              </a>
             </div>
             <div id="menu">
                 <ul id="menulist">
-                    <li><a href="gallery.html">Rings</a> </li>
-                    <li><a href="gallery.html">Necklaces</a> </li>
-                    <li><a href="contactus.html">Bracelets</a> </li>
-                    <li><a href="contactus.html">Earings</a> </li>
-                    <li><a href="about.html">Contact Us</a> </li>
+                    <li><a href="gallery.php">Rings</a> </li>
+                    <li><a href="gallery.php">Necklaces</a> </li>
+                    <li><a href="gallery.php">Bracelets</a> </li>
+                    <li><a href="gallery.php">Earings</a> </li>
+                    <li><a href="about.php">About</a> </li>
                 </ul>
             </div>
             

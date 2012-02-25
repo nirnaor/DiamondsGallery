@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2012-02-25 16:52:13
+<?php /* Smarty version Smarty-3.1.8, created on 2012-02-25 17:11:51
          compiled from "../templates\jeweldisplay.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:247084f49115b4ebe49-05514856%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ee4186df630c936001c077ec9e0190a9a58c0484' => 
     array (
       0 => '../templates\\master.tpl',
-      1 => 1330185379,
+      1 => 1330189909,
       2 => 'file',
     ),
   ),
@@ -43,7 +43,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div id="main">
         <div id="logoandmenu">
         <div id="banner">
+              <a href="home.php">
               <img src="../images/blacklogo.gif" alt="skull" />
+              </a>
             </div>
             <div id="menu">
                 <ul id="menulist">

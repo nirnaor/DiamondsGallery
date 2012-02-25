@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-    <title>Carpe Diem Diamonds</title>
-    <link href='http://fonts.googleapis.com/css?family=Eater|Fredericka+the+Great|Just+Me+Again+Down+Here|Asul|Amaranth' rel='stylesheet' type='text/css'/>
+    <title>Kre8tive Collection</title>
     <link rel="Shortcut Icon" href="../images/diamondskullnoback.ico" />
     <link type="text/css" rel="Stylesheet" href="../css/default.css" />
-    <link type="text/css" rel="Stylesheet" href="../css/home.css" />
-    <link type="text/css" rel="Stylesheet" href="../css/contentflow_src.css" />
     <script language="JavaScript" type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="../js/home.js"></script>
-    <script language="JavaScript" type="text/javascript" src="../js/contentflow.js"></script>
-
+    <link href='http://fonts.googleapis.com/css?family=Eater|Fredericka+the+Great|Just+Me+Again+Down+Here|Asul|Amaranth' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Merienda+One' rel='stylesheet' type='text/css'>
-    <script language="JavaScript" type="text/javascript" src="../js/jquery.cross-slide.min.js"></script>
+   {block name=scriptsandlinks}{/block}
 </head>
 <body>
     <div id="main">

@@ -5,37 +5,43 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '01c7f2c332fc64e9e24c81e6cd4be83c5468096e' => 
     array (
       0 => '../templates\\home.tpl',
-      1 => 1330184589,
+      1 => 1330185287,
       2 => 'file',
     ),
     'ee4186df630c936001c077ec9e0190a9a58c0484' => 
     array (
       0 => '../templates\\master.tpl',
-      1 => 1330183139,
+      1 => 1330184852,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '270674f48fd0f802814-79347542',
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_4f4901925b81d4_60483187',
+  'unifunc' => 'content_4f4904518b9114_59948542',
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_4f4901925b81d4_60483187')) {function content_4f4901925b81d4_60483187($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_4f4904518b9114_59948542')) {function content_4f4904518b9114_59948542($_smarty_tpl) {?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <title>Carpe Diem Diamonds</title>
-    <link href='http://fonts.googleapis.com/css?family=Eater|Fredericka+the+Great|Just+Me+Again+Down+Here|Asul|Amaranth' rel='stylesheet' type='text/css'/>
+
     <link rel="Shortcut Icon" href="../images/diamondskullnoback.ico" />
     <link type="text/css" rel="Stylesheet" href="../css/default.css" />
-    <link type="text/css" rel="Stylesheet" href="../css/home.css" />
-    <link type="text/css" rel="Stylesheet" href="../css/contentflow_src.css" />
-    <script language="JavaScript" type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="../js/home.js"></script>
-    <script language="JavaScript" type="text/javascript" src="../js/contentflow.js"></script>
 
-    <link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Merienda+One' rel='stylesheet' type='text/css'>
+
+    <script language="JavaScript" type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="../js/jquery.cross-slide.min.js"></script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Eater|Fredericka+the+Great|Just+Me+Again+Down+Here|Asul|Amaranth' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Merienda+One' rel='stylesheet' type='text/css'>
+
+
+   
+     <script language="JavaScript" type="text/javascript" src="../js/home.js"></script>
+     <script language="JavaScript" type="text/javascript" src="../js/jquery.cross-slide.min.js"></script>
+     <link type="text/css" rel="Stylesheet" href="../css/home.css" />
+
 </head>
 <body>
     <div id="main">

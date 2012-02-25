@@ -11,32 +11,25 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ee4186df630c936001c077ec9e0190a9a58c0484' => 
     array (
       0 => '../templates\\master.tpl',
-      1 => 1330184852,
+      1 => 1330185379,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '270674f48fd0f802814-79347542',
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_4f4904518b9114_59948542',
+  'unifunc' => 'content_4f4905bf19b2b8_03996174',
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_4f4904518b9114_59948542')) {function content_4f4904518b9114_59948542($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_4f4905bf19b2b8_03996174')) {function content_4f4905bf19b2b8_03996174($_smarty_tpl) {?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-    <title>Carpe Diem Diamonds</title>
-
+    <title>Kre8tive Collection</title>
     <link rel="Shortcut Icon" href="../images/diamondskullnoback.ico" />
     <link type="text/css" rel="Stylesheet" href="../css/default.css" />
-
-
     <script language="JavaScript" type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="../js/jquery.cross-slide.min.js"></script>
-    
     <link href='http://fonts.googleapis.com/css?family=Eater|Fredericka+the+Great|Just+Me+Again+Down+Here|Asul|Amaranth' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Merienda+One' rel='stylesheet' type='text/css'>
-
-
    
      <script language="JavaScript" type="text/javascript" src="../js/home.js"></script>
      <script language="JavaScript" type="text/javascript" src="../js/jquery.cross-slide.min.js"></script>

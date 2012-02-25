@@ -78,14 +78,14 @@
     #menu #menulist li a
     {
             text-decoration: none;
-            color: #B50B3A;
-            font-family: eater ;
+            color: #56C5E8;
+            font-family: 'Bilbo Swash Caps', cursive;
             font-weight:bold;
     }
 
     #content
     {
-            color: #B50B3A;
+            color: white;
     }
 
     #footer
@@ -167,3 +167,4 @@
       margin: 2%;
     }
 }    
+    

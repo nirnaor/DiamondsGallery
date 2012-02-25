@@ -16,8 +16,9 @@
 
   #content
   {
-      color: #B5A312;
+      color: white;
       font-weight:bold;
+      font-family: 'Bilbo Swash Caps', cursive;
   }
 
   #description
@@ -25,7 +26,7 @@
       
       width: 45%;
       float: left;
-      color: #F5E99A;
+      color: white;
       
       margin-left: 3%;
       margin-top: 15px;
@@ -34,7 +35,7 @@
   #details
   {
       width: 36%;
-      color: #F5E99A;
+      color: white;
       float: right;
       margin-right: 3%;
       margin-top: 15px;
@@ -78,7 +79,7 @@
   }
  #content img
   {
-      border: solid #F5E99A 2px;
+      border: solid white 2px;
   }
 
 }
@@ -137,4 +138,5 @@
   }
 
 }
+
 

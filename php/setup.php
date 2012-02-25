@@ -19,9 +19,9 @@ class Smarty_GuestBook extends Smarty {
         parent::__construct();
 
         $this->setTemplateDir('../templates/');
-        $this->setCompileDir('../templates_c/');
-        $this->setConfigDir('../configs/');
-        $this->setCacheDir('../cache/');
+        $this->setCompileDir('../smarty/templates_c/');
+        $this->setConfigDir('../smarty/configs/');
+        $this->setCacheDir('../smarty/cache/');
 
         $this->caching = Smarty::CACHING_LIFETIME_CURRENT;
         $this->assign('app_name', 'Guest Book');

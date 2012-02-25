@@ -18,10 +18,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'nocache_hash' => '251134f48ff4cae07f7-32694128',
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_4f4916d7e09954_49033564',
+  'unifunc' => 'content_4f4934a0740cb5_12281942',
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_4f4916d7e09954_49033564')) {function content_4f4916d7e09954_49033564($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_4f4934a0740cb5_12281942')) {function content_4f4934a0740cb5_12281942($_smarty_tpl) {?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <title>Kre8tive Collection</title>

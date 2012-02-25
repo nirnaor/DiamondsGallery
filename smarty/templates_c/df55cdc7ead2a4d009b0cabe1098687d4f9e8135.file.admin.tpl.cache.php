@@ -1,11 +1,13 @@
-<?php /*%%SmartyHeaderCode:270674f48fd0f802814-79347542%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.8, created on 2012-02-25 19:32:16
+         compiled from "../templates\admin.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:156084f4935ab26ec16-80856675%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '01c7f2c332fc64e9e24c81e6cd4be83c5468096e' => 
+    'df55cdc7ead2a4d009b0cabe1098687d4f9e8135' => 
     array (
-      0 => '../templates\\home.tpl',
-      1 => 1330185287,
+      0 => '../templates\\admin.tpl',
+      1 => 1330198335,
       2 => 'file',
     ),
     'ee4186df630c936001c077ec9e0190a9a58c0484' => 
@@ -15,13 +17,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '270674f48fd0f802814-79347542',
+  'nocache_hash' => '156084f4935ab26ec16-80856675',
+  'function' => 
+  array (
+  ),
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_4f4934c3b039a2_77848843',
+  'unifunc' => 'content_4f4935ab2e5e87_60413103',
   'has_nocache_code' => false,
-),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_4f4934c3b039a2_77848843')) {function content_4f4934c3b039a2_77848843($_smarty_tpl) {?><!DOCTYPE html>
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_4f4935ab2e5e87_60413103')) {function content_4f4935ab2e5e87_60413103($_smarty_tpl) {?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <title>Kre8tive Collection</title>
@@ -31,9 +36,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <link href='http://fonts.googleapis.com/css?family=Eater|Fredericka+the+Great|Just+Me+Again+Down+Here|Asul|Amaranth' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Merienda+One' rel='stylesheet' type='text/css'>
    
-     <script language="JavaScript" type="text/javascript" src="../js/home.js"></script>
-     <script language="JavaScript" type="text/javascript" src="../js/jquery.cross-slide.min.js"></script>
-     <link type="text/css" rel="Stylesheet" href="../css/home.css" />
+    <link type="text/css" rel="Stylesheet" href="../css/admin.css" />
 
 </head>
 <body>
@@ -59,23 +62,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div id="content">
         
         
-<div id="whatwedo">
-                    <h1>
-                        What We Do
-                    </h1>
-                    
-                <p id="desc">
-                    We at carpe diem believe that diamonds and jewelerry are special. 
-                    we believe that you are special too. Carpe Diem Diamonds 
-                    design and sell jewelerry like never seen before. If you want the standart, 
-                    this is defenitelly not your place. If you wanna 
-                    look different, feel different, check our stuuf out
-                </p>
-            </div>
-            <div id="slidinggallerycontainer">
-        <div id="slidinggallery">
-            </div>
-            </div>
+<h1 class="title">What would you like to do ??</h1>
+<a href="addjewel.php"><h1 class="action">Add a jewel</h1></a>
+<a href="editjewel.php"><h1 class="action">Edit/delete a jewel a jewel</h1></a>
 
 
             

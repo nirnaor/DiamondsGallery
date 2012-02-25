@@ -1,4 +1,8 @@
 {extends file="master.tpl"}
+{block name=scriptsandlinks}
+     <script language="JavaScript" type="text/javascript" src="../js/home.js"></script>
+     <link type="text/css" rel="Stylesheet" href="../css/home.css" />
+{/block}
 {block name=htmlcontent}
 <div id="whatwedo">
                     <h1>

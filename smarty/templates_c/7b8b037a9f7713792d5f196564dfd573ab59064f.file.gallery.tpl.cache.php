@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2012-02-25 15:33:32
+<?php /* Smarty version Smarty-3.1.8, created on 2012-02-25 16:00:47
          compiled from "../templates\gallery.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:251134f48ff4cae07f7-32694128%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,13 +7,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7b8b037a9f7713792d5f196564dfd573ab59064f' => 
     array (
       0 => '../templates\\gallery.tpl',
-      1 => 1330183929,
+      1 => 1330185645,
       2 => 'file',
     ),
     'ee4186df630c936001c077ec9e0190a9a58c0484' => 
     array (
       0 => '../templates\\master.tpl',
-      1 => 1330183139,
+      1 => 1330185379,
       2 => 'file',
     ),
   ),
@@ -21,25 +21,27 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
+  'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.8',
   'unifunc' => 'content_4f48ff4cb4b413_59591976',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_4f48ff4cb4b413_59591976')) {function content_4f48ff4cb4b413_59591976($_smarty_tpl) {?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-    <title>Carpe Diem Diamonds</title>
-    <link href='http://fonts.googleapis.com/css?family=Eater|Fredericka+the+Great|Just+Me+Again+Down+Here|Asul|Amaranth' rel='stylesheet' type='text/css'/>
+    <title>Kre8tive Collection</title>
     <link rel="Shortcut Icon" href="../images/diamondskullnoback.ico" />
     <link type="text/css" rel="Stylesheet" href="../css/default.css" />
-    <link type="text/css" rel="Stylesheet" href="../css/home.css" />
-    <link type="text/css" rel="Stylesheet" href="../css/contentflow_src.css" />
     <script language="JavaScript" type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="../js/home.js"></script>
-    <script language="JavaScript" type="text/javascript" src="../js/contentflow.js"></script>
-
+    <link href='http://fonts.googleapis.com/css?family=Eater|Fredericka+the+Great|Just+Me+Again+Down+Here|Asul|Amaranth' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Merienda+One' rel='stylesheet' type='text/css'>
-    <script language="JavaScript" type="text/javascript" src="../js/jquery.cross-slide.min.js"></script>
+   
+    <script language="JavaScript" type="text/javascript" src="../js/gallery.js"></script>
+    <link type="text/css" rel="Stylesheet" href="../css/gallery.css" />
+    <script language="JavaScript" type="text/javascript" src="../js/contentflow.js"></script>
+    <link type="text/css" rel="Stylesheet" href="../css/contentflow_src.css" />
+
+
 </head>
 <body>
     <div id="main">

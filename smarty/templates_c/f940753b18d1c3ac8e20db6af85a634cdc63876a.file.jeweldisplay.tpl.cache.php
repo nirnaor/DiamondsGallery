@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2012-02-25 17:11:51
+<?php /* Smarty version Smarty-3.1.8, created on 2012-02-25 17:16:21
          compiled from "../templates\jeweldisplay.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:247084f49115b4ebe49-05514856%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -13,7 +13,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ee4186df630c936001c077ec9e0190a9a58c0484' => 
     array (
       0 => '../templates\\master.tpl',
-      1 => 1330189909,
+      1 => 1330190038,
       2 => 'file',
     ),
   ),
@@ -49,11 +49,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </div>
             <div id="menu">
                 <ul id="menulist">
-                    <li><a href="gallery.html">Rings</a> </li>
-                    <li><a href="gallery.html">Necklaces</a> </li>
-                    <li><a href="contactus.html">Bracelets</a> </li>
-                    <li><a href="contactus.html">Earings</a> </li>
-                    <li><a href="about.html">Contact Us</a> </li>
+                    <li><a href="gallery.php">Rings</a> </li>
+                    <li><a href="gallery.php">Necklaces</a> </li>
+                    <li><a href="gallery.php">Bracelets</a> </li>
+                    <li><a href="gallery.php">Earings</a> </li>
+                    <li><a href="about.php">About</a> </li>
                 </ul>
             </div>
             

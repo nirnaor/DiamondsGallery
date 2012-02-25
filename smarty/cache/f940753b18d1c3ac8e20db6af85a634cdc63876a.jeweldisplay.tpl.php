@@ -11,17 +11,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ee4186df630c936001c077ec9e0190a9a58c0484' => 
     array (
       0 => '../templates\\master.tpl',
-      1 => 1330189909,
+      1 => 1330190038,
       2 => 'file',
     ),
   ),
   'nocache_hash' => '247084f49115b4ebe49-05514856',
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_4f4916578ccaa9_89198137',
+  'unifunc' => 'content_4f491765159eb6_58271869',
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_4f4916578ccaa9_89198137')) {function content_4f4916578ccaa9_89198137($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_4f491765159eb6_58271869')) {function content_4f491765159eb6_58271869($_smarty_tpl) {?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <title>Kre8tive Collection</title>
@@ -44,11 +44,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </div>
             <div id="menu">
                 <ul id="menulist">
-                    <li><a href="gallery.html">Rings</a> </li>
-                    <li><a href="gallery.html">Necklaces</a> </li>
-                    <li><a href="contactus.html">Bracelets</a> </li>
-                    <li><a href="contactus.html">Earings</a> </li>
-                    <li><a href="about.html">Contact Us</a> </li>
+                    <li><a href="gallery.php">Rings</a> </li>
+                    <li><a href="gallery.php">Necklaces</a> </li>
+                    <li><a href="gallery.php">Bracelets</a> </li>
+                    <li><a href="gallery.php">Earings</a> </li>
+                    <li><a href="about.php">About</a> </li>
                 </ul>
             </div>
             

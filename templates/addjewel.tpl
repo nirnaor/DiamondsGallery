@@ -3,7 +3,8 @@
     <link type="text/css" rel="Stylesheet" href="../css/addjewel.css" />
 {/block}
 {block name=htmlcontent}
-<form action="addjewel_submit.php" method="post" accept-charset="utf-8">
+<form enctpye="multipart/form-data" action="addjewel_submit.php" method="post" accept-charset="utf-8">
+  <input type="file" id="screenshot" name="screenshot" />
   
   <input type="text" name="jewelname" value="Jewel">
 

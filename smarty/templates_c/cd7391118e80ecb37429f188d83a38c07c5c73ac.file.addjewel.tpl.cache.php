@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.8, created on 2012-02-25 20:59:12
+<?php /* Smarty version Smarty-3.1.8, created on 2012-02-26 19:16:51
          compiled from "../templates\addjewel.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:316814f4942c0aec445-55263529%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cd7391118e80ecb37429f188d83a38c07c5c73ac' => 
     array (
       0 => '../templates\\addjewel.tpl',
-      1 => 1330203551,
+      1 => 1330283810,
       2 => 'file',
     ),
     'ee4186df630c936001c077ec9e0190a9a58c0484' => 
@@ -62,10 +62,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div id="content">
         
         
-<form action="addjewel_submit" method="get" accept-charset="utf-8">
+<form action="addjewel_submit.php" method="post" accept-charset="utf-8">
   
   <input type="text" name="jewelname" value="Jewel">
-  <input type="file" name="Main picture" text="bla" value="Main picture">
+
   <select name="category" onchange="combo(this, 'theinput')" onmouseout="comboInit(this, 'theinput')">
         <option>one</option>
         <option>two</option>
@@ -74,10 +74,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       
   <textarea name="description" rows="5" cols="40"></textarea>
 
-  <input type="text" name="Depth" value="Jewel">
+  <input type="text" name="depth" value="Jewel">
   <input type="text" name="Clarity" value="Clarity">
   <input type="text" name="Depth" value="Depth">
-<p><input type="submit" value="Continue &rarr;"></p>
+<p><input type="submit" name="submit" value="Continue &rarr;"></p>
 </form>
 
             

@@ -3,10 +3,10 @@
     <link type="text/css" rel="Stylesheet" href="../css/addjewel.css" />
 {/block}
 {block name=htmlcontent}
-<form action="addjewel_submit" method="get" accept-charset="utf-8">
+<form action="addjewel_submit.php" method="post" accept-charset="utf-8">
   
   <input type="text" name="jewelname" value="Jewel">
-  <input type="file" name="Main picture" text="bla" value="Main picture">
+
   <select name="category" onchange="combo(this, 'theinput')" onmouseout="comboInit(this, 'theinput')">
         <option>one</option>
         <option>two</option>
@@ -15,9 +15,9 @@
       
   <textarea name="description" rows="5" cols="40"></textarea>
 
-  <input type="text" name="Depth" value="Jewel">
+  <input type="text" name="depth" value="Jewel">
   <input type="text" name="Clarity" value="Clarity">
   <input type="text" name="Depth" value="Depth">
-<p><input type="submit" value="Continue &rarr;"></p>
+<p><input type="submit" name="submit" value="Continue &rarr;"></p>
 </form>
 {/block}

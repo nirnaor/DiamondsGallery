@@ -5,7 +5,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cd7391118e80ecb37429f188d83a38c07c5c73ac' => 
     array (
       0 => '../templates\\addjewel.tpl',
-      1 => 1330203551,
+      1 => 1330283810,
       2 => 'file',
     ),
     'ee4186df630c936001c077ec9e0190a9a58c0484' => 
@@ -18,10 +18,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'nocache_hash' => '316814f4942c0aec445-55263529',
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.8',
-  'unifunc' => 'content_4f494ba0d8a866_09264623',
+  'unifunc' => 'content_4f4a85236ce5d3_55894157',
   'has_nocache_code' => false,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_4f494ba0d8a866_09264623')) {function content_4f494ba0d8a866_09264623($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_4f4a85236ce5d3_55894157')) {function content_4f4a85236ce5d3_55894157($_smarty_tpl) {?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <title>Kre8tive Collection</title>
@@ -57,10 +57,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div id="content">
         
         
-<form action="addjewel_submit" method="get" accept-charset="utf-8">
+<form action="addjewel_submit.php" method="post" accept-charset="utf-8">
   
   <input type="text" name="jewelname" value="Jewel">
-  <input type="file" name="Main picture" text="bla" value="Main picture">
+
   <select name="category" onchange="combo(this, 'theinput')" onmouseout="comboInit(this, 'theinput')">
         <option>one</option>
         <option>two</option>
@@ -69,10 +69,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       
   <textarea name="description" rows="5" cols="40"></textarea>
 
-  <input type="text" name="Depth" value="Jewel">
+  <input type="text" name="depth" value="Jewel">
   <input type="text" name="Clarity" value="Clarity">
   <input type="text" name="Depth" value="Depth">
-<p><input type="submit" value="Continue &rarr;"></p>
+<p><input type="submit" name="submit" value="Continue &rarr;"></p>
 </form>
 
             

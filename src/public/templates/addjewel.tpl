@@ -3,8 +3,9 @@
     <link type="text/css" rel="Stylesheet" href="../css/addjewel.css" />
 {/block}
 {block name=htmlcontent}
-<form enctpye="multipart/form-data" action="addjewel_submit.php" method="post" accept-charset="utf-8">
+<form enctype="multipart/form-data" action="addjewel_submit.php" method="post" accept-charset="utf-8">
   <input type="text" name="jewelname" value="Jewel">
+  <input type="file" name="mainimage" value="">
   <select name="shape" onchange="combo(this, 'theinput')" onmouseout="comboInit(this, 'theinput')">
         <option>Round</option>
         <option>Circle</option>

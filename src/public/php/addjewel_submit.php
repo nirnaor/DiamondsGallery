@@ -5,8 +5,14 @@
     // Grab the score data from the POST
     $jewelname = $_POST['jewelname'];
     $shape= $_POST['shape'];
+    $mainimage = $_FILES['mainimage']['name'];
+    
+    echo '</br>';
     echo 'this is the jewel name : ' .$jewelname;
+    echo '</br>';
     echo 'this is the shape: ' .$shape;
+    echo '</br>';
+    echo 'this is the main image: ' .$mainimage;
 
     $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 

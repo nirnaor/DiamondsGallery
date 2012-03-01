@@ -11,6 +11,16 @@
         <option>Circle</option>
         <option>Rectangle</option>
   </select>
+  <select name="clarity" onchange="combo(this, 'theinput')" onmouseout="comboInit(this, 'theinput')">
+        <option>Flawless</option>
+        <option>ws1</option>
+        <option>ws2</option>
+        <option>vs1</option>
+        <option>vs2</option>
+        <option>si1</option>
+        <option>si2</option>
+        <option>si3</option>
+  </select>
   <textarea name="description" rows="5" cols="40"></textarea>
   <input type="text" name="depth" value="Jewel">
   <input type="text" name="Clarity" value="Clarity">

@@ -5,6 +5,7 @@
     
     $jewelToAdd = new jewel($_POST,$_FILES);
     $jewelToAdd->printDetails();
+    $jewelToAdd->validateInput();
     $jewelToAdd->addToDb();
       
 

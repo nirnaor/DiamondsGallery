@@ -43,8 +43,50 @@ class Jewel
     echo 'cut: ' .$this->cut;
     echo '</br>';
 
+
   }
 
+  function nameIsNotUnique()
+  {
+    $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+    $query = "SELECT * FROM JEWELS WHERE NAME = '$this->jewelName'";
+    $result = mysqli_query($dbc, $query);
+    mysqli_close($dbc);
+    return mysqli_num_rows($result) > 0;
+  }
+  function validateInput()
+  {
+    $errors = array();
+
+    // validate name is unique
+    if($this->nameIsNotUnique())
+    {
+      echo 'name is not unique';
+      array_push($errors, "name of the jewel must be unique");
+    }
+
+
+    
+    // validate file is an image  
+  }
+
+  function handleImage()
+  {
+    // create the images tree folder :
+    // images folder
+    //    category
+            // root folder
+            //    mainimage
+            //      original
+            //      thumb
+            //    birth
+            //      original
+            //      thhumb
+    
+    // move the uploaded main image to the main image original folder 
+    // move the uploaded birth images to the birth images original folder 
+    // create thumb for all of the images in the original folders
+  }
   function addToDb()
   {
     $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);

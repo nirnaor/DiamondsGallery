@@ -5,18 +5,57 @@
  **/
 class Jewel 
 {
-  var $name; 
+  var $jewelName; 
+  var $mainImage; 
+  var $metalColor; 
+  var $metalWeight; 
+  var $weight; 
+  var $clarity; 
   var $cut; 
-  function __construct($name,$cut)
-  {
-    $this->name = $name;
-    $this->cut = $cut;
 
+  function __construct($postArray,$filesArray)
+  {
+    print_r($postArray);
+    $this->jewelName= $postArray['jewelname'];
+    $this->mainImage= $filesArray['mainimage']['name'];
+    $this->metalColor= $postArray['metalcolor'];
+    $this->metalWeight= $postArray['metalweight'];
+    $this->weight= $postArray['weight'];
+    $this->clarity= $postArray['clarity'];
+    $this->cut = $postArray['cut']; 
   }
 
   function printDetails()
   {
-    echo 'Name :' . $this->name;
+    echo '</br>';
+    echo 'jewel name : ' .$this->jewelName;
+    echo '</br>';
+    echo 'main Image: ' .$this->mainImage;
+    echo '</br>';
+    echo 'metal color : ' .$this->metalColor;
+    echo '</br>';
+    echo 'metal weight: ' .$this->metalWeight;
+    echo '</br>';
+    echo 'weight: ' .$this->weight;
+    echo '</br>';
+    echo 'clarity: ' .$this->clarity;
+    echo '</br>';
+    echo 'cut: ' .$this->cut;
+    echo '</br>';
+
+  }
+
+  function addToDb()
+  {
+    $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+    // Write the data to the database
+    $query = "INSERT INTO JEWELS VALUES (0,'$this->jewelName',
+      '$this->metalColor','$this->metalWeight','$this->weight',
+      '$this->clarity','$this->cut')";
+
+    mysqli_query($dbc, $query);
+    mysqli_close($dbc);
   }
 }
 

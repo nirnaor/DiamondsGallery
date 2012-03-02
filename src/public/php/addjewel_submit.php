@@ -1,5 +1,6 @@
 <?php
   require_once('../../configs/db.php');
+  require_once('jewel.php');
   if (isset($_POST['submit'])) {
     echo 'this is the sumbit if';
     // Grab the score data from the POST
@@ -12,6 +13,9 @@
     $cut= $_POST['cut'];
     
     
+    $jewelToAdd = new jewel($jewelname,$cut);
+    $jewelToAdd->printDetails();
+      
     echo '</br>';
     echo 'this is the jewel name : ' .$jewelname;
     echo '</br>';
@@ -28,7 +32,13 @@
     mysqli_close($dbc);
 
     echo 'added one row successfully'; 
+ 
 
+
+      
+
+
+    
   }
 
 ?>

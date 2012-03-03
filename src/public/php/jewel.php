@@ -3,6 +3,7 @@
  * k
  * represent a single jewel.
  **/
+require_once('imageAdder.php');
 class Jewel 
 {
   var $jewelName; 
@@ -12,17 +13,21 @@ class Jewel
   var $weight; 
   var $clarity; 
   var $cut; 
+  var $filesArray; 
+
 
   function __construct($postArray,$filesArray)
   {
     print_r($postArray);
     $this->jewelName= $postArray['jewelname'];
     $this->mainImage= $filesArray['mainimage']['name'];
+    $this->filesArray = $filesArray;
     $this->metalColor= $postArray['metalcolor'];
     $this->metalWeight= $postArray['metalweight'];
     $this->weight= $postArray['weight'];
     $this->clarity= $postArray['clarity'];
     $this->cut = $postArray['cut']; 
+
   }
 
   function printDetails()
@@ -54,6 +59,10 @@ class Jewel
     mysqli_close($dbc);
     return mysqli_num_rows($result) > 0;
   }
+  function fileIsNotAnImage()
+  {
+    return false;
+  }
   function validateInput()
   {
     $errors = array();
@@ -65,28 +74,17 @@ class Jewel
       array_push($errors, "name of the jewel must be unique");
     }
 
-
+    // validate files is an image  
+    if($this->fileIsNotAnImage())
+    {
+      echo 'file is not an image';
+      array_push($errors, "all files must be image files");
+    }
     
-    // validate file is an image  
+    
+
   }
 
-  function handleImage()
-  {
-    // create the images tree folder :
-    // images folder
-    //    category
-            // root folder
-            //    mainimage
-            //      original
-            //      thumb
-            //    birth
-            //      original
-            //      thhumb
-    
-    // move the uploaded main image to the main image original folder 
-    // move the uploaded birth images to the birth images original folder 
-    // create thumb for all of the images in the original folders
-  }
   function addToDb()
   {
     $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
@@ -98,7 +96,17 @@ class Jewel
 
     mysqli_query($dbc, $query);
     mysqli_close($dbc);
+
   }
+
+  function createImageFiles()
+  {
+    $adder=
+      new jewelimagesAdder($this->filesArray,'somecat',$this->jewelName);
+
+    $adder->add();
+  }
+
 }
 
 ?>

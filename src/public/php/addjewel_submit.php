@@ -7,6 +7,7 @@
     $jewelToAdd->printDetails();
     $jewelToAdd->validateInput();
     $jewelToAdd->addToDb();
+    $jewelToAdd->createImageFiles();
       
 
  

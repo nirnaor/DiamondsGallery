@@ -95,8 +95,10 @@ require_once('const.php');
 
         $theNameOfTheNewFile = $this->getNewFileName($newFile,'birth' . $i);
         echo 'name of the newfile: ' . $theNameOfTheNewFile;
+        echo '</br>second parameter on move uploaded:'
+          . $directoryToPlaceFile . $theNameOfTheNewFile;
         move_uploaded_file($newFileTempName,
-          $directoryToPlaceFile . 'birth' . $i);
+          $directoryToPlaceFile . $theNameOfTheNewFile);
       }
 
     }

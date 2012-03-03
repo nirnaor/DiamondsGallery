@@ -66,34 +66,54 @@ require_once('const.php');
       $this->jewelname= $jewelname;
     }
 
-    function getNewFileName($newFile)
+    function getNewFileName($newFile,$prefix)
     {
-      return $this->jewelname .  '.' . end(explode(".",$newFile));  
+      return $prefix . $this->jewelname .  '.' . end(explode(".",$newFile));  
       
     }
 
 
-    function moveImages($newFile,$directoryToPlaceFile)
+    function movePrimaryImage($newFile,$directoryToPlaceFile)
+    {
+      $newFileName =
+        $this->getNewFileName($newFile["name"],'primary');
+      move_uploaded_file($newFile["tmp_name"],
+        $directoryToPlaceFile . $newFileName);
+    }
+
+    function moveBirthImages($birthImagesArray,$directoryToPlaceFile)
     {
 
-      $newFileName =
-        $this->getNewFileName($newFile["name"]);
+      for($i = 0; $i < sizeof($birthImagesArray["name"]); ++$i)
+      {
+        echo '</br> this is the newfile';
+        $newFile = $birthImagesArray["name"][$i];
+        print_r($newFile);
+        $newFileTempName = $birthImagesArray["tmp_name"][$i];
+        print_r($newFileTempName);
+        echo '</br>';
 
-        move_uploaded_file($newFile["tmp_name"],
-         $directoryToPlaceFile . $newFileName);
+        $theNameOfTheNewFile = $this->getNewFileName($newFile,'birth' . $i);
+        echo 'name of the newfile: ' . $theNameOfTheNewFile;
+        move_uploaded_file($newFileTempName,
+          $directoryToPlaceFile . 'birth' . $i);
+      }
+
     }
     function moveOriginalFiles()
     {
-      $this->moveImages($this->filesArray["mainimage"],
+      $this->movePrimaryImage($this->filesArray["mainimage"],
         $this->dirCreator->primaryOriginalDir);
 
+      
+      $this->moveBirthImages($this->filesArray["birth"] ,
+          $this->dirCreator->birthOriginalDir);
     }
     function add()
     {
       $this->dirCreator = 
         new JewelDirectoryCreator($this->jewelname,$this->category);
 
-      print_r($this->dirCreator);
       $this->dirCreator->buildDirectories();
       $this->moveOriginalFiles();
         

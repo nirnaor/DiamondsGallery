@@ -4,6 +4,4 @@
   define('THUMBNAIL_PATH','/thumb/');
   define('PRIMARY_IMAGE_PATH','/primary');
   define('BIRTH_IMAGES_PATH','/birth');
-
-
 ?>

@@ -33,5 +33,7 @@
            <img src="../images/butterfly/butterfly2.jpg" />
            <img src="../images/butterfly/butterfly12.jpg" />
            <img src="../images/butterfly/butterfly7.jpg" />
+          </div>
+
 
 {/block}

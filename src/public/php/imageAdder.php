@@ -68,8 +68,7 @@ require_once('const.php');
 
     function moveOriginalFiles()
     {
-
-        move_uploaded_file($_FILES["mainimage"]["tmp_name"],
+        move_uploaded_file($this->filesArray["mainimage"]["tmp_name"],
           $this->dirCreator->primaryOriginalDir. $this->jewelname);
 
     }

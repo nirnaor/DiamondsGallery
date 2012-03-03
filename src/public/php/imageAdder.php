@@ -73,17 +73,19 @@ require_once('const.php');
     }
 
 
-    function movePrimaryImage()
+    function moveImages($newFile,$directoryToPlaceFile)
     {
-      $newFileName =
-        $this->getNewFileName($this->filesArray["mainimage"]["name"]);
 
-        move_uploaded_file($this->filesArray["mainimage"]["tmp_name"],
-          $this->dirCreator->primaryOriginalDir. $newFileName);
+      $newFileName =
+        $this->getNewFileName($newFile["name"]);
+
+        move_uploaded_file($newFile["tmp_name"],
+         $directoryToPlaceFile . $newFileName);
     }
     function moveOriginalFiles()
     {
-      $this->movePrimaryImage();
+      $this->moveImages($this->filesArray["mainimage"],
+        $this->dirCreator->primaryOriginalDir);
 
     }
     function add()

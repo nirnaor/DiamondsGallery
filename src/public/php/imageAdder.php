@@ -66,10 +66,18 @@ require_once('const.php');
       $this->jewelname= $jewelname;
     }
 
+    function getFileExtension($newFile)
+    {
+      return $this->jewelname .  '.' . end(explode(".",$newFile));  
+      
+    }
     function moveOriginalFiles()
     {
+      $newFileName =
+        $this->getFileExtension($this->filesArray["mainimage"]["name"]);
+       echo 'newfilename : ' .  $newFileName;
         move_uploaded_file($this->filesArray["mainimage"]["tmp_name"],
-          $this->dirCreator->primaryOriginalDir. $this->jewelname);
+          $this->dirCreator->primaryOriginalDir. $newFileName);
 
     }
     function add()

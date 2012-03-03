@@ -58,7 +58,7 @@ require_once('const.php');
     var $filesArray;
     var $jewelname;
     var $category;
-
+    var $dirCreator;
     function __construct($filesArray,$category,$jewelname)
     {
       $this->filesArray = $filesArray;
@@ -66,13 +66,22 @@ require_once('const.php');
       $this->jewelname= $jewelname;
     }
 
+    function moveOriginalFiles()
+    {
+
+        move_uploaded_file($_FILES["mainimage"]["tmp_name"],
+          $this->dirCreator->primaryOriginalDir. $this->jewelname);
+
+    }
     function add()
     {
-      $dirCreator = 
+      $this->dirCreator = 
         new JewelDirectoryCreator($this->jewelname,$this->category);
 
-      print_r($dirCreator);
-      $dirCreator->buildDirectories();
+      print_r($this->dirCreator);
+      $this->dirCreator->buildDirectories();
+      $this->moveOriginalFiles();
+        
     }
 
   }

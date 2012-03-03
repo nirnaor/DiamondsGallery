@@ -99,6 +99,7 @@ require_once('const.php');
           . $directoryToPlaceFile . $theNameOfTheNewFile;
         move_uploaded_file($newFileTempName,
           $directoryToPlaceFile . $theNameOfTheNewFile);
+
       }
 
     }

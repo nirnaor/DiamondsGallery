@@ -8,6 +8,7 @@ class Jewel
 {
   var $jewelName; 
   var $mainImage; 
+  var $category; 
   var $metalColor; 
   var $metalWeight; 
   var $weight; 
@@ -21,6 +22,7 @@ class Jewel
     print_r($postArray);
     $this->jewelName= $postArray['jewelname'];
     $this->mainImage= $filesArray['mainimage']['name'];
+    $this->category= strtolower($postArray['category']);
     $this->filesArray = $filesArray;
     $this->metalColor= $postArray['metalcolor'];
     $this->metalWeight= $postArray['metalweight'];
@@ -102,7 +104,7 @@ class Jewel
   function createImageFiles()
   {
     $adder=
-      new jewelimagesAdder($this->filesArray,'somecat',$this->jewelName);
+      new jewelimagesAdder($this->filesArray,$this->category,$this->jewelName);
 
     $adder->add();
   }

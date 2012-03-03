@@ -6,6 +6,12 @@
 <form enctype="multipart/form-data" action="addjewel_submit.php" method="post" accept-charset="utf-8">
   <input type="text" name="jewelname" value="Jewel">
   <input type="file" name="mainimage" value="">
+  <select name="category" onchange="combo(this, 'theinput')" onmouseout="comboInit(this, 'theinput')">
+        <option>Rings</option>
+        <option>Earings</option>
+        <option>Bracelets</option>
+        <option>Necklaces</option>
+  </select>
   <select name="metalcolor" onchange="combo(this, 'theinput')" onmouseout="comboInit(this, 'theinput')">
         <option>Gold</option>
         <option>Silver</option>

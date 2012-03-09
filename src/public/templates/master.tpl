@@ -21,9 +21,9 @@
             <div id="menu">
                 <ul id="menulist">
                     <li class="gallerymenuitem"><a id="rings" href="gallery.php">Rings</a> </li>
-                    <li class="gallerymenuitem"><a id="necklaces" href="gallery.php">Necklaces</a> </li>
-                    <li class="gallerymenuitem"><a id="bracelets" href="gallery.php">Bracelets</a> </li>
-                    <li class="gallerymenuitem"><a id="earings" href="gallery.php">Earings</a> </li>
+                    <li class="gallerymenuitem"><a id="necklaces" href="#">Necklaces</a> </li>
+                    <li class="gallerymenuitem"><a id="bracelets" href="#">Bracelets</a> </li>
+                    <li class="gallerymenuitem"><a id="earings" href="#">Earings</a> </li>
                     <li><a href="about.php">About</a> </li>
                 </ul>
             </div>

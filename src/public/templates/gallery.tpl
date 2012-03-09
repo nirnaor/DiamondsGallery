@@ -1,6 +1,16 @@
 {extends file="master.tpl"}
 {block name=scriptsandlinks}
     <script language="JavaScript" type="text/javascript" src="../js/gallery.js"></script>
+
+
+
+   <script type="text/javascript">
+   window.gallery_files = {$imagesArray}
+  </script>
+
+
+
+
     <link type="text/css" rel="Stylesheet" href="../css/gallery.css" />
     <script language="JavaScript" type="text/javascript" src="../js/contentflow.js"></script>
     <link type="text/css" rel="Stylesheet" href="../css/contentflow_src.css" />

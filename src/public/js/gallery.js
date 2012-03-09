@@ -3,7 +3,12 @@ var myNewFlow = null;
 $(document).ready(function () {
     
     initGalleryFlow();
-    
+    printImagesArray();
+
+    function printImagesArray(){
+      console.log(window.gallery_files);
+    }
+
     function initGalleryFlow() {
         var flowDiv = $('#galleryflow')[0];
 

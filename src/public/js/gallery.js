@@ -6,6 +6,7 @@ $(document).ready(function () {
     printImagesArray();
 
     function printImagesArray(){
+      console.log('this is the array from the server');
       console.log(window.gallery_files);
     }
 

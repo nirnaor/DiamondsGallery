@@ -5,7 +5,6 @@
     <link rel="Shortcut Icon" href="../images/diamondskullnoback.ico" />
     <link type="text/css" rel="Stylesheet" href="../css/default.css" />
     <script language="JavaScript" type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="../js/master.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Eater|Fredericka+the+Great|Just+Me+Again+Down+Here|Asul|Amaranth' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Merienda+One' rel='stylesheet' type='text/css'>
    {block name=scriptsandlinks}{/block}
@@ -20,10 +19,10 @@
             </div>
             <div id="menu">
                 <ul id="menulist">
-                    <li class="gallerymenuitem"><a id="rings" href="gallery.php">Rings</a> </li>
-                    <li class="gallerymenuitem"><a id="necklaces" href="#">Necklaces</a> </li>
-                    <li class="gallerymenuitem"><a id="bracelets" href="#">Bracelets</a> </li>
-                    <li class="gallerymenuitem"><a id="earings" href="#">Earings</a> </li>
+                    <li class="gallerymenuitem"><a id="rings" href="gallery.php?category=rings">Rings</a> </li>
+                    <li class="gallerymenuitem"><a id="necklaces" href="gallery.php?category=necklaces">Necklaces</a> </li>
+                    <li class="gallerymenuitem"><a id="bracelets" href="gallery.php?category=bracelets">Bracelets</a> </li>
+                    <li class="gallerymenuitem"><a id="earings" href="gallery.php?category=earings">Earings</a> </li>
                     <li><a href="about.php">About</a> </li>
                 </ul>
             </div>

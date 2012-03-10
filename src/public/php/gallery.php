@@ -20,8 +20,6 @@
       $currentJewelAsClass = new Jewel();
       $currentJewelAsClass->fillDataFromDb($currentJewel);
       array_push($result,$currentJewelAsClass);
-      echo '<h2> Jewel Number. ' . $i .'</h2>';
-      print_r($currentJewel);
     }
     return $result;
   }

@@ -9,11 +9,12 @@
 
   require('setup.php');
   require('const.php');
-  $smarty = new Smarty_GuestBook();
   
   $images = json_encode(getJewelsForCategory($category));
 
   // if you want to use the traditional object parameter format, pass a boolean of false
+  $smarty = new Smarty_GuestBook();
+  $smarty->caching = 0;
   $smarty->assign('imagesArray', $images);
   $smarty->display('gallery.tpl');
 

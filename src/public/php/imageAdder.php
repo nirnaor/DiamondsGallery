@@ -7,7 +7,7 @@ require_once('const.php');
   /**
    * responsible for the creation of all the relevant directories
    **/
-  class JewelDirectoryCreator 
+  class JewelDirectoryManager
   {
     
 
@@ -115,7 +115,7 @@ require_once('const.php');
     function add()
     {
       $this->dirCreator = 
-        new JewelDirectoryCreator($this->jewelname,$this->category);
+        new JewelDirectoryManager($this->jewelname,$this->category);
 
       $this->dirCreator->buildDirectories();
       $this->moveOriginalFiles();

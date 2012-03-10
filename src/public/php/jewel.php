@@ -17,9 +17,8 @@ class Jewel
   var $filesArray; 
 
 
-  function __construct($postArray,$filesArray)
+  public function fillDataFromPost($postArray,$filesArray)
   {
-    print_r($postArray);
     $this->jewelName= $postArray['jewelname'];
     $this->mainImage= $filesArray['mainimage']['name'];
     $this->category= strtolower($postArray['category']);
@@ -29,28 +28,30 @@ class Jewel
     $this->weight= $postArray['weight'];
     $this->clarity= $postArray['clarity'];
     $this->cut = $postArray['cut']; 
-
   }
 
-  function printDetails()
+  function getMainImage()
   {
-    echo '</br>';
-    echo 'jewel name : ' .$this->jewelName;
-    echo '</br>';
-    echo 'main Image: ' .$this->mainImage;
-    echo '</br>';
-    echo 'metal color : ' .$this->metalColor;
-    echo '</br>';
-    echo 'metal weight: ' .$this->metalWeight;
-    echo '</br>';
-    echo 'weight: ' .$this->weight;
-    echo '</br>';
-    echo 'clarity: ' .$this->clarity;
-    echo '</br>';
-    echo 'cut: ' .$this->cut;
-    echo '</br>';
+    $manager = new JewelDirectoryManager ($this->jewelName,$this->category);
+    $imagesArray= scandir($manager->primaryOriginalDir);
 
+    if(!sizeof($imagesArray) == 1)
+     throw new Exception('there are no images or more than one images in the primary image folder. please checkout whats wrong'); 
 
+     return $imagesArray[0];
+  }
+
+  public function fillDataFromDb($dbRow)
+  {
+    $this->jewelName= $dbRow['name'];
+    $this->mainImage= $this->getMainImage();
+    $this->category= strtolower($dbRow['category']);
+    $this->metalColor= $dbRow['metalcolor'];
+    $this->metalWeight= $dbRow['metalweight'];
+    $this->weight= $dbRow['weight'];
+    $this->clarity= $dbRow['clarity'];
+    $this->cut = $dbRow['cut']; 
+    echo '</br> this is the jewel :';
   }
 
   function nameIsNotUnique()
@@ -91,10 +92,11 @@ class Jewel
   {
     $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
+    var_dump($dbc);
     // Write the data to the database
     $query = "INSERT INTO JEWELS VALUES (0,'$this->jewelName',
       '$this->metalColor','$this->metalWeight','$this->weight',
-      '$this->clarity','$this->cut')";
+      '$this->category','$this->clarity','$this->cut')";
 
     mysqli_query($dbc, $query);
     mysqli_close($dbc);
@@ -108,6 +110,7 @@ class Jewel
 
     $adder->add();
   }
+
 
 }
 

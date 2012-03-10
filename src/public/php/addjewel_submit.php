@@ -3,13 +3,12 @@
   require_once('jewel.php');
   if (isset($_POST['submit'])) {
     
-    $jewelToAdd = new jewel($_POST,$_FILES);
-    $jewelToAdd->printDetails();
+    $jewelToAdd = new jewel();
+    $jewelToAdd->fillDataFromPost($_POST,$_FILES);
     $jewelToAdd->validateInput();
     $jewelToAdd->addToDb();
     $jewelToAdd->createImageFiles();
       
-
  
 
 

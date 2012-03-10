@@ -85,28 +85,7 @@ function generateFakeMetadata($index)
   $result['cut'] = getcut($index); 
   return $result;
 }
-function getFiveImages($index){
-  $result = array();
-  $max = sizeof($files) - 2;
-  array_push($result,$allFiles[rand(1,$max)]);
-  array_push($result,$allFiles[rand(1,$max)]);
-  array_push($result,$allFiles[rand(1,$max)]);
-  array_push($result,$allFiles[rand(1,$max)]);
-  array_push($result,$allFiles[rand(1,$max)]);
-  return $result;
-}
-function getOneImage($index){
-  print_r($allFiles);
-  $max = sizeof($allFiles) - 2;
-  return $allFiles[rand(1,$max)];
-}
-function generateFakeImages($index)
-{
-  $result = array();
-  $result['mainImage'] = "d:/Dev/Demos/randomimages/picture" . $index;
-  $result['birth[]'] = getbirthFiles($index);
-  return $result;
-}
+
 function fakeIt()
 {
   $filesArray = array();

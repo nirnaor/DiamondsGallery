@@ -8,14 +8,14 @@ require_once('getAllFilesInDirectory.php');
 class Jewel 
 {
   var $jewelName; 
-  var $mainImage; 
+  var $mainImagePath; 
+  var $birthImagesPathes;
   var $category; 
   var $metalColor; 
   var $metalWeight; 
   var $weight; 
   var $clarity; 
   var $cut; 
-  var $filesArray; 
 
 
   public function fillDataFromPost($postArray)
@@ -29,21 +29,16 @@ class Jewel
     $this->cut = $postArray['cut']; 
   }
 
-  public function fillDataFromFiles($filesArray)
+  public function fillDataFromFiles($mainImageName,$birthImagesNames)
   {
-    $this->mainImage= $filesArray['mainimage']['name'];
-    $this->filesArray = $filesArray;
+    $this->mainImagePath = $mainImageName;
+    $this->birthImagesPathes  = $birthImagesNames;
   }
 
   function getMainImage()
   {
     $manager = new JewelDirectoryManager ($this->jewelName,$this->category);
-
-    print_r($manager);
-
     $imagesArray= getAllFiles($manager->primaryOriginalDir);
-    echo '<h2> images array: </h2>';
-    print_r($imagesArray);
 
     if(!sizeof($imagesArray) == 1)
      throw new Exception('there are no images or more than one images in the primary image folder. please checkout whats wrong'); 
@@ -101,7 +96,6 @@ class Jewel
   {
     $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
-    var_dump($dbc);
     // Write the data to the database
     $query = "INSERT INTO JEWELS VALUES (0,'$this->jewelName',
       '$this->metalColor','$this->metalWeight','$this->weight',
@@ -114,8 +108,10 @@ class Jewel
 
   function createImageFiles()
   {
+    var_dump($this);
     $adder=
-      new jewelimagesAdder($this->filesArray,$this->category,$this->jewelName);
+      new jewelimagesAdder($this->mainImagePath, $this->birthImagesPathes
+      ,$this->jewelName,$this->category);
 
     $adder->add();
   }

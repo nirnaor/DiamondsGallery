@@ -4,21 +4,16 @@
   if (isset($_POST['submit'])) {
     
     $jewelToAdd = new jewel();
-    print_r($_POST);
-    print_r($_FILES);
-    $jewelToAdd->fillDataFromPost($_POST,$_FILES);
-    $jewelToAdd->fillDataFromFiles($_FILES);
+    $jewelToAdd->fillDataFromPost($_POST);
+
+    $mainimage= $_FILES['mainimage']['tmp_name'];
+    $birth = $_FILES['birth']['tmp_name'];
+
+
+    $jewelToAdd->fillDataFromFiles($mainimage,$birth);
     $jewelToAdd->validateInput();
     $jewelToAdd->addToDb();
     $jewelToAdd->createImageFiles();
-      
- 
-
-
-      
-
-
-    
   }
 
 ?>

@@ -21,8 +21,10 @@ $(document).ready(function () {
     }
 
     function addPictuesToFlow(flowToAdd) {
-        for (var i = 1; i <= 6; i++) {
-            var path = '../images/diamonds/transparent/trans' + i + '.gif';
+      
+        for (var i = 0; i < window.gallery_files.length; i++) {
+            var path = window.gallery_files[i];
+            console.log('path : ' + path);
             var newImage = createNewImage(path, 'picture ' + i);
             myNewFlow.addItem(newImage, 'last');
         }

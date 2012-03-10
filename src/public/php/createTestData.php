@@ -10,7 +10,6 @@ function getDummyImages(){
   }
   return $files;
 }
-$allFiles = getDummyImages();
 
 function getcut($index){
   $mod = $index % 8;
@@ -86,22 +85,42 @@ function generateFakeMetadata($index)
   return $result;
 }
 
+
+
+
+function getPrimaryImage($filesToGetFrom,$index)
+{
+  $dir = "d:/Dev/Demos/randomimages/";
+  return $dir . $filesToGetFrom[$index];
+}
+
+function getBirthImages($filesToGetFrom,$index)
+{
+  $dir = "d:/Dev/Demos/randomimages/";
+  $result = array();
+  $max = sizeof($filesToGetFrom);
+  array_push($result,$dir . $filesToGetFrom[rand(2,$max)]);
+  array_push($result,$dir . $filesToGetFrom[rand(2,$max)]);
+  return $result;
+}
+
 function fakeIt()
 {
-  $filesArray = array();
+  $filesArray = getDummyImages();
+  echo ' <h1> this is allFiles : </h1>';
+  print_r($filesArray);
+
   for ($i = 1; $i < 120; $i++) {
     $jewelToAdd = new jewel();
     $jewelToAdd->fillDataFromPost(generateFakeMetadata($i));
+
+    $primary = getPrimaryImage($filesArray,$i);
+    $birth= getBirthImages($filesArray, $i);
+
+    $jewelToAdd->fillDataFromFiles($primary,$birth);
+    $jewelToAdd->validateInput();
     $jewelToAdd->addToDb();
-
-    $dirCreator = 
-      new JewelDirectoryManager($jewelToAdd->jewelName,$jewelToAdd->category);
-
-    $dirCreator->buildDirectories();
-
-    $primary = getOneImage($i);
-    $birth= getFiveImages($i);
-    $dirCreator->addImagesToDirectoryForTestingData($primary,$birth);
+    $jewelToAdd->createImageFiles();
   }
 }
 fakeIt();

@@ -4,6 +4,7 @@
  * represent a single jewel.
  **/
 require_once('imageAdder.php');
+require_once('getAllFilesInDirectory.php');
 class Jewel 
 {
   var $jewelName; 
@@ -33,7 +34,12 @@ class Jewel
   function getMainImage()
   {
     $manager = new JewelDirectoryManager ($this->jewelName,$this->category);
-    $imagesArray= scandir($manager->primaryOriginalDir);
+
+    print_r($manager);
+
+    $imagesArray= getAllFiles($manager->primaryOriginalDir);
+    echo '<h2> images array: </h2>';
+    print_r($imagesArray);
 
     if(!sizeof($imagesArray) == 1)
      throw new Exception('there are no images or more than one images in the primary image folder. please checkout whats wrong'); 
@@ -44,14 +50,13 @@ class Jewel
   public function fillDataFromDb($dbRow)
   {
     $this->jewelName= $dbRow['name'];
-    $this->mainImage= $this->getMainImage();
-    $this->category= strtolower($dbRow['category']);
+    $this->category= $dbRow['category'];
     $this->metalColor= $dbRow['metalcolor'];
     $this->metalWeight= $dbRow['metalweight'];
     $this->weight= $dbRow['weight'];
     $this->clarity= $dbRow['clarity'];
     $this->cut = $dbRow['cut']; 
-    echo '</br> this is the jewel :';
+    $this->mainImage= $this->getMainImage();
   }
 
   function nameIsNotUnique()

@@ -22,7 +22,7 @@ require_once('const.php');
     {
         $this->jewelname= $jewelname;
 
-        $this->categoryDir = GALLERY_PATH . $category . '/' ;
+        $this->categoryDir = GALLERY_PATH . $category . '/';
         $this->rootDir= $this->categoryDir . $jewelname;
         $primaryImageDir= $this->rootDir . PRIMARY_IMAGE_PATH;
         $birthImagesDir= $this->rootDir . BIRTH_IMAGES_PATH;

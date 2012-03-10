@@ -23,7 +23,7 @@ $(document).ready(function () {
     function addPictuesToFlow(flowToAdd) {
       
         for (var i = 0; i < window.gallery_files.length; i++) {
-            var path = window.gallery_files[i];
+            var path = window.gallery_files[i]['mainImage'];
             console.log('path : ' + path);
             var newImage = createNewImage(path, 'picture ' + i);
             myNewFlow.addItem(newImage, 'last');

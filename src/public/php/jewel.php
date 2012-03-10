@@ -18,17 +18,21 @@ class Jewel
   var $filesArray; 
 
 
-  public function fillDataFromPost($postArray,$filesArray)
+  public function fillDataFromPost($postArray)
   {
     $this->jewelName= $postArray['jewelname'];
-    $this->mainImage= $filesArray['mainimage']['name'];
     $this->category= strtolower($postArray['category']);
-    $this->filesArray = $filesArray;
     $this->metalColor= $postArray['metalcolor'];
     $this->metalWeight= $postArray['metalweight'];
     $this->weight= $postArray['weight'];
     $this->clarity= $postArray['clarity'];
     $this->cut = $postArray['cut']; 
+  }
+
+  public function fillDataFromFiles($filesArray)
+  {
+    $this->mainImage= $filesArray['mainimage']['name'];
+    $this->filesArray = $filesArray;
   }
 
   function getMainImage()

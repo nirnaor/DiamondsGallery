@@ -50,6 +50,13 @@ require_once('const.php');
       $this->createDirectoryIfNotExist($this->birthOriginalDir);
       $this->createDirectoryIfNotExist($this->birthThumbDir);
     }
+
+    function addImagesToDirectoryForTestingData($primaryImage,$birthImages)
+    {
+      $targetName = $primaryOriginalDir . 'primarybitch.jpg';
+      copy($primaryImage,$targetName);
+
+    }
   }
 
   class jewelimagesAdder

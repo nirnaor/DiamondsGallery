@@ -17,7 +17,8 @@ $(document).ready(function () {
             myNewFlow = new ContentFlow(flowDiv,
                 {
                   onclickActiveItem: function (item) {
-                        console.log('2pac rules');
+                        var url = '../php/jeweldisplay.php';
+                        $(location).attr('href',url);
                       },
                 }
             );

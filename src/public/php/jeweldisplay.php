@@ -6,9 +6,7 @@ function getJewelByName($name)
   $result = array();
   $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
   $query = "SELECT * from jewels WHERE name ='" . $name. "'";
-  print_r($query);
   $jewelsFromDb= mysqli_query($dbc, $query);
-  print_r(mysqli_num_rows($jewelsFromDb));
   $jewelsFromDbArray = mysqli_fetch_all($jewelsFromDb, MYSQLI_ASSOC);
 
   for ($i = 0; $i < sizeof($jewelsFromDbArray); $i++) {
@@ -22,13 +20,12 @@ function getJewelByName($name)
 
 
 $jewelName= $_GET["name"];
-echo 'this is the jewel name :' . $jewelName;
-$jewelArray = getJewelByName($jewelName);
-print_r($jewelArray);
-$jewelDetails = json_encode($jewelArray);
+$jewelDetails= getJewelByName($jewelName);
+$jewelDetailsJson = json_encode($jewelDetails);
+print_r($jewelDetailsJson);
 
 require('setup.php');
 $smarty = new Smarty_GuestBook();
-$smarty->assign('jewelDetails', $jewelDetails);
+$smarty->assign('jewelDetails', $jewelDetailsJson);
 $smarty->display('jeweldisplay.tpl');
 ?>

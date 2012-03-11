@@ -17,8 +17,10 @@ $(document).ready(function () {
             myNewFlow = new ContentFlow(flowDiv,
                 {
                   onclickActiveItem: function (item) {
-                        var url = '../php/jeweldisplay.php';
+                        var jewelName = item.caption.innerText;
+                        var url = "../php/jeweldisplay.php?name=" + jewelName;    
                         $(location).attr('href',url);
+                        
                       },
                 }
             );

@@ -14,7 +14,13 @@ $(document).ready(function () {
         var flowDiv = $('#galleryflow')[0];
 
         if (myNewFlow == null) {
-            myNewFlow = new ContentFlow(flowDiv);
+            myNewFlow = new ContentFlow(flowDiv,
+                {
+                  onclickActiveItem: function (item) {
+                        console.log('2pac rules');
+                      },
+                }
+            );
             myNewFlow.init();
             addPictuesToFlow(myNewFlow);
         }
@@ -33,8 +39,19 @@ $(document).ready(function () {
     function createNewImage(path, caption) {
         var result = document.createElement('img');
         result.setAttribute('src', path);
+        result.setAttribute('class', 'nir');
         result.setAttribute('title', caption);
         return result;
     }
+
+  function activeClicked()
+  {
+      console.log('active item clicked');
+  }
+
+   $('.active.item').click(function(){
+      console.log('active item clicked');
+      return false;
+   });
 
 });

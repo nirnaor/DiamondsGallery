@@ -1,6 +1,9 @@
 {extends file="master.tpl"}
 {block name=scriptsandlinks}
-     <link type="text/css" rel="Stylesheet" href="../css/jeweldisplay.css" />
+      <link type="text/css" rel="Stylesheet" href="../css/jeweldisplay.css" />
+      <script type="text/javascript">
+        window.jewelDetails= {$jewelDetails}
+      </script>
 {/block}
 {block name=htmlcontent}
 

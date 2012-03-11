@@ -33,8 +33,9 @@ $(document).ready(function () {
       
         for (var i = 0; i < window.gallery_files.length; i++) {
             var path = window.gallery_files[i]['mainImage'];
+            var jewelName = window.gallery_files[i]['jewelName'];
             console.log('path : ' + path);
-            var newImage = createNewImage(path, 'picture ' + i);
+            var newImage = createNewImage(path, jewelName);
             myNewFlow.addItem(newImage, 'last');
         }
     }

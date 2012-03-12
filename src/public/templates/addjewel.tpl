@@ -12,6 +12,10 @@
         <option>Bracelets</option>
         <option>Necklaces</option>
   </select>
+  <textarea name="description" rows="5" cols="50">
+    At W3Schools you will find all the Web-building tutorials you need, from basic HTML to advanced XML, SQL, ASP, and PHP. 
+  </textarea>
+
   <select name="metalcolor" onchange="combo(this, 'theinput')" onmouseout="comboInit(this, 'theinput')">
         <option>Gold</option>
         <option>Silver</option>

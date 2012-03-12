@@ -11,6 +11,7 @@ class Jewel
   var $mainImagePath; 
   var $birthImagesPathes;
   var $category; 
+  var $desc; 
   var $metalColor; 
   var $metalWeight; 
   var $weight; 
@@ -22,6 +23,7 @@ class Jewel
   {
     $this->jewelName= $postArray['jewelname'];
     $this->category= strtolower($postArray['category']);
+    $this->desc= $postArray['description'];
     $this->metalColor= $postArray['metalcolor'];
     $this->metalWeight= $postArray['metalweight'];
     $this->weight= $postArray['weight'];
@@ -50,6 +52,7 @@ class Jewel
   {
     $this->jewelName= $dbRow['name'];
     $this->category= $dbRow['category'];
+    $this->desc= $dbRow['description'];
     $this->metalColor= $dbRow['metalcolor'];
     $this->metalWeight= $dbRow['metalweight'];
     $this->weight= $dbRow['weight'];
@@ -97,9 +100,11 @@ class Jewel
     $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
     // Write the data to the database
-    $query = "INSERT INTO JEWELS VALUES (0,'$this->jewelName',
-      '$this->metalColor','$this->metalWeight','$this->weight',
-      '$this->category','$this->clarity','$this->cut')";
+    $query = "INSERT INTO JEWELS
+      (jewelid,name,metalcolor,metalweight,weight,category,clarity,cut,description)
+      VALUES (0,'$this->jewelName','$this->metalColor',
+        '$this->metalWeight','$this->weight','$this->category',
+        '$this->clarity','$this->cut','$this->desc')";
 
     mysqli_query($dbc, $query);
     mysqli_close($dbc);

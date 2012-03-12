@@ -1,6 +1,7 @@
 CREATE TABLE `jewels` (
   `jewelid` INT AUTO_INCREMENT,
   `name` VARCHAR(32),
+  `description` VARCHAR(150),
   `metalcolor` ENUM('Gold', 'Silver', 'Platinum'),
   `metalweight` INT,
   `weight` INT,

@@ -12,9 +12,7 @@
            <img id="mainimage" src="../images/butterfly/butterfly5.jpg" />
 
           <div id="description">
-            <p>Ut euismod tempus elementum. Donec hendrerit, nisi vel elementum viverra, nisi metus pulvinar eni
-            m, eleifend fermentum lorem libero non lorem. Vestibulum ante 
-            ipsum primis in faucibus</p>
+            <p></p>
           </div>
 
           <div id="details">

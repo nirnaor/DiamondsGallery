@@ -1,5 +1,6 @@
 <?php
   // User name and password for authentication
+  require_once('../../configs/db.php');
   $username = ADMIN_USERNAME;
   $password = ADMIN_PASSWORD;
 

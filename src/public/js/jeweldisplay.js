@@ -10,6 +10,11 @@ $(document).ready(function () {
       ' ' + window.jewelDetails[0]['metalWeight'] + ' kt';
     $('#metal').text(metalText);
   }
+  
+  function setImages(){
+    $('#mainimage').attr('src',window.jewelDetails[0]['mainImage']);
+  }
   fillMetadata();
+  setImages();
                       
 });

@@ -2,6 +2,14 @@
 require_once('../../configs/db.php');
 require_once('jewel.php');
 require_once('imageAdder.php');
+
+function deleteFromDb()
+{
+  $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+  $query = "DELETE FROM JEWELS"; 
+  $result = mysqli_query($dbc, $query);
+  mysqli_close($dbc);
+}
 function getDummyImages(){
   $dir = "d:/Dev/Demos/randomimages/";
   $dh  = opendir($dir);
@@ -82,6 +90,7 @@ function generateFakeMetadata($index)
   $result['weight'] = uniqid(); 
   $result['clarity'] = getclarity($index); 
   $result['cut'] = getcut($index); 
+  $result['description'] = 'take one look at yourself, realize - life is treating you nice, better be wise and enjoy your moments'; 
   return $result;
 }
 
@@ -99,13 +108,24 @@ function getBirthImages($filesToGetFrom,$index)
   $dir = "d:/Dev/Demos/randomimages/";
   $result = array();
   $max = sizeof($filesToGetFrom);
+
   array_push($result,$dir . $filesToGetFrom[rand(2,$max)]);
   array_push($result,$dir . $filesToGetFrom[rand(2,$max)]);
+  array_push($result,$dir . $filesToGetFrom[rand(2,$max)]);
+  array_push($result,$dir . $filesToGetFrom[rand(2,$max)]);
+  array_push($result,$dir . $filesToGetFrom[rand(2,$max)]);
+
+  $moreBirth = $index % 5;
+  for ($i = 0; $i < $moreBirth; $i++) {
+      array_push($result,$dir . $filesToGetFrom[rand(2,$max)]);
+  }
+  
   return $result;
 }
 
 function fakeIt()
 {
+  deleteFromDb();
   $filesArray = getDummyImages();
   echo ' <h1> this is allFiles : </h1>';
   print_r($filesArray);

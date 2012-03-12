@@ -9,7 +9,7 @@ class Jewel
 {
   var $jewelName; 
   var $mainImagePath; 
-  var $birthImagesPathes;
+  var $birthImagesPaths;
   var $category; 
   var $desc; 
   var $metalColor; 
@@ -34,9 +34,19 @@ class Jewel
   public function fillDataFromFiles($mainImageName,$birthImagesNames)
   {
     $this->mainImagePath = $mainImageName;
-    $this->birthImagesPathes  = $birthImagesNames;
+    $this->birthImagesPaths  = $birthImagesNames;
   }
 
+  function getBirthImages()
+  {
+    $manager = new JewelDirectoryManager ($this->jewelName,$this->category);
+    $imagesArray= getAllFiles($manager->birthOriginalDir);
+
+    /*if(!sizeof($imagesArray) == 0)
+      throw new Exception('there are no images in the birth folder. please checkout whats wrong: ' . $manager->birthOriginalDir); */
+
+     return $imagesArray;
+  }
   function getMainImage()
   {
     $manager = new JewelDirectoryManager ($this->jewelName,$this->category);
@@ -60,6 +70,7 @@ class Jewel
     $this->clarity= $dbRow['clarity'];
     $this->cut = $dbRow['cut']; 
     $this->mainImage= $this->getMainImage();
+    $this->birthImagesPathes = $this->getBirthImages();
   }
 
   function nameIsNotUnique()
@@ -116,7 +127,7 @@ class Jewel
   {
     var_dump($this);
     $adder=
-      new jewelimagesAdder($this->mainImagePath, $this->birthImagesPathes
+      new jewelimagesAdder($this->mainImagePath, $this->birthImagesPaths
       ,$this->jewelName,$this->category);
 
     $adder->add();

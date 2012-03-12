@@ -52,6 +52,7 @@ class Jewel
   {
     $this->jewelName= $dbRow['name'];
     $this->category= $dbRow['category'];
+    echo'dbrow desc:'. $dbRow['description'];
     $this->desc= $dbRow['description'];
     $this->metalColor= $dbRow['metalcolor'];
     $this->metalWeight= $dbRow['metalweight'];

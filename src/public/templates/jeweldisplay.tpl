@@ -1,6 +1,8 @@
 {extends file="master.tpl"}
 {block name=scriptsandlinks}
       <link type="text/css" rel="Stylesheet" href="../css/jeweldisplay.css" />
+      <script language="JavaScript" type="text/javascript" src="../js/jquery.cross-slide.min.js"></script>
+      <script language="JavaScript" type="text/javascript" src="../js/jeweldisplay.js"></script>
       <script type="text/javascript">
         window.jewelDetails= {$jewelDetails}
       </script>

@@ -19,15 +19,15 @@
 
           <div id="details">
             <dl>
-              <dt>lectus:</dt>
-                <dd>consectetur</dd>
-              <dt>iaculis:</dt>
-                <dd>ectus</dd>
+              <dt>Clarity:</dt>
+                <dd id="clarity">consectetur</dd>
+              <dt>Weight:</dt>
+                <dd id="weight">ectus</dd>
             </dl>
-            <dt>lectus:</dt>
-              <dd>consectetur </dd>
-            <dt>iaculis:</dt>
-              <dd>ectus </dd>
+            <dt>Cut:</dt>
+              <dd id="cut">consectetur </dd>
+            <dt>Metal:</dt>
+              <dd id="metal">ectus </dd>
         </div>
 
         <div id="emptydiv"></div>

@@ -26,6 +26,7 @@ print_r($jewelDetailsJson);
 
 require('setup.php');
 $smarty = new Smarty_GuestBook();
+$smarty->caching = 1;
 $smarty->assign('jewelDetails', $jewelDetailsJson);
 $smarty->display('jeweldisplay.tpl');
 ?>

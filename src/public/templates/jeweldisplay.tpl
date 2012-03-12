@@ -33,11 +33,6 @@
         <div id="emptydiv"></div>
 
           <div id="birth">
-           <img src="../images/butterfly/butterfly3.jpg" />
-           <img src="../images/butterfly/butterfly8.jpg" />
-           <img src="../images/butterfly/butterfly2.jpg" />
-           <img src="../images/butterfly/butterfly12.jpg" />
-           <img src="../images/butterfly/butterfly7.jpg" />
           </div>
 
 

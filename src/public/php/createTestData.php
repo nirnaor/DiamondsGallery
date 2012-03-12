@@ -2,6 +2,16 @@
 require_once('../../configs/db.php');
 require_once('jewel.php');
 require_once('imageAdder.php');
+/**
+ * Deletes a directory and all files and folders under it
+ * @return Null
+ * @param $dir String Directory Path
+ */
+function rmdir_files($dir) {
+  foreach(glob($dir.'*.*') as $v){
+      unlink($v);
+  }
+}
 
 function deleteFromDb()
 {
@@ -123,14 +133,22 @@ function getBirthImages($filesToGetFrom,$index)
   return $result;
 }
 
-function fakeIt()
+
+function deleteOldStuff()
 {
   deleteFromDb();
+  echo GALLERY_PATH;
+  rmdir_files(GALLERY_PATH);
+}
+
+
+function fakeIt()
+{
   $filesArray = getDummyImages();
   echo ' <h1> this is allFiles : </h1>';
   print_r($filesArray);
 
-  for ($i = 1; $i < 120; $i++) {
+  for ($i = 1; $i < 30; $i++) {
     $jewelToAdd = new jewel();
     $jewelToAdd->fillDataFromPost(generateFakeMetadata($i));
 
@@ -143,6 +161,7 @@ function fakeIt()
     $jewelToAdd->createImageFiles();
   }
 }
+deleteOldStuff();
 fakeIt();
 
 

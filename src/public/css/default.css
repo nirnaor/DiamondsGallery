@@ -1,6 +1,4 @@
 
-@media screen and (min-width:320px)
-{
     *
     {
             margin: 0;
@@ -18,10 +16,8 @@
               color-stop(0.46, rgb(86,198,232)),
               color-stop(0.7, rgb(0,0,0))
             );
-            
-        
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D16173', endColorstr='#C7C5A7');
-            background: -moz-linear-gradient(top,  #D16173,  #C7C5A7);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#55c6e8',GradientType=0 ); /* IE6-9 */
+            background-image: -moz-linear-gradient(bottom, rgb(0,0,0) 13%, rgb(85,198,232) 46%, rgb(0,0,0) 70%);
     }
 
     #logoandmenu
@@ -104,7 +100,7 @@
             color: #B50B3A;
             font-size: 130%;
     }
-}
+
 
 @media screen and (min-width:480px)
 {

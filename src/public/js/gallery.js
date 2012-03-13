@@ -32,7 +32,7 @@ $(document).ready(function () {
     function addPictuesToFlow(flowToAdd) {
       
         for (var i = 0; i < window.gallery_files.length; i++) {
-            var path = window.gallery_files[i]['mainImage'];
+            var path = window.gallery_files[i]['mainImagePath'];
             var jewelName = window.gallery_files[i]['jewelName'];
             console.log('path : ' + path);
             var newImage = createNewImage(path, jewelName);

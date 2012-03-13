@@ -69,7 +69,7 @@ class Jewel
     $this->weight= $dbRow['weight'];
     $this->clarity= $dbRow['clarity'];
     $this->cut = $dbRow['cut']; 
-    $this->mainImage= $this->getMainImage();
+    $this->mainImagePath= $this->getMainImage();
     $this->birthImagesPathes = $this->getBirthImages();
   }
 

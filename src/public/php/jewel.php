@@ -70,7 +70,7 @@ class Jewel
     $this->clarity= $dbRow['clarity'];
     $this->cut = $dbRow['cut']; 
     $this->mainImagePath= $this->getMainImage();
-    $this->birthImagesPathes = $this->getBirthImages();
+    $this->birthImagesPaths = $this->getBirthImages();
   }
 
   function nameIsNotUnique()

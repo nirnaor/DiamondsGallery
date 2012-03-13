@@ -19,8 +19,7 @@ $(document).ready(function () {
                   onclickActiveItem: function (item) {
                         var jewelName = item.caption.innerText;
                         var url = "../php/jeweldisplay.php?name=" + jewelName;    
-                        $(location).attr('href',url);
-                        
+                        window.location = url; 
                       },
                 }
             );
@@ -53,9 +52,5 @@ $(document).ready(function () {
       console.log('active item clicked');
   }
 
-   $('.active.item').click(function(){
-      console.log('active item clicked');
-      return false;
-   });
 
 });

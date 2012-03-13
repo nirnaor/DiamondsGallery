@@ -13,7 +13,8 @@ $(document).ready(function () {
   
 
   function addBirthImages(flowToAdd) {
-        var birthArray = window.jewelDetails[0]['birthImagesPathes']; 
+        $('#birth img').remove();
+        var birthArray = window.jewelDetails[0]['birthImagesPaths']; 
         for (var i = 0; i < birthArray.length; i++) {
             var path = birthArray[i];
             console.log('path : ' + path);
@@ -31,8 +32,12 @@ $(document).ready(function () {
 
   
   function setImages(){
-    $('#mainimage').attr('src',window.jewelDetails[0]['mainImage']);
+    /*$('#mainImage img').remove();
+    var mainImage = createNewImage(window.jewelDetails[0]['mainImagePath'],'nirnaor');
+    $('#mainImage').append(mainImage);*/
+    $('#mainimage').attr('src',window.jewelDetails[0]['mainImagePath']);
     addBirthImages();
+    alert('this is name: ' +window.jewelDetails[0]['jewelName']);
 
   }
   fillMetadata();

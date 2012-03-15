@@ -20,7 +20,7 @@ $(document).ready(function () {
                         var jewelName = item.caption.innerText;
                         var url = "../php/jeweldisplay.php?name=" + jewelName;    
                         window.location = url; 
-                      },
+                      }
                 }
             );
             myNewFlow.init();

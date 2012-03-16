@@ -105,7 +105,6 @@ require_once('const.php');
       $this->movePrimaryImage($this->primaryImagePath, $this->dirCreator->primaryOriginalDir);
       
       echo '<h1> birth images pathes : </h1>' ;
-      print_r($this->birthImagesPathes);
 
       $this->moveBirthImages($this->birthImagesPathes ,
         $this->dirCreator->birthOriginalDir);

@@ -37,7 +37,6 @@ $(document).ready(function () {
     $('#mainImage').append(mainImage);*/
     $('#mainimage').attr('src',window.jewelDetails[0]['mainImagePath']);
     addBirthImages();
-    alert('this is name: ' +window.jewelDetails[0]['jewelName']);
 
   }
   fillMetadata();

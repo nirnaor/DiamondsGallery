@@ -10,7 +10,7 @@
 {block name=htmlcontent}
 
 
-          <img id="mainimage" alt="nirnaor" src="../images/butterfly/butterfly10.jpg"/>
+          <img id="mainimage" alt="nirnaor" src=""/>
           <div id="description">
             <p></p>
           </div>

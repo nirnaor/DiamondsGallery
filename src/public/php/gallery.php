@@ -33,7 +33,7 @@
   $images = json_encode(getJewelsForCategory($category));
 
   $smarty = new Smarty_GuestBook();
-  $smarty->caching = 0;
+  $smarty->caching = false;
   $smarty->assign('imagesArray', $images);
   $smarty->display('gallery.tpl');
 ?>

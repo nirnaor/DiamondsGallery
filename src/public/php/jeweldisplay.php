@@ -25,12 +25,11 @@ function getJewelByName($name)
 
 $jewelName= $_GET["name"];
 $jewelDetails= getJewelByName($jewelName);
-$jewelDetailsJson = json_encode($jewelDetails);
-print_r($jewelDetailsJson);
 
 require('setup.php');
 $smarty = new Smarty_GuestBook();
-$smarty->caching = 1;
-$smarty->assign('jewelDetails', $jewelDetailsJson);
+$smarty->caching = false;
+$smarty->assign('jewelDetails', null);
+$smarty->assign('jewelDetails', json_encode($jewelDetails));
 $smarty->display('jeweldisplay.tpl');
 ?>

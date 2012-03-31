@@ -32,9 +32,7 @@ $(document).ready(function () {
 
   
   function setImages(){
-    /*$('#mainImage img').remove();
-    var mainImage = createNewImage(window.jewelDetails[0]['mainImagePath'],'nirnaor');
-    $('#mainImage').append(mainImage);*/
+    console.log('will now fill the main image : ' + window.jewelDetails[0]['mainImagePath']);
     $('#mainimage').attr('src',window.jewelDetails[0]['mainImagePath']);
     addBirthImages();
 

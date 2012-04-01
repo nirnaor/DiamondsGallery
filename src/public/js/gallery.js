@@ -17,7 +17,7 @@ $(document).ready(function () {
             myNewFlow = new ContentFlow(flowDiv,
                 {
                   onclickActiveItem: function (item) {
-                        var jewelName = item.caption.innerText;
+                        var jewelName = item.caption.innerHTML;
                         var url = "../php/jeweldisplay.php?name=" + jewelName;    
                         window.location = url; 
                       }

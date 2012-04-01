@@ -1,92 +1,99 @@
-@media screen and (min-width: 300px)
+#mainimagecontainer 
 {
-  #mainimagecontainer 
-  {
-      text-align: center;
-  }
+    text-align: center;
+}
 
 
-  #mainimage
-  {
-      margin-top: 15px;
-      max-width: 80%;
-      padding-left: 10%;
-      
-  }
+#mainimage
+{
+    margin-top: 15px;
+    max-width: 90%;
+    min-width: 90%;
+    margin-left: 5%;
+}
 
-  #content
-  {
-      color: white;
-      font-weight:bold;
-      font-family: 'Bilbo Swash Caps', cursive;
-  }
+#content
+{
+    color: white;
+    font-size: 100%;
+    font-weight:bold;
+    font-family: 'Bilbo Swash Caps', cursive;
+}
 
-  #description
-  {
-      
-      width: 45%;
-      float: left;
-      color: white;
-      
-      margin-left: 3%;
-      margin-top: 15px;
-      
-  }
-  #details
-  {
-      width: 36%;
-      color: white;
-      float: right;
-      margin-right: 3%;
-      margin-top: 15px;
-  }
-
-
-  dl {
-   width:100%;
-   overflow:hidden;
-   
-  }
-  dt {
-   float:left;
-   width:30%; /* adjust the width; make sure the total of both is 100% */
-   
-  }
-  dd {
-   float:left;
-   width:50%; /* adjust the width; make sure the total of both is 100% */
-   
-  }
+#description
+{
+    
+    width: 55%;
+    float: left;
+    color: white;
+    
+    margin-left: 5%;
+    margin-top: 15px;
+    
+}
+#details
+{
+    width: 35%;
+    color: white;
+    float: right;
+    
+    
+    margin-top: 15px;
+    
+}
 
 
-  #emptydiv
-  {
+dl {
+ width:100%;
+ overflow:hidden;
+ 
+}
+dt {
+ float:left;
+ width:30%; /* adjust the width; make sure the total of both is 100% */
+ color:red;
+ margin-right: 15%;
+ 
+}
+dd {
+ float:left;
+ color: black;
+ 
+ width:50%; /* adjust the width; make sure the total of both is 100% */
+ 
+}
+
+
+#emptydiv
+{
+  clear: both;
+}
+
+
+#birth
+{
     clear: both;
-  }
+    text-align: center;
+    width: 100%;
+    margin-top: 24px;
+}
 
-
-  #birth
-  {
-      clear: both;
-      text-align: center;
-      width: 100%;
-      margin-top: 24px;
-  }
-
-  #birth img
-  {
-    margin: 1%;
-    max-width: 15%;
-    max-height: 15%;
-    min-width: 15%;
-
-  }
- #content img
-  {
-      border: solid white 2px;
-  }
+#birth img
+{
+  margin: 1%;
+  max-width: 10%;
+  min-width: 10%;
+  
+  min-height: 10%;
+  max-height: 10%;
+  
 
 }
+#content img
+{
+    border: solid white 2px;
+}
+
 
 
 @media screen and (min-width:600px)
@@ -94,19 +101,27 @@
   #mainimage
   {
       max-width: 40%;
+      min-width: 40%;
+      margin-right:1%;
+      margin-left:1%;
       padding-left: 0%;
   }
   #description
   {
-      
-      width: 26%;
+      margin-right:1%;
+      margin-left:1%;
+      width: 25%;
       float: left;
+      
       
       
   }
   #details
   {
-      width: 26%;
+      width: 25%;
+      
+      margin-right:1%;
+      margin-left:1%;
       
   }
     
@@ -115,13 +130,7 @@
 
 
 
-@media screen and (min-width:480px)
-{
-  #content
-  {
-    font-size: 116%;
-  }
-}
+
 
 
 @media screen and (min-width:1024px)
@@ -129,7 +138,7 @@
 
   #content
   {
-    font-size: 136%;
+    font-size: 100%;
   }
 
 }
@@ -142,5 +151,7 @@
   }
 
 }
+
+
 
 

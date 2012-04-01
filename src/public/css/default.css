@@ -1,108 +1,106 @@
-@media screen and (min-width:480px)
+*
 {
-    *
-    {
-            margin: 0;
-            padding: 0;
-    }
-
-
-    #main
-    {
-             background: black;
-             background-image: -webkit-gradient(
-              linear,
-              left bottom,
-              left top,
-              color-stop(0.13, rgb(0,0,0)),
-              color-stop(0.46, rgb(86,198,232)),
-              color-stop(0.7, rgb(0,0,0))
-            );
-            background-image: -moz-linear-gradient(bottom, rgb(0,0,0) 13%, rgb(85,198,232) 46%, rgb(0,0,0) 70%);
-    }
-
-    #logoandmenu
-    {
-                text-align:center;
-    }
-
-    #logoandmenu img
-    {
-            max-width: 25%;
-    
-            
-    }
-
-
-    
-    #logoandmenu #banner a
-    {
-        text-decoration: none;        
-    }
-
-
-    #logoandmenu #banner h1
-    {
-        display:inline;
-        line-height: 0;
-            font-family: 'Just Me Again Down Here', cursive;
-            color: #DBD328;
-            background: -webkit-gradient(linear, left top , left bottom, from(#DBD328), to(#C7C5A7));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: #1A4352;
-            line-height: 0;
-            
-    }
-
-    #logoandmenu #menu 
-    {
-            
-            padding-top: 5px;
-            
-            
-    }
-
-    #menu #menulist li
-    {
-            display: inline;
-            margin: 1%;
-            font-size: 59%;
-    }
-
-
-    #menu #menulist li a
-    {
-            text-decoration: none;
-            color: #56C5E8;
-            font-family: 'Bilbo Swash Caps', cursive;
-            font-weight:bold;
-    }
-
-    #content
-    {
-            color: white;
-    }
-
-    #footer
-    {
-            padding-top: 3%;
-	    padding-bottom: 4%;
-            text-align: center;
-        
-            clear: both;
-            color: #1A4352;
-            font-family: eater; 
-    }
-    
-    #footer h1
-    {
-            color: #B50B3A;
-            font-size: 130%;
-    }
-
+        margin: 0;
+        padding: 0;
 }
+
+
+#main
+{
+         background: black;
+         background-image: -webkit-gradient(
+          linear,
+          left bottom,
+          left top,
+          color-stop(0.13, rgb(0,0,0)),
+          color-stop(0.46, rgb(86,198,232)),
+          color-stop(0.7, rgb(0,0,0))
+        );
+        background-image: -moz-linear-gradient(bottom, rgb(0,0,0) 13%, rgb(85,198,232) 46%, rgb(0,0,0) 70%);
+}
+
+#logoandmenu
+{
+            text-align:center;
+}
+
+#logoandmenu img
+{
+        max-width: 25%;
+
+        
+}
+
+
+
+#logoandmenu #banner a
+{
+    text-decoration: none;        
+}
+
+
+#logoandmenu #banner h1
+{
+    display:inline;
+    line-height: 0;
+        font-family: 'Just Me Again Down Here', cursive;
+        color: #DBD328;
+        background: -webkit-gradient(linear, left top , left bottom, from(#DBD328), to(#C7C5A7));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #1A4352;
+        line-height: 0;
+        
+}
+
+#logoandmenu #menu 
+{
+        
+        padding-top: 5px;
+        
+        
+}
+
+#menu #menulist li
+{
+        display: inline;
+        margin: 1%;
+        font-size: 100%;
+}
+
+
+#menu #menulist li a
+{
+        text-decoration: none;
+        color: #56C5E8;
+        font-family: 'Bilbo Swash Caps', cursive;
+        font-weight:bold;
+}
+
+#content
+{
+        color: white;
+}
+
+#footer
+{
+        padding-top: 3%;
+  padding-bottom: 4%;
+        text-align: center;
+    
+        clear: both;
+        color: #1A4352;
+        font-family: eater; 
+}
+
+#footer h1
+{
+        color: #B50B3A;
+        font-size: 130%;
+}
+
+
 @media screen and (min-width:480px)
 {
     #menulist li a

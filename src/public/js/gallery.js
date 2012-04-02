@@ -11,32 +11,48 @@ $(document).ready(function () {
     }
 
     function initGalleryFlow() {
-        var flowDiv = $('#galleryflow')[0];
-
-        if (myNewFlow == null) {
-            myNewFlow = new ContentFlow(flowDiv,
-                {
-                  onclickActiveItem: function (item) {
-                        var jewelName = item.caption.innerHTML;
-                        var url = "../php/jeweldisplay.php?name=" + jewelName;    
-                        window.location = url; 
-                      }
-                }
-            );
-            myNewFlow.init();
-            addPictuesToFlow(myNewFlow);
+        if(true){
+          buildContentFlow();
+        }
+        else{
+          buildSlider();  
         }
     }
 
-    function addPictuesToFlow(flowToAdd) {
+
+    function buildContentFlow(){
+      var flowDiv = $('#galleryflow')[0];
+      if (myNewFlow == null) {
+          myNewFlow = new ContentFlow(flowDiv,
+              {
+                onclickActiveItem: function (item) {
+                      var jewelName = item.caption.innerHTML;
+                      var url = "../php/jeweldisplay.php?name=" + jewelName;    
+                      window.location = url; 
+                    }
+              }
+          );
+      }
+
+      myNewFlow.init();
+
+      var allImages = getImagesArray();
+      for (var i = 0; i < allImages.length; i++) {
+        myNewFlow.addItem(allImages[i], 'last');
+      };
+    }
+
+    function getImagesArray() {
+      var imagesArray = new Array();
       
         for (var i = 0; i < window.gallery_files.length; i++) {
             var path = window.gallery_files[i]['mainImagePath'];
             var jewelName = window.gallery_files[i]['jewelName'];
             console.log('path : ' + path);
             var newImage = createNewImage(path, jewelName);
-            myNewFlow.addItem(newImage, 'last');
+            imagesArray.push(newImage);
         }
+      return imagesArray;
     }
 
     function createNewImage(path, caption) {

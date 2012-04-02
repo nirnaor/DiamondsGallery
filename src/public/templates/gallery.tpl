@@ -15,4 +15,11 @@
       </div>
       <div class="globalCaption"></div>
    </div>
+
+
+  <div id='slider'>
+    <ul>
+    </ul>
+  </div>
+
 {/block}

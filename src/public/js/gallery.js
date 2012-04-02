@@ -11,7 +11,7 @@ $(document).ready(function () {
     }
 
     function initGalleryFlow() {
-        if(true){
+        if(Modernizr.csstransforms){
           buildContentFlow();
         }
         else{
@@ -42,6 +42,15 @@ $(document).ready(function () {
       };
     }
 
+    function buildSlider(){
+      var sliderlist= $('#slider ul')[0];
+
+      var allImages = getImagesArray();
+      for (var i = 0; i < allImages.length; i++) {
+        $('#slider ul').append(
+           $('<li>').append(allImages[i]));
+      }
+    }
     function getImagesArray() {
       var imagesArray = new Array();
       

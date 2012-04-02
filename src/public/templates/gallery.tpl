@@ -14,6 +14,5 @@
       <div id="imagescontainer" class="flow">
       </div>
       <div class="globalCaption"></div>
-      <div class="scrollbar"><div class="slider"><div class="position"></div></div></div>    
    </div>
 {/block}

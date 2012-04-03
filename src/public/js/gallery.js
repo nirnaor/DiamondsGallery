@@ -11,11 +11,11 @@ $(document).ready(function () {
     }
 
     function initGalleryFlow() {
-        if(Modernizr.csstransforms){
-          buildContentFlow();
+        if(Modernizr.touch){
+          buildSlider();  
         }
         else{
-          buildSlider();  
+          buildContentFlow();
         }
     }
 

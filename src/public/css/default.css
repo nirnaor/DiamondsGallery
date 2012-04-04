@@ -33,7 +33,7 @@
 
 
 
-#logoandmenu #banner a
+#logoandmenu #banner a:visited
 {
     text-decoration: none;        
 }

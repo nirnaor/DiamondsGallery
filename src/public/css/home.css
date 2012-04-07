@@ -1,17 +1,17 @@
+#slidinggallery
+{
+        margin-right: 5%;
+        margin-top: 6%;	
+        border: solid 2px;
+        height: 550%;
+        color: #F5E99A;
+        width: 210%;
+        width: 430px;
+        height: 250px;
+        float: right;
+}
 @media screen and (min-width:320px)
 {
-  #slidinggallery
-  {
-          margin-right: 5%;
-          margin-top: 6%;	
-          border: solid 2px;
-          height: 550%;
-          color: #F5E99A;
-          width: 210%;
-          width: 430px;
-          height: 250px;
-          float: right;
-  }
   #whatwedo
   {
       float: left;

@@ -7,6 +7,8 @@
   <link type="text/css" rel="Stylesheet" href="../css/gallery.css" />
   <script language="JavaScript" type="text/javascript" src="../js/contentflow.js"></script>
   <link type="text/css" rel="Stylesheet" href="../css/contentflow_src.css" />
+  <script language="JavaScript" type="text/javascript" src="../js/modernizr.js"></script>
+  <script language="JavaScript" type="text/javascript" src="../js/swipe.js"></script>
 {/block}
 {block name=htmlcontent}
   <div id="galleryflow">

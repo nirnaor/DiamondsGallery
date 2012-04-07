@@ -8,8 +8,6 @@
     <script language="JavaScript" type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Eater|Fredericka+the+Great|Just+Me+Again+Down+Here|Asul|Amaranth' rel='stylesheet' type='text/css'/>
     <link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Merienda+One' rel='stylesheet' type='text/css'>
-    <script language="JavaScript" type="text/javascript" src="../js/modernizr.js"></script>
-    <script language="JavaScript" type="text/javascript" src="../js/swipe.js"></script>
    {block name=scriptsandlinks}{/block}
       <!--[if lte IE 8]>
         <link rel="stylesheet" type="text/css" href="../css/jeweldisplay-ie8-and-down.css" />

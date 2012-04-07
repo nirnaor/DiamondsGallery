@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 
     function setSizesByWindowSizes(){
-        $('#slidinggallery').width(0.4 * $(window).width()); 
+        $('#slidinggallery').width(0.9 * $(window).width()); 
     };
     $('#slidinggallery').crossSlide({
         fade: 1

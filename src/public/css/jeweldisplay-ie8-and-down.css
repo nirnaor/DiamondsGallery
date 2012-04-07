@@ -16,15 +16,19 @@
     margin-left:1%;
     width: 25%;
     float: left;
-    
-    
-    
+    font-size: 150%;
 }
 #details
 {
     width: 25%;
-    
     margin-right:1%;
     margin-left:1%;
-    
+    font-size: 150%;
+}
+
+.birthpicture
+{
+  border: solid red 5px;
+  width: 10%;
+  height: 50px;
 }

@@ -27,6 +27,7 @@ $(document).ready(function () {
     function createNewImage(path, caption) {
         var result = document.createElement('img');
         result.setAttribute('src', path);
+        result.setAttribute('class', 'birthpicture');
         return result;
     }
 

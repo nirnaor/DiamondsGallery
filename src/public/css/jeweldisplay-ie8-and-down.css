@@ -1,4 +1,9 @@
 #main
 {
-  background: red;
+  background: green;
+}
+#mainimage
+{
+    max-width: 40%;
+    min-width: 40%;
 }

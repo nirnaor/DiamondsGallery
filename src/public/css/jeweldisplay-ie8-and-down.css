@@ -2,6 +2,10 @@
 {
   background: green;
 }
+#menu #menulist li
+{
+        font-size: 250%;
+}
 #mainimage
 {
     max-width: 40%;

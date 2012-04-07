@@ -11,6 +11,9 @@
     <script language="JavaScript" type="text/javascript" src="../js/modernizr.js"></script>
     <script language="JavaScript" type="text/javascript" src="../js/swipe.js"></script>
    {block name=scriptsandlinks}{/block}
+      <!--[if lte IE 8]>
+        <link rel="stylesheet" type="text/css" href="../css/jeweldisplay-ie8-and-down.css" />
+      <![endif]-->
 </head>
 <body>
     <div id="main">

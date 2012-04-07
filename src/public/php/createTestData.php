@@ -21,7 +21,7 @@ function deleteFromDb()
   mysqli_close($dbc);
 }
 function getDummyImages(){
-  $dir = "d:/Dev/Demos/randomimages/";
+  $dir = "../images/randomimages/";
   $dh  = opendir($dir);
   while (false !== ($filename = readdir($dh))) {
       $files[] = $filename;

@@ -8,7 +8,7 @@
       </script>
 
       <!--[if lte IE 8]>
-        <link rel="stylesheet" type="text/css" href="../css/ie8-and-down.css" />
+        <link rel="stylesheet" type="text/css" href="../css/jeweldisplay-ie8-and-down.css" />
       <![endif]-->
 
 {/block}

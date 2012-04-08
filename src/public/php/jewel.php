@@ -62,7 +62,6 @@ class Jewel
   {
     $this->jewelName= $dbRow['name'];
     $this->category= $dbRow['category'];
-    echo'dbrow desc:'. $dbRow['description'];
     $this->desc= $dbRow['description'];
     $this->metalColor= $dbRow['metalcolor'];
     $this->metalWeight= $dbRow['metalweight'];
@@ -78,8 +77,13 @@ class Jewel
     $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
     $query = "SELECT * FROM JEWELS WHERE NAME = '$this->jewelName'";
     $result = mysqli_query($dbc, $query);
+
+    if ($result == false)
+      return false;
+
+    $num_rows = mysqli_num_rows($result);
     mysqli_close($dbc);
-    return mysqli_num_rows($result) > 0;
+    return $num_rows > 0;
   }
   function fileIsNotAnImage()
   {
@@ -112,20 +116,20 @@ class Jewel
     $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
     // Write the data to the database
-    $query = "INSERT INTO JEWELS
+    $query = "INSERT INTO jewels
       (jewelid,name,metalcolor,metalweight,weight,category,clarity,cut,description)
       VALUES (0,'$this->jewelName','$this->metalColor',
         '$this->metalWeight','$this->weight','$this->category',
         '$this->clarity','$this->cut','$this->desc')";
 
-    mysqli_query($dbc, $query);
+    $result = mysqli_query($dbc, $query);
+
     mysqli_close($dbc);
 
   }
 
   function createImageFiles()
   {
-    var_dump($this);
     $adder=
       new jewelimagesAdder($this->mainImagePath, $this->birthImagesPaths
       ,$this->jewelName,$this->category);

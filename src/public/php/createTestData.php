@@ -109,13 +109,13 @@ function generateFakeMetadata($index)
 
 function getPrimaryImage($filesToGetFrom,$index)
 {
-  $dir = "d:/Dev/Demos/randomimages/";
+  $dir = "../images/randomimages/";
   return $dir . $filesToGetFrom[$index];
 }
 
 function getBirthImages($filesToGetFrom,$index)
 {
-  $dir = "d:/Dev/Demos/randomimages/";
+  $dir = "../images/randomimages/";
   $result = array();
   $max = sizeof($filesToGetFrom);
 
@@ -146,10 +146,12 @@ function fakeIt()
 {
   $filesArray = getDummyImages();
   echo ' <h1> this is allFiles : </h1>';
-  print_r($filesArray);
+  echo "<pre>";
+  var_dump($filesArray);
+  echo "</pre>";
 
   for ($i = 1; $i < 30; $i++) {
-    $jewelToAdd = new jewel();
+    $jewelToAdd = new Jewel();
     $jewelToAdd->fillDataFromPost(generateFakeMetadata($i));
 
     $primary = getPrimaryImage($filesArray,$i);
@@ -159,6 +161,11 @@ function fakeIt()
     $jewelToAdd->validateInput();
     $jewelToAdd->addToDb();
     $jewelToAdd->createImageFiles();
+
+    echo "<h3>Added Jewel:</h3>";
+    echo "<pre>";
+    var_dump($jewelToAdd);
+    echo "</pre>";
   }
 }
 deleteOldStuff();

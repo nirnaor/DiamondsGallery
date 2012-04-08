@@ -7,19 +7,19 @@ require('jewel.php');
 require('../../configs/db.php');
 function getJewelByName($name)
 {
-  $result = array();
-  $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+  $jewels = array();
+  $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
   $query = "SELECT * from jewels WHERE name ='" . $name. "'";
-  $jewelsFromDb= mysqli_query($dbc, $query);
-  $jewelsFromDbArray = mysqli_fetch_all($jewelsFromDb, MYSQLI_ASSOC);
+  $queryResult = $mysqli->query($query);
+  //$jewelsFromDbArray = mysqli_fetch_all($jewelsFromDb, MYSQLI_ASSOC);
 
-  for ($i = 0; $i < sizeof($jewelsFromDbArray); $i++) {
-    $currentJewel = $jewelsFromDbArray[$i];
-    $currentJewelAsClass = new Jewel();
-    $currentJewelAsClass->fillDataFromDb($currentJewel);
-    array_push($result,$currentJewelAsClass);
+  //for ($i = 0; $i < sizeof($jewelsFromDbArray); $i++) {
+  while($row = $queryResult->fetch_assoc()) {
+    $jewel = new Jewel();
+    $jewel->fillDataFromDb($row);
+    array_push($jewels, $jewel);
   }
-  return $result;
+  return $jewels;
 }
 
 

@@ -43,13 +43,24 @@ $(document).ready(function () {
     }
 
     function buildSlider(){
+      var ul = $('#slider ul');
       var sliderlist= $('#slider ul')[0];
 
       var allImages = getImagesArray();
       for (var i = 0; i < allImages.length; i++) {
-        $('#slider ul').append(
-           $('<li>').append(allImages[i]));
+        var img = allImages[i];
+        console.log("img = " + img);
+
+        var li = $('<li>').appendTo(ul);
+        console.log(li);
+        console.log(ul);
+
+        var a = $('<a>').attr({
+          href: "../php/jeweldisplay.php?name=" + img.title }).appendTo(li);
+        a.append(img);
       }
+
+      window.slider = new Swipe($('#slider')[0]);
     }
     function getImagesArray() {
       var imagesArray = new Array();

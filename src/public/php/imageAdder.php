@@ -87,8 +87,8 @@ require_once('const.php');
       var_dump($info);
       echo "</pre>";
       // continue only if this is a JPEG image
-      if ( strtolower($info['extension']) == 'jpg' ) 
-      {
+      //if ( strtolower($info['extension']) == 'jpg' ) 
+      //{
         echo "Creating thumbnail for {$fname} <br />";
 
         // load image and get image size
@@ -109,7 +109,7 @@ require_once('const.php');
 
         // save thumbnail into a file
         imagejpeg( $tmp_img, "{$directoryToPlaceFile}{$info['basename']}" );
-      }
+      //}
     }
 
     function movePrimaryImage($newFile,$directoryToPlaceFile)

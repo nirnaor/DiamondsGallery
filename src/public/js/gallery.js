@@ -15,31 +15,35 @@ $(document).ready(function () {
           buildSlider();  
         }
         else{
-          buildContentFlow();
+          window.setTimeout(buildContentFlow, 200);
+          //buildContentFlow();
         }
     }
 
 
     function buildContentFlow(){
       var flowDiv = $('#galleryflow')[0];
-      if (myNewFlow == null) {
-          myNewFlow = new ContentFlow(flowDiv,
-              {
-                onclickActiveItem: function (item) {
-                      var jewelName = item.caption.innerHTML;
-                      var url = "../php/jeweldisplay.php?name=" + jewelName;    
-                      window.location = url; 
-                    }
-              }
-          );
-      }
-
-      myNewFlow.init();
 
       var allImages = getImagesArray();
-      for (var i = 0; i < allImages.length; i++) {
-        myNewFlow.addItem(allImages[i], 'last');
-      };
+
+      window.onAllImagesLoaded = function() {
+
+        var myNewFlow = new ContentFlow(flowDiv,
+            {
+              onclickActiveItem: function (item) {
+                    var jewelName = item.caption.innerHTML;
+                    var url = "../php/jeweldisplay.php?name=" + jewelName;    
+                    window.location = url; 
+                  }
+            }
+        );
+
+        myNewFlow.init();
+        for (var i = 0; i < allImages.length; i++) {
+          myNewFlow.addItem(allImages[i], 'last');
+        };
+      }
+
     }
 
     function buildSlider(){
@@ -62,6 +66,16 @@ $(document).ready(function () {
 
       window.slider = new Swipe($('#slider')[0]);
     }
+
+    window.imagesLeftToLoad = window.gallery_files.length;
+    function notifyImageLoaded() {
+      window.imagesLeftToLoad--;
+      console.log("images left to load: " + window.imagesLeftToLoad);
+      if (window.imagesLeftToLoad <= 0) {
+        window.onAllImagesLoaded();
+      }
+    }
+
     function getImagesArray() {
       var imagesArray = new Array();
       
@@ -71,6 +85,7 @@ $(document).ready(function () {
             console.log('path : ' + path);
             var newImage = createNewImage(path, jewelName);
             imagesArray.push(newImage);
+            newImage.onload = notifyImageLoaded;
         }
       return imagesArray;
     }

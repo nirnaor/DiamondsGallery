@@ -24,7 +24,9 @@ function getDummyImages(){
   $dir = "../images/randomimages/";
   $dh  = opendir($dir);
   while (false !== ($filename = readdir($dh))) {
+    if ($filename != "." and $filename != "..")  {
       $files[] = $filename;
+    }
   }
   return $files;
 }
@@ -117,7 +119,7 @@ function getBirthImages($filesToGetFrom,$index)
 {
   $dir = "../images/randomimages/";
   $result = array();
-  $max = sizeof($filesToGetFrom);
+  $max = sizeof($filesToGetFrom) - 1;
 
   array_push($result,$dir . $filesToGetFrom[rand(2,$max)]);
   array_push($result,$dir . $filesToGetFrom[rand(2,$max)]);

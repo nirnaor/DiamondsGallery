@@ -80,11 +80,42 @@ require_once('const.php');
       return $prefix . $this->jewelname .  '.jpg';  
     }
 
+    function createThumb($fname,$directoryToPlaceFile)
+    {
+      $info = pathinfo($fname);
+      echo "<pre>";
+      var_dump($info);
+      echo "</pre>";
+      // continue only if this is a JPEG image
+      if ( strtolower($info['extension']) == 'jpg' ) 
+      {
+        echo "Creating thumbnail for {$fname} <br />";
+
+        // load image and get image size
+        $img = imagecreatefromjpeg($fname);
+        $width = imagesx( $img );
+        $height = imagesy( $img );
+
+        // calculate thumbnail size
+        $thumbWidth = 500;
+        $new_width = $thumbWidth;
+        $new_height = floor( $height * ( $thumbWidth / $width ) );
+
+        // create a new temporary image
+        $tmp_img = imagecreatetruecolor( $new_width, $new_height );
+
+        // copy and resize old image into new image 
+        imagecopyresized( $tmp_img, $img, 0, 0, 0, 0, $new_width, $new_height, $width, $height );
+
+        // save thumbnail into a file
+        imagejpeg( $tmp_img, "{$directoryToPlaceFile}{$info['basename']}" );
+      }
+    }
 
     function movePrimaryImage($newFile,$directoryToPlaceFile)
     {
       $newFileName = $this->getNewFileName('primary');
-      copy($newFile, $directoryToPlaceFile . $newFileName);
+      $this->createThumb($newFile, $directoryToPlaceFile);
     }
 
     function moveBirthImages($birthImagesArray,$directoryToPlaceFile)
@@ -94,7 +125,7 @@ require_once('const.php');
         $newFile = $birthImagesArray[$i];
         $newFileName = $this->getNewFileName('birth' . $i);
         if($newFile){
-           copy($newFile, $directoryToPlaceFile . $newFileName);
+           $this->createThumb($newFile, $directoryToPlaceFile);
         }
       }
 

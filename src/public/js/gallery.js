@@ -1,5 +1,11 @@
 var myNewFlow = null;
 
+    function pageIsGallery(){
+      // If this is admin page we would like to show the gallery
+      // only after the admin says that he would like to edit/delete 
+      // a certain jewel
+      return location.href.indexOf("category") !=-1;
+    }
     function printImagesArray(){
       console.log('this is the array from the server');
       console.log(window.gallery_files);
@@ -100,12 +106,6 @@ var myNewFlow = null;
 $(document).ready(function () {
     
     window.imagesLeftToLoad = window.gallery_files.length;
-    function pageIsGallery(){
-      // If this is admin page we would like to show the gallery
-      // only after the admin says that he would like to edit/delete 
-      // a certain jewel
-      return location.href.indexOf("category") !=-1;
-    }
     if(pageIsGallery()){
       initGalleryFlow();
       printImagesArray();

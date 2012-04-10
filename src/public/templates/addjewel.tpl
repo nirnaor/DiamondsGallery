@@ -1,6 +1,9 @@
 {extends file="master.tpl"}
 {block name=scriptsandlinks}
     <link type="text/css" rel="Stylesheet" href="../css/addjewel.css" />
+      <script type="text/javascript">
+        window.jewelDetails= {$jewelDetails}
+      </script>
 {/block}
 {block name=htmlcontent}
 <form enctype="multipart/form-data" action="addjewel_submit.php" method="post" accept-charset="utf-8">

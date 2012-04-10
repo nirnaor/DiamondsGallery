@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   function fillMetadata(){
-    $('#description').(window.jewelDetails[0]['description']);
+    $('#desc').html(window.jewelDetails[0]['desc']);
     $('#clarity').text(window.jewelDetails[0]['clarity']);
     $('#weight').text(window.jewelDetails[0]['weight'] + ' kt');
     $('#cut').text(window.jewelDetails[0]['cut']);

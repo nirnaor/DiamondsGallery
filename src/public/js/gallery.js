@@ -2,8 +2,16 @@ var myNewFlow = null;
 
 $(document).ready(function () {
     
-    initGalleryFlow();
-    printImagesArray();
+    function pageIsGallery(){
+      // If this is admin page we would like to show the gallery
+      // only after the admin says that he would like to edit/delete 
+      // a certain jewel
+      return location.href.indexOf("category") !=-1;
+    }
+    if(pageIsGallery()){
+      initGalleryFlow();
+      printImagesArray();
+    }
 
     function printImagesArray(){
       console.log('this is the array from the server');

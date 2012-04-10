@@ -1,18 +1,5 @@
 var myNewFlow = null;
 
-$(document).ready(function () {
-    
-    function pageIsGallery(){
-      // If this is admin page we would like to show the gallery
-      // only after the admin says that he would like to edit/delete 
-      // a certain jewel
-      return location.href.indexOf("category") !=-1;
-    }
-    if(pageIsGallery()){
-      initGalleryFlow();
-      printImagesArray();
-    }
-
     function printImagesArray(){
       console.log('this is the array from the server');
       console.log(window.gallery_files);
@@ -75,7 +62,6 @@ $(document).ready(function () {
       window.slider = new Swipe($('#slider')[0]);
     }
 
-    window.imagesLeftToLoad = window.gallery_files.length;
     function notifyImageLoaded() {
       window.imagesLeftToLoad--;
       console.log("images left to load: " + window.imagesLeftToLoad);
@@ -106,10 +92,25 @@ $(document).ready(function () {
         return result;
     }
 
-  function activeClicked()
-  {
-      console.log('active item clicked');
-  }
+    function activeClicked()
+    {
+        console.log('active item clicked');
+    }
+
+$(document).ready(function () {
+    
+    window.imagesLeftToLoad = window.gallery_files.length;
+    function pageIsGallery(){
+      // If this is admin page we would like to show the gallery
+      // only after the admin says that he would like to edit/delete 
+      // a certain jewel
+      return location.href.indexOf("category") !=-1;
+    }
+    if(pageIsGallery()){
+      initGalleryFlow();
+      printImagesArray();
+    }
+
 
 
 });

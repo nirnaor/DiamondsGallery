@@ -1,5 +1,12 @@
 var myNewFlow = null;
 
+    var basicUrl;
+    function initBasicUrl(){
+        if(pageIsGallery())
+          basicUrl = "../php/jeweldisplay.php";
+        else
+          basicUrl = "../php/addjewel.php";
+    }
     function pageIsGallery(){
       // If this is admin page we would like to show the gallery
       // only after the admin says that he would like to edit/delete 
@@ -12,6 +19,7 @@ var myNewFlow = null;
     }
 
     function initGalleryFlow() {
+      initBasicUrl();
         if(Modernizr.touch){
           buildSlider();  
         }
@@ -20,6 +28,7 @@ var myNewFlow = null;
           //buildContentFlow();
         }
     }
+
 
 
     function buildContentFlow(){
@@ -33,7 +42,7 @@ var myNewFlow = null;
             {
               onclickActiveItem: function (item) {
                     var jewelName = item.caption.innerHTML;
-                    var url = "../php/jeweldisplay.php?name=" + jewelName;    
+                    var url = basicUrl + "?name=" + jewelName;    
                     window.location = url; 
                   }
             }
@@ -61,7 +70,7 @@ var myNewFlow = null;
         console.log(ul);
 
         var a = $('<a>').attr({
-          href: "../php/jeweldisplay.php?name=" + img.title }).appendTo(li);
+          href: basicUrl + "?name=" + img.title }).appendTo(li);
         a.append(img);
       }
 

@@ -11,12 +11,14 @@
 
     $jewelToAdd->fillDataFromFiles($mainimage,$birth);
     $jewelToAdd->validateInput();
+    echo '<h1> will now add to db </h1>';
     $jewelToAdd->addToDb();
     $jewelToAdd->createImageFiles();
 
   }
 
   if (isset($_POST['submit'])) {
+    echo '<h1> bitch </h1>';
     createOrUpdateJewel();
   }
 

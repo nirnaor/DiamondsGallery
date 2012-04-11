@@ -134,9 +134,9 @@ class Jewel
     }
     else
     {
-      $query = "update jewels set " .
-               "name = " . $this->jewelName .
-               "where jewelid = " .$this->jewelId;
+      $query = "update jewels set 
+                name ='$this->jewelName' 
+                where jewelid = '$this->jewelId'";
     }
 
     echo '<h1> this is the query : '.  $query . '</h1>';

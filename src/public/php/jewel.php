@@ -136,6 +136,13 @@ class Jewel
     {
       $query = "update jewels set 
                 name ='$this->jewelName' 
+                ,category ='$this->category' 
+                ,description ='$this->desc' 
+                ,metalcolor ='$this->metalColor' 
+                ,metalweight ='$this->metalWeight' 
+                ,weight ='$this->weight' 
+                ,clarity ='$this->clarity' 
+                ,cut ='$this->cut' 
                 where jewelid = '$this->jewelId'";
     }
 

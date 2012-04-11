@@ -123,6 +123,7 @@ class Jewel
   {
     $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
+    echo 'hello im in add to db';
     if($this->objectIsNew())
     {
       $query = "INSERT INTO jewels

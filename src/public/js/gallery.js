@@ -42,7 +42,9 @@ var myNewFlow = null;
             {
               onclickActiveItem: function (item) {
                     var jewelName = item.caption.innerHTML;
-                    var url = basicUrl + "?name=" + jewelName;    
+                    var jewelid = 
+                      item.element.firstChild.getAttribute('jewelid');
+                    var url = basicUrl + "?id=" + jewelid;    
                     window.location = url; 
                   }
             }
@@ -70,7 +72,7 @@ var myNewFlow = null;
         console.log(ul);
 
         var a = $('<a>').attr({
-          href: basicUrl + "?name=" + img.title }).appendTo(li);
+          href: basicUrl + "?id=" + img.jewelid}).appendTo(li);
         a.append(img);
       }
 
@@ -91,19 +93,22 @@ var myNewFlow = null;
         for (var i = 0; i < window.gallery_files.length; i++) {
             var path = window.gallery_files[i]['mainImagePath'];
             var jewelName = window.gallery_files[i]['jewelName'];
+            var jewelId = window.gallery_files[i]['jewelId'];
             console.log('path : ' + path);
-            var newImage = createNewImage(path, jewelName);
+            console.log('jewelid : ' + jewelId);
+            var newImage = createNewImage(path, jewelName,jewelId);
             imagesArray.push(newImage);
             newImage.onload = notifyImageLoaded;
         }
       return imagesArray;
     }
 
-    function createNewImage(path, caption) {
+    function createNewImage(path, caption,jewelId) {
         var result = document.createElement('img');
         result.setAttribute('src', path);
         result.setAttribute('class', 'nir');
         result.setAttribute('title', caption);
+        result.setAttribute('jewelid',jewelId);
         return result;
     }
 

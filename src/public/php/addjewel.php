@@ -2,11 +2,11 @@
 require('jewel.php');
 require('authorize.php');
 
-function getJewelByName($name)
+function getJewelById($id)
 {
   $jewels = array();
   $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-  $query = "SELECT * from jewels WHERE name ='" . $name. "'";
+  $query = "SELECT * from jewels WHERE jewelid ='" . $id. "'";
   $queryResult = $mysqli->query($query);
   //$jewelsFromDbArray = mysqli_fetch_all($jewelsFromDb, MYSQLI_ASSOC);
 
@@ -19,8 +19,8 @@ function getJewelByName($name)
   return $jewels;
 }
 
-$jewelName= $_GET["name"];
-$jewelDetails= getJewelByName($jewelName);
+$jewelid= $_GET["id"];
+$jewelDetails= getJewelById($jewelid);
 
 require('setup.php');
 $smarty = new Smarty_GuestBook();

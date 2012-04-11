@@ -7,7 +7,7 @@
       </script>
 {/block}
 {block name=htmlcontent}
-<form enctype="multipart/form-data" action="addjewel_submit.php" method="post" accept-charset="utf-8">
+<form id="jewelform" enctype="multipart/form-data" action="addjewel_submit.php" method="post" accept-charset="utf-8">
   <input type="text" name="jewelname" value="Jewel">
   <input type="file" name="mainimage" value="">
   <select name="category" onchange="combo(this, 'theinput')" onmouseout="comboInit(this, 'theinput')">
@@ -54,6 +54,7 @@
 
   <input type="file" name="birth[]" multiple="" value="">
 <p><input type="submit" name="submit" value="Continue &rarr;"></p>
+<p><input type="button" name="deletejewel" style="display:none" value="Delete The Jewel"></p>
 </form>
 
 

@@ -13,9 +13,11 @@ $(document).ready(function () {
   }
   
 
-  if(window.jewelDetails[0] != null){
-    fillMetadata();
-    $('#jewelform').attr("method","put");
-    $('[name="deletejewel"]').attr('style','display:show');
+  if(window.jewelDetails != null){
+    if(window.jewelDetails[0] != null){
+      fillMetadata();
+      $('#jewelform').attr("method","put");
+      $('[name="deletejewel"]').attr('style','display:show');
+    }
   }
 });

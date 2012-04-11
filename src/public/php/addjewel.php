@@ -19,13 +19,16 @@ function getJewelById($id)
   return $jewels;
 }
 
-$jewelid= $_GET["id"];
-$jewelDetails= getJewelById($jewelid);
+$jewelDetails = "";
+  if (isset($_GET)) {
+    $jewelid= $_GET["id"];
+    $jewelDetails= getJewelById($jewelid);
+  }
+
 
 require('setup.php');
 $smarty = new Smarty_GuestBook();
 $smarty->caching = false;
-$smarty->assign('jewelDetails', null);
 $smarty->assign('jewelDetails', json_encode($jewelDetails));
 $smarty->display('addjewel.tpl');
 ?>

@@ -9,6 +9,7 @@ $(document).ready(function () {
     $('[name="weight"]').attr('value',window.jewelDetails[0]['weight']);
     $('[name="clarity"]').attr('value',window.jewelDetails[0]['clarity']);
     $('[name="cut"]').attr('value',window.jewelDetails[0]['cut']);
+    $('[name="jewelid"]').attr('value',window.jewelDetails[0]['jewelId']);
   }
   
 

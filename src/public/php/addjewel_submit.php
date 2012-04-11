@@ -1,8 +1,7 @@
 <?php
   require_once('../../configs/db.php');
   require_once('jewel.php');
-  if (isset($_POST['submit'])) {
-    
+  function createOrUpdateJewel(){
     $jewelToAdd = new jewel();
     $jewelToAdd->fillDataFromPost($_POST);
 
@@ -14,6 +13,11 @@
     $jewelToAdd->validateInput();
     $jewelToAdd->addToDb();
     $jewelToAdd->createImageFiles();
+
+  }
+
+  if (isset($_POST['submit'])) {
+    createOrUpdateJewel();
   }
 
 ?>

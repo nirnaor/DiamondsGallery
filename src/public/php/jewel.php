@@ -8,6 +8,7 @@ require_once('getAllFilesInDirectory.php');
 class Jewel 
 {
   var $jewelName; 
+  var $jewelId; 
   var $mainImagePath; 
   var $birthImagesPaths;
   var $category; 
@@ -21,6 +22,7 @@ class Jewel
 
   public function fillDataFromPost($postArray)
   {
+    $this->jewelId= $postArray['jewelid'];
     $this->jewelName= $postArray['jewelname'];
     $this->category= $postArray['category'];
     $this->desc= $postArray['description'];
@@ -60,6 +62,7 @@ class Jewel
 
   public function fillDataFromDb($dbRow)
   {
+    $this->jewelId = $dbRow['jewelid'];
     $this->jewelName= $dbRow['name'];
     $this->category= $dbRow['category'];
     $this->desc= $dbRow['description'];
@@ -111,16 +114,32 @@ class Jewel
 
   }
 
+  function objectIsNew()
+  {
+    return $this->jewelId == null;
+  }
+
   function addToDb()
   {
     $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
+    if($this->objectIsNew())
+    {
+      $query = "INSERT INTO jewels
+        (jewelid,name,metalcolor,metalweight,weight,category,clarity,cut,description)
+        VALUES (0,'$this->jewelName','$this->metalColor',
+          '$this->metalWeight','$this->weight','$this->category',
+          '$this->clarity','$this->cut','$this->desc')";
+    }
+    else
+    {
+      $query = "update jewels set " .
+               "name = " . $this->jewelName .
+               "where jewelid = " .$this->jewelId;
+    }
+
+    echo '<h1> this is the query : '.  $query . '</h1>';
     // Write the data to the database
-    $query = "INSERT INTO jewels
-      (jewelid,name,metalcolor,metalweight,weight,category,clarity,cut,description)
-      VALUES (0,'$this->jewelName','$this->metalColor',
-        '$this->metalWeight','$this->weight','$this->category',
-        '$this->clarity','$this->cut','$this->desc')";
 
     $result = mysqli_query($dbc, $query);
 

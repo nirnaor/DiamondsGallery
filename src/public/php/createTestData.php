@@ -16,8 +16,11 @@ function rmdir_files($dir) {
 function deleteFromDb()
 {
   $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-  $query = "DELETE FROM JEWELS"; 
+  echo '<h1>DELETING FORM DB!!!!!!!</h1>';
+  $query = "DELETE FROM jewels"; 
   $result = mysqli_query($dbc, $query);
+  echo "Query affected " . mysqli_affected_rows($dbc) . " rows";
+  
   mysqli_close($dbc);
 }
 function getDummyImages(){
@@ -140,7 +143,8 @@ function deleteOldStuff()
 {
   deleteFromDb();
   echo GALLERY_PATH;
-  rmdir_files(GALLERY_PATH);
+  //rmdir_files(GALLERY_PATH);
+  system("rm -rf " . GALLERY_PATH);
 }
 
 

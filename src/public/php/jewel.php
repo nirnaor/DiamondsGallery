@@ -22,7 +22,7 @@ class Jewel
   public function fillDataFromPost($postArray)
   {
     $this->jewelName= $postArray['jewelname'];
-    $this->category= strtolower($postArray['category']);
+    $this->category= $postArray['category'];
     $this->desc= $postArray['description'];
     $this->metalColor= $postArray['metalcolor'];
     $this->metalWeight= $postArray['metalweight'];

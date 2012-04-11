@@ -5,7 +5,7 @@ CREATE TABLE jewels (
   metalcolor ENUM('Gold', 'Silver', 'Platinum'),
   metalweight INT,
   weight INT,
-  category ENUM('rings', 'necklaces','bracelets','earings'),
+  category ENUM('Rings', 'Necklaces','Bracelets','Earings'),
   clarity ENUM('Flawless', 'ws1', 'ws2','vs1','ws2','si1','si2','si3'),
   cut ENUM('round', 'oval', 'peer','heart','asher','emrald','maequise','radiant'),
   UNIQUE(name),

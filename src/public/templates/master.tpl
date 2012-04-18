@@ -26,7 +26,7 @@
                     <li class="gallerymenuitem"><a id="rings" href="gallery.php?category=rings">Rings</a> </li>
                     <li class="gallerymenuitem"><a id="necklaces" href="gallery.php?category=necklaces">Necklaces</a> </li>
                     <li class="gallerymenuitem"><a id="bracelets" href="gallery.php?category=bracelets">Bracelets</a> </li>
-                    <li class="gallerymenuitem"><a id="earings" href="gallery.php?category=earings">Earings</a> </li>
+                    <li class="gallerymenuitem"><a id="earings" href="gallery.php?category=earings">Earrings</a> </li>
                     <li><a href="about.php">About</a> </li>
                 </ul>
             </div>

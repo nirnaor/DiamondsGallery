@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+  $(".active").focusout(function() {
+    console.log('div is focusing out');
+    $(this).removeClass("active");
+  })
+
+ $("div").focusin(function() {
+    $(this).addClass("active");
+ });
   function fillMetadata(){
     $('[name="jewelname"]').attr('value',window.jewelDetails[0]['jewelName']);
     $('[name="description"]').html(window.jewelDetails[0]['desc']);
@@ -11,6 +19,7 @@ $(document).ready(function () {
     $('[name="cut"]').attr('value',window.jewelDetails[0]['cut']);
     $('[name="jewelid"]').attr('value',window.jewelDetails[0]['jewelId']);
   }
+
   
 
   if(window.jewelDetails != null){

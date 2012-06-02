@@ -1,8 +1,30 @@
-form input ,select, textarea
+form div
 {
-  color: blue;
-  display: block;
-  margin-top: 20px;
+    border: solid white 2px;
+    margin: 5px;
+    
+}
+
+form label
+{
+    border: solid blue 1px;
+    margin: 5px;
+}
+
+form input
+{
+  
+    margin : 15px;
+} 
+
+.active
+{
+  background-color:#00825A
+}
+.error 
+{
+  background-color: red;
+  display:none;
 }
 
 

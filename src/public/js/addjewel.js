@@ -16,6 +16,9 @@ $(document).ready(function () {
     makeElementActive($(this));
 	});
 
+  $('input:file').mouseenter(function() {
+    makeElementActive($(this));
+	});
 
 
 

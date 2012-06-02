@@ -1,13 +1,25 @@
 $(document).ready(function () {
+  function makeElementActive(element){
+    $(".active").removeClass("active")
+		element.parent().addClass("active")
+  };
 
-  $(".active").focusout(function() {
-    console.log('div is focusing out');
-    $(this).removeClass("active");
-  })
+  $("input").focus(function() {
+    makeElementActive($(this));
+	});
 
- $("div").focusin(function() {
-    $(this).addClass("active");
- });
+  $("select").focus(function() {
+    makeElementActive($(this));
+	});
+
+  $("textarea").focus(function() {
+    makeElementActive($(this));
+	});
+
+
+
+
+
   function fillMetadata(){
     $('[name="jewelname"]').attr('value',window.jewelDetails[0]['jewelName']);
     $('[name="description"]').html(window.jewelDetails[0]['desc']);

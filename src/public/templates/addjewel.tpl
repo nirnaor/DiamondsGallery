@@ -20,7 +20,7 @@
   </div>
   <div>
     <label for="Jewel Name">Category:</label>
-    <select name="category" onchange="combo(this, 'theinput')" onmouseout="comboInit(this, 'theinput')">
+    <select name="category">
           <option>Rings</option>
           <option>Earings</option>
           <option>Bracelets</option>
@@ -36,7 +36,7 @@
   </div>
   <div>
     <label for="Jewel Name">Metal Color:</label>
-    <select name="metalcolor" onchange="combo(this, 'theinput')" onmouseout="comboInit(this, 'theinput')">
+    <select name="metalcolor">
           <option>Gold</option>
           <option>Silver</option>
           <option>Platinum</option>
@@ -45,7 +45,7 @@
   </div>
   <div>
     <label for="Jewel Name">Metal weight:</label>
-  <select name="metalweight" onchange="combo(this, 'theinput')" onmouseout="comboInit(this, 'theinput')">
+  <select name="metalweight">
         <option>14</option>
         <option>18</option>
         <option>22</option>
@@ -59,7 +59,7 @@
   </div>
   <div>
     <label for="Jewel Name">Clarity:</label>
-    <select name="clarity" onchange="combo(this, 'theinput')" onmouseout="comboInit(this, 'theinput')">
+    <select name="clarity">
           <option>Flawless</option>
           <option>ws1</option>
           <option>ws2</option>
@@ -73,7 +73,7 @@
   </div>
   <div>
     <label for="Jewel Name">Cut:</label>
-    <select name="cut" onchange="combo(this, 'theinput')" onmouseout="comboInit(this, 'theinput')">
+    <select name="cut">
           <option>round</option>
           <option>oval</option>
           <option>peer</option>
@@ -88,7 +88,6 @@
   <div>
     <label for="Jewel Name">Birth Image Set:</label>
     <input type="file" name="birth[]" multiple="" value="">
-    </select>
     <label class="error" for="name">Field cannot be empty</label>
   </div>
 

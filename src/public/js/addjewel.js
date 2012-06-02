@@ -1,5 +1,36 @@
 $(document).ready(function () {
+  function addErrorMessageById(elementid,errormessage){
+    $('#jewelname').parent().children('.error').html().replace(errormessage)
+    $("#" + elementid).parent().children('.error').css('display','inline')
+  };
+
+  function removeErrorMessage(elementid){
+    $("#" + elementid).parent().children('.error').html().replace('');
+    $("#" + elementid).parent().children('.error').css('display','none')
+  };
+
+  function validateName(elementid){
+    if ($("#" + elementid).val() == "")
+      addErrorMessageById(elementid);
+    else
+      removeErrorMessage(elementid);
+  };
+  function validateInput(elementid){
+        console.log(elementid);
+    switch(elementid) {
+      case 'jewelname':
+        validateName(elementid)
+        break;
+      
+      default:
+        // code
+    }
+
+  };
   function makeElementActive(element){
+    previousActiveElement = $('.active').children('select, input, textarea')
+    validateInput(previousActiveElement.attr('id'));
+
     $(".active").removeClass("active")
 		element.parent().addClass("active")
   };

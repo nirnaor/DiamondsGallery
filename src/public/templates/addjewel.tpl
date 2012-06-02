@@ -10,17 +10,17 @@
 <form id="jewelform" enctype="multipart/form-data" action="addjewel_submit.php" method="post" accept-charset="utf-8">
   <div class="active">
     <label for="Jewel Name">Jewel Name</label>
-    <input type="text" name="jewelname" value="" id="Jewel Name">
+    <input type="text" name="jewelname" value="" id="jewelname">
     <label class="error" for="name">Field cannot be empty</label>
   </div>
   <div >
     <label for="Jewel Name">Primary Image File:</label>
-    <input type="file" name="mainimage" value="">
+    <input type="file" name="mainimage" value=""id="mainimage"/>
     <label class="error" for="name">Field cannot be empty</label>
   </div>
   <div>
     <label for="Jewel Name">Category:</label>
-    <select name="category">
+    <select name="category" id="category">
           <option>Rings</option>
           <option>Earings</option>
           <option>Bracelets</option>
@@ -30,13 +30,13 @@
   </div>
   <div>
     <label for="Jewel Name">Description:</label>
-  <textarea name="description" rows="5" cols="50">
+  <textarea name="description" id="description" rows="5" cols="50">
   </textarea>
     <label class="error" for="name">Field cannot be empty</label>
   </div>
   <div>
     <label for="Jewel Name">Metal Color:</label>
-    <select name="metalcolor">
+    <select name="metalcolor" id="metalcolor">
           <option>Gold</option>
           <option>Silver</option>
           <option>Platinum</option>
@@ -45,7 +45,7 @@
   </div>
   <div>
     <label for="Jewel Name">Metal weight:</label>
-  <select name="metalweight">
+  <select name="metalweight" id="metalweight">
         <option>14</option>
         <option>18</option>
         <option>22</option>
@@ -54,12 +54,12 @@
   </div>
   <div>
     <label for="Jewel Name">Weight:</label>
-    <input type="text" name="weight" value="">
+    <input type="text" name="weight" value="" id="weight">
     <label class="error" for="name">Field cannot be empty</label>
   </div>
   <div>
     <label for="Jewel Name">Clarity:</label>
-    <select name="clarity">
+    <select name="clarity" id="clarity">
           <option>Flawless</option>
           <option>ws1</option>
           <option>ws2</option>
@@ -73,7 +73,7 @@
   </div>
   <div>
     <label for="Jewel Name">Cut:</label>
-    <select name="cut">
+    <select name="cut" id="cut">
           <option>round</option>
           <option>oval</option>
           <option>peer</option>
@@ -87,7 +87,7 @@
   </div>
   <div>
     <label for="Jewel Name">Birth Image Set:</label>
-    <input type="file" name="birth[]" multiple="" value="">
+    <input type="file" name="birth[]" id="birth" multiple="" value="">
     <label class="error" for="name">Field cannot be empty</label>
   </div>
 

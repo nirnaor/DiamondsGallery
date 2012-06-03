@@ -10,8 +10,8 @@ $(document).ready(function () {
        });
     });
   function addErrorMessageById(elementid,errormessage){
-    $('#jewelname').parent().children('.error').html().replace(errormessage)
-    $("#" + elementid).parent().children('.error').css('display','inline')
+    $("#" + elementid).parent().children('.error').html(errormessage);
+    $("#" + elementid).parent().children('.error').css('display','inline');
   };
 
   function removeErrorMessage(elementid){
@@ -27,7 +27,12 @@ $(document).ready(function () {
   };
 
   function validateMainImage(elementid){
-
+     console.log('validating main image');
+     var fileName = $("#" +elementid).val();
+     if(fileName.lastIndexOf(".jpg")==-1 && 
+        fileName.lastIndexOf(".jpeg")==-1){
+       addErrorMessageById(elementid, "can only upload jpg or jpef files");
+     }
   };
 
 
@@ -60,19 +65,11 @@ $(document).ready(function () {
 		element.parent().addClass("active")
   };
 
-  $("input").focus(function() {
+  $(".input").focus(function() {
     makeElementActive($(this));
 	});
 
-  $("select").focus(function() {
-    makeElementActive($(this));
-	});
-
-  $("textarea").focus(function() {
-    makeElementActive($(this));
-	});
-
-  $('input:file').mouseenter(function() {
+  $('.input').mouseenter(function() {
     makeElementActive($(this));
 	});
 

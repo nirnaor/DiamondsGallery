@@ -1,14 +1,4 @@
 $(document).ready(function () {
-  $(function() {
-       $("input:file").change(function (){
-         var fileName = $(this).val();
-         if(fileName.lastIndexOf(".jpg")==-1 || 
-            fileName.lastIndexOf(".jpeg")==-1){
-           addErrorMessageById($(this).attr('id'),
-                               "can only upload jpg or jpef files");
-         }
-       });
-    });
   function addErrorMessageById(elementid,errormessage){
     $("#" + elementid).parent().children('.error').html(errormessage);
     $("#" + elementid).parent().children('.error').css('display','inline');
@@ -19,34 +9,56 @@ $(document).ready(function () {
     $("#" + elementid).parent().children('.error').css('display','none')
   };
 
-  function validateName(elementid){
+  function validateTextField(elementid){
     if ($("#" + elementid).val() == "")
       addErrorMessageById(elementid);
     else
       removeErrorMessage(elementid);
   };
+  
+  function fileIsNotSupported(fileName){
+    return (fileName.lastIndexOf(".jpg")==-1 && 
+        fileName.lastIndexOf(".jpeg")==-1)
+  };
 
   function validateMainImage(elementid){
      console.log('validating main image');
      var fileName = $("#" +elementid).val();
-     if(fileName.lastIndexOf(".jpg")==-1 && 
-        fileName.lastIndexOf(".jpeg")==-1){
+     if(fileIsNotSupported(fileName))
        addErrorMessageById(elementid, "can only upload jpg or jpef files");
-     }
+     else
+       removeErrorMessage(elementid);
   };
 
-
-
-
-
+  function validateBirthImageSet(elementid){
+     console.log('validating main image');
+     var fileName = $("#" +elementid).val();
+     console.log('this is fileName' + fileName);
+     var allFilesAreGood = true;
+     for (var i = 0; i < filenName.length; i += 1) {
+         if(fileIsNotSupported(fileName)){
+           addErrorMessageById(elementid, "can only upload jpg or jpef files");
+           allFilesAreGood = false;
+         }
+       };
+       if (allFilesAreGood)
+         removeErrorMessage(elementid);
+  };
   function validateInput(elementid){
     switch(elementid) {
       case 'jewelname':
-        validateName(elementid)
+        validateTextField(elementid)
         break;
       case 'mainimage':
         validateMainImage(elementid)
         break;
+      case 'description':
+        validateTextField(elementid)
+        break;
+      case 'birth':
+        validateBirthImageSet(elementid)
+        break;
+      
       
       default:
         // code
@@ -54,11 +66,8 @@ $(document).ready(function () {
 
   };
   function makeElementActive(element){
-    // removing the error message from the previous input
+    // revalidating the old active element
     previousActiveElement = $('.active').children('select, input, textarea')
-    removeErrorMessage(previousActiveElement.attr('id'));
-
-    // validating the previous active element again (to see if the error has changed)
     validateInput(previousActiveElement.attr('id'));
     $(".active").removeClass("active")
 

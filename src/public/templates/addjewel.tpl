@@ -54,7 +54,7 @@
   </div>
   <div>
     <label for="Jewel Name">Weight:</label>
-    <input type="text" name="weight" value="" class="input" id="weight">
+    <input type="number" name="weight" value="" class="input" id="weight">
     <label class="error" for="name">Field cannot be empty</label>
   </div>
   <div>

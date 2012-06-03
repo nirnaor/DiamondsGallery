@@ -1,4 +1,14 @@
 $(document).ready(function () {
+  $(function() {
+       $("input:file").change(function (){
+         var fileName = $(this).val();
+         if(fileName.lastIndexOf(".jpg")==-1 || 
+            fileName.lastIndexOf(".jpeg")==-1){
+           addErrorMessageById($(this).attr('id'),
+                               "can only upload jpg or jpef files");
+         }
+       });
+    });
   function addErrorMessageById(elementid,errormessage){
     $('#jewelname').parent().children('.error').html().replace(errormessage)
     $("#" + elementid).parent().children('.error').css('display','inline')
@@ -15,11 +25,22 @@ $(document).ready(function () {
     else
       removeErrorMessage(elementid);
   };
+
+  function validateMainImage(elementid){
+
+  };
+
+
+
+
+
   function validateInput(elementid){
-        console.log(elementid);
     switch(elementid) {
       case 'jewelname':
         validateName(elementid)
+        break;
+      case 'mainimage':
+        validateMainImage(elementid)
         break;
       
       default:
@@ -28,10 +49,14 @@ $(document).ready(function () {
 
   };
   function makeElementActive(element){
+    // removing the error message from the previous input
     previousActiveElement = $('.active').children('select, input, textarea')
-    validateInput(previousActiveElement.attr('id'));
+    removeErrorMessage(previousActiveElement.attr('id'));
 
+    // validating the previous active element again (to see if the error has changed)
+    validateInput(previousActiveElement.attr('id'));
     $(".active").removeClass("active")
+
 		element.parent().addClass("active")
   };
 
@@ -51,6 +76,7 @@ $(document).ready(function () {
     makeElementActive($(this));
 	});
 
+  
 
 
 

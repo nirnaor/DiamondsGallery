@@ -98,7 +98,9 @@ $(document).ready(function () {
     $('[name="jewelid"]').attr('value',window.jewelDetails[0]['jewelId']);
   }
 
-  
+   $('#jewelform').submit(function(){
+      $('input[type=submit]', this).attr('disabled', 'disabled');
+  }); 
 
   if(window.jewelDetails != null){
     if(window.jewelDetails[0] != null){

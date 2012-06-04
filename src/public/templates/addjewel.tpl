@@ -92,7 +92,7 @@
   </div>
 
 
-<p><input type="submit" name="submit" value="Continue &rarr;"></p>
+<p><input type="submit" name="submit" value="Add The Jewel!!"></p>
 <p><input type="button" name="deletejewel" style="display:none" value="Delete The Jewel"></p>
 <p><input type="text" name="jewelid" style="display:none" ></p>
 </form>

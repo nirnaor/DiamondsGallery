@@ -19,8 +19,8 @@ function getJewelById($id)
   return $jewels;
 }
 
-$jewelDetails = "";
-  if (isset($_GET)) {
+if (isset($_GET['id'])){
+    $jewelDetails = "";
     $jewelid= $_GET["id"];
     $jewelDetails= getJewelById($jewelid);
   }

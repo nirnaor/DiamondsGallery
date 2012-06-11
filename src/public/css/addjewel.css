@@ -1,20 +1,30 @@
+form
+{
+    max-width: 700px;
+    margin: auto;
+}
+
 form div
 {
-    border: solid white 2px;
-    margin: 5px;
-    
+    /*margin: 5px;*/
+    overflow: auto;   
 }
 
 form label
 {
-    border: solid blue 1px;
-    margin: 5px;
+    float: left;
+    width: 30%;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-form input
+
+form .input
 {
-  
-    margin : 15px;
+    width: 40%;
+    margin-top: 5px;
+    box-sizing: border-box;
 } 
 
 .active
@@ -23,8 +33,8 @@ form input
 }
 .error 
 {
-  background-color: red;
+  color: red;
   display:none;
+  float: right;
+  width: 29%;
 }
-
-
